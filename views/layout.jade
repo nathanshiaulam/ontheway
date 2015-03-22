@@ -1,0 +1,34 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/main.css')
+    link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+    block style
+  body
+    block nav
+        nav.navbar.navbar-default(role='navigation')
+            div#nav-box
+                div.navbar-header
+                    button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNav')
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='/')
+                div.main-menu-container
+                    ul#myNav.nav.navbar-nav.navbar-right.collapse.navbar-collapse
+                        li.nav-item
+                            a(href='/about') About
+                        li.nav-item
+                            a(href='/faq') FAQ
+                        li.nav-item
+                            a(href='/contact') Contact
+                        li.nav-item.login
+                            a(href='/login') Log In
+                        
+    div#page-wrapper
+        block content
+  script(type='text/javascript', src='http://code.jquery.com/jquery-latest.min.js')
+  script(type='text/javascript', src='/javascripts/bootstrap.min.js')
+  script(type='text/javascript', src="/javascripts/FlowType.js/flowtype.js")
+  block script

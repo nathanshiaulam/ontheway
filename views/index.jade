@@ -1,0 +1,119 @@
+extends layout
+
+block content   
+    div#cover
+        div.container.box
+            img.logo(src="images/logo.png")
+            div.headerText
+                h1.main-header ontheway <br>
+                h2.sub-header The world's first peer-to-peer delivery network.
+                h3.sub-sub-header No middlemen. No markups. No commissions.
+                h3.sub-sub-header You make all the profit.
+    div#content
+        div#process.container
+            div.steps.container
+                div.role.header
+                    h1 Picking something up?
+                div.col-md-3
+                    h2 1. Describe what you want
+                    p Write a short description of an item you're looking for. 
+                div.col-md-3
+                    h2 1. Set your location
+                    p Set your location so someone can deliver the item to you.
+                div.col-md-3
+                    h2 1. Enjoy your delivery
+                    p Within minutes, you'll have exactly what you wanted.
+                div.col-md-3
+                    h2 1. Enjoy your delivery
+                    p Within minutes, you'll have exactly what you wanted.  
+            div.steps.container
+                div.role.header
+                    h1 Need something?
+                div.col-md-3
+                    h2 1. Browse requests
+                    p See if anyone's looking for something.
+                div.col-md-3
+                    h2 1. Set your location
+                    p Accept any requests that are on the way.
+                div.col-md-3
+                    h2 1. Get Paid
+                    p Purchase the item, deliver it, and get paid.
+                 div.col-md-3
+                    h2 1. Get Paid
+                    p Purchase the item, deliver it, and get paid. 
+    div#next
+block script
+    script(type='text/javascript').
+        $('.headerText').flowtype({
+            minimum   : 100,
+            maximum   : 2500,
+            minFont   : 1,
+            maxFont   : 11,
+        });
+        function fadeIn($elts) {
+          $elts.each(function() {
+            var $this = $(this);
+            if ($this.css('opacity') == 0 || !$this.is(':visible'))
+              $this.fadeIn('slow');
+          });
+        }
+        function fadeOut($elts) {
+          $elts.each(function() {
+            var $this = $(this);
+            if ($this.css('opacity') == 1 || $this.is(':visible'))
+              $this.fadeOut('fast');
+          });
+        }
+        function displayNone($elts) {
+          $elts.each(function() {
+            var $this = $(this);
+            if ($this.css('opacity') == 1 || $this.is(':visible'))
+              $this.css('display', 'none');('fast');
+          });
+        }
+        $(".download-btns").hover(function(){
+            $(".download-text").css('display', 'none');
+            $(".download-btns").css('padding', '0');
+            fadeIn($(".windows-btn, a.mac-btn, #download-info"));
+            },
+            function(){  
+                displayNone($(".windows-btn, a.mac-btn, #download-info"));
+                $(".download-btns").css('padding-top', '10%');
+                $(".download-btns").css('padding-bottom', '10%');
+                $(".download-text").fadeIn('slow');
+        });
+        $(document).ready(function() {
+            var logo = $('.logo');
+            var main_head = $('.main-header');
+            var sub_head = $('.sub-header');
+            var sub_sub_header = $('.sub-sub-header');
+            var scrolldown = $('.scroll-down');
+            $(logo).fadeTo(1500, 1);
+            $(main_head).delay(400).fadeTo(1500, 1);
+            $(sub_head).delay(800).fadeTo(1500, 1);
+            $(sub_sub_header).delay(1200).fadeTo(1500, 1);
+            $(scrolldown).delay(1200).fadeTo(1500, 1);
+        });
+    script(type='text/javascript', src='/javascripts/smoothScroll.js')
+        //- // Download Button
+        //- $(document).ready(function(){   
+        //-     $('#download-info').fadeOut(100);
+        //- });
+        //- // Store button
+        //- $(".store-btn").hover(function(){
+        //-   fadeIn($("#shop-info"));
+        //- },
+        //- function(){
+        //-     $("#shop-info").fadeOut(100);
+        //- });
+
+        // Window bit button
+        //- $(".win-btn-wrapper").hover(function(){
+        //-   fadeIn($(".windows-bit"));
+        //- },
+        //- function(){
+        //-     $(".windows-bit").fadeOut(100);
+        //- });
+
+       
+
