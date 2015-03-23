@@ -49,6 +49,24 @@ hr.symbol:after {
 	min-height: 650px;
 }
 
+@media(max-width: 767px) {
+	.navbar-nav {
+		transition: 0.5s;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-ms-transition: 0.5s;
+		-o-transition: 0.5s;
+		padding: 0;
+	}
+	.navbar-nav:hover {
+		background-color: rgba(0,0,0,0.5);
+		transition: 0.5s;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-ms-transition: 0.5s;
+		-o-transition: 0.5s;
+	}
+}
 
 @media(max-width: 1136px) {
 	#cover {
