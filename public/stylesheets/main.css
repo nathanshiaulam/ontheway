@@ -25,7 +25,7 @@ hr.symbol:after {
 	position: relative;
 	top: -0.8em;
 	font-size: 2em;
-	background-color: rgb(204,51,51);
+	background-color: rgb(205,51,51);
 }
 .center {
     position: absolute;
@@ -42,7 +42,7 @@ hr.symbol:after {
 }
 
 #cover {
-	background-color: rgb(204,51,51);
+	background-color: rgb(205,51,51);
   	background-size: cover;
 	height: 80%;
 	min-height: 600px;
@@ -50,7 +50,7 @@ hr.symbol:after {
 
 @media(max-width: 1136px) {
 	#cover {
-		background-color: rgb(204,51,51);
+		background-color: rgb(205,51,51);
 	  	background-size: cover;
 		height: 80%;
 		min-height: 675px;
@@ -64,7 +64,7 @@ hr.symbol:after {
 		padding-top: 5px;
 	}
 	#cover {
-		background-color: rgb(204,51,51);
+		background-color: rgb(205,51,51);
 	  	background-size: cover;
 		height: 80%;
 		min-height: 750px;
@@ -72,7 +72,7 @@ hr.symbol:after {
 } 
 @media(max-width: 605px) {
 	#cover {
-		background-color: rgb(204,51,51);
+		background-color: rgb(205,51,51);
 	  	background-size: cover;
 		height: 80%;
 		min-height: 850px;
@@ -89,7 +89,7 @@ hr.symbol:after {
 }
 @media(max-width: 425px) {
 	#cover {
-		background-color: rgb(204,51,51);
+		background-color: rgb(205,51,51);
 	  	background-size: cover;
 		height: 70%;
 		min-height: 875px;
@@ -105,7 +105,7 @@ hr.symbol:after {
 }
 @media(max-width: 357px) {
 	#cover {
-		background-color: rgb(204,51,51);
+		background-color: rgb(205,51,51);
 	  	background-size: cover;
 		height: 70%;
 		min-height: 850px;
@@ -276,7 +276,7 @@ a.svg {
 /* Next CSS */
 
 #next {
-	background-color: rgb(204,51,51);
+	background-color: rgb(205,51,51);
 	height: 100vh;
 }
 
