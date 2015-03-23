@@ -44,11 +44,13 @@ block content
     div#next
 block script
     script(type='text/javascript').
-        $('.headerText').flowtype({
-            minimum   : 100,
-            maximum   : 2500,
-            minFont   : 1,
-            maxFont   : 11,
+        $(document).ready(function() {
+                $('.headerText').flowtype({
+                minimum   : 100,
+                maximum   : 2500,
+                minFont   : 1,
+                maxFont   : 11,
+            });
         });
         function fadeIn($elts) {
           $elts.each(function() {
