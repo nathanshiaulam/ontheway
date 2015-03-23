@@ -20,10 +20,10 @@
 }
 
 hr.symbol:after {
-	content: 'o';
+	content: '•';
 	display: inline;
 	position: relative;
-	top: -0.8em;
+	top: -.7em;
 	font-size: 2em;
 	padding: 0 5px;
 	background-color: rgb(205,51,51);
@@ -39,7 +39,7 @@ hr.symbol:after {
 .box {
 	width: 100%;
 	position: absolute;
-	margin-top: 5%;
+	margin-top: 6%;
 }
 
 #cover {
