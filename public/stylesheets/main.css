@@ -46,8 +46,9 @@ hr.symbol:after {
 	background-color: rgb(205,51,51);
   	background-size: cover;
 	height: 80%;
-	min-height: 600px;
+	min-height: 650px;
 }
+
 
 @media(max-width: 1136px) {
 	#cover {
