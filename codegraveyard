@@ -191,3 +191,30 @@
   -ms-transition: 0.25s;
   -o-transition: 0.25s;
 }
+   //- div.buttons
+            //-   section.btn-wrapper-download.center
+            //-     //- p Download now and join us here
+            //-     div.download-btns
+            //-       span.download-text
+            //-         i.fa.fa-cloud-download &nbsp;&nbsp;
+            //-         | Download      
+            //-         //- div.windows-bit(style='display: none;')
+            //-         //-   ul
+            //-         //-     li
+            //-         //-         a(href='javascript:void(0)') 32bit
+            //-         //-     |             
+            //-         //-     li
+            //-         //-         a(href='javascript:void(0)') 64bit
+            //-         //- |         
+            //-       a.windows-btn(title='Android App', style='display:none;')
+            //-         i.fa.fa-android
+            //-       |       
+            //-       a.mac-btn(title='iOS App', style='display: none;')
+            //-         i.fa.fa-apple
+
+        //- div.scroll-down
+        //-     div#above-arrow
+        //-         h3
+        //-             i Join the community
+        //-     a.smoothScroll(href='#content')
+        //-         div#home-arrow.fa.fa-users
