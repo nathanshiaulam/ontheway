@@ -37,7 +37,7 @@
 #cover {
 	background-color: rgb(182,15,5);
   	background-size: cover;
-	height: 70%;
+	height: 80%;
 	min-height: 600px;
 }
 
@@ -45,8 +45,21 @@
 	#cover {
 		background-color: rgb(182,15,5);
 	  	background-size: cover;
-		height: 70%;
+		height: 80%;
 		min-height: 700px;
+	}
+	.box {
+		width: 100%;
+		position: absolute;
+		margin-top: 10%;
+	}
+}
+@media(max-width: 435px) {
+	#cover {
+		background-color: rgb(182,15,5);
+	  	background-size: cover;
+		height: 70%;
+		min-height: 800px;
 	}
 	.box {
 		width: 100%;
