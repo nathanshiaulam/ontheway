@@ -8,18 +8,25 @@
 	color: white;
 }
 
-/*}
- * .hattori {
-    font-family: 'hattori_hanzolight'!important; 	
- }
+.symbol {
+    padding: 0;
+    border: none;
+    border-top: thin double white;
+    color: white;
+    text-align: center;
+    margin-left: 15%;
+    margin-right: 15%;
 
- * .dekar {
-  	font-family: 'dekarregular';
- }
+}
 
- *.dekarlight {
- 	font-family: 'dekar_lightregular';
- }*/
+hr.symbol:after {
+	content: 'o';
+	display: inline;
+	position: relative;
+	top: -0.8em;
+	font-size: 2em;
+	background-color: rgb(204,51,51);
+}
 .center {
     position: absolute;
 	width: 100%;
@@ -40,38 +47,76 @@
 	height: 80%;
 	min-height: 600px;
 }
+
 @media(max-width: 1136px) {
 	#cover {
 		background-color: rgb(204,51,51);
 	  	background-size: cover;
 		height: 80%;
-		min-height: 650px;
+		min-height: 675px;
 	}
 }
-@media(max-width: 611px) {
+@media(max-width: 768px) {
+	.box {
+		width: 100%;
+		position: absolute;
+		margin-top: 10%;
+		padding-top: 5px;
+	}
 	#cover {
 		background-color: rgb(204,51,51);
 	  	background-size: cover;
 		height: 80%;
 		min-height: 750px;
 	}
+} 
+@media(max-width: 605px) {
+	#cover {
+		background-color: rgb(204,51,51);
+	  	background-size: cover;
+		height: 80%;
+		min-height: 850px;
+	}
 	.box {
 		width: 100%;
 		position: absolute;
-		margin-top: 10%;
+		margin-top: 15%;
 	}
+	.app-buttons {
+		padding-top: 10px!important;
+	}
+
 }
-@media(max-width: 435px) {
+@media(max-width: 425px) {
 	#cover {
-		background-color: rgb(182,15,5);
+		background-color: rgb(204,51,51);
 	  	background-size: cover;
 		height: 70%;
-		min-height: 820px;
+		min-height: 875px;
 	}
 	.box {
 		width: 100%;
 		position: absolute;
 		margin-top: 10%;
+	}
+	.app-buttons {
+		padding-top: 0!important;
+	}
+}
+@media(max-width: 357px) {
+	#cover {
+		background-color: rgb(204,51,51);
+	  	background-size: cover;
+		height: 70%;
+		min-height: 850px;
+	}
+	.box {
+		width: 100%;
+		position: absolute;
+		margin-top: 10%;
+	}
+	.app-buttons {
+		padding-top: 0!important;
 	}
 }
 #page-wrapper {
@@ -231,7 +276,7 @@ a.svg {
 /* Next CSS */
 
 #next {
-	background-color: rgb(182,15,5);
+	background-color: rgb(204,51,51);
 	height: 100vh;
 }
 
