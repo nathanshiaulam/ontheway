@@ -45,14 +45,14 @@ block content
 block script
     //- script(type='text/javascript', src='/javascripts/smoothScroll.js')
     script(type='text/javascript').
-        //- $(document).ready(function() {
-        //-         $('.headerText').flowtype({
-        //-         minimum   : 100,
-        //-         maximum   : 2500,
-        //-         minFont   : 1,
-        //-         maxFont   : 11,
-        //-     });
-        //- });
+        $(document).ready(function() {
+                $('.headerText').flowtype({
+                minimum   : 100,
+                maximum   : 2500,
+                minFont   : 1,
+                maxFont   : 11,
+            });
+        });
         function fadeIn($elts) {
           $elts.each(function() {
             var $this = $(this);
