@@ -3,12 +3,16 @@ extends layout
 block content   
     div#cover
         div.container.box
-            img.logo(src="images/logo.png")
+            img.logo(src="images/main-logo.png")
             div.headerText
-                h1.main-header ontheway <br>
                 h2.sub-header The world's first peer-to-peer delivery network.
                 h3.sub-sub-header No middlemen. No markups. No commissions.
                 h3.sub-sub-header You make all the profit.
+                div.app-buttons
+                    a(href='/', class='svg')
+                        object.download-button.apple(data='images/appledownload.svg', type='image/svg+xml',  class="mailicon")
+                    a(href='/')
+                        img.download-button.android(src='images/androiddownload.png')
     div#content
         div#process.container
             div.steps.container
@@ -82,12 +86,12 @@ block script
             var main_head = $('.main-header');
             var sub_head = $('.sub-header');
             var sub_sub_header = $('.sub-sub-header');
-            var scrolldown = $('.scroll-down');
+            var app_buttons = $('.app-buttons');
             $(logo).fadeTo(1500, 1);
             $(main_head).delay(400).fadeTo(1500, 1);
             $(sub_head).delay(800).fadeTo(1500, 1);
             $(sub_sub_header).delay(1200).fadeTo(1500, 1);
-            $(scrolldown).delay(1200).fadeTo(1500, 1);
+            $(app_buttons).delay(1200).fadeTo(1500, 1);
         });
        
 

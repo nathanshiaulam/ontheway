@@ -35,18 +35,25 @@
 }
 
 #cover {
-	background-color: rgb(182,15,5);
+	background-color: rgb(204,51,51);
   	background-size: cover;
 	height: 80%;
 	min-height: 600px;
 }
-
-@media(max-width: 611px) {
+@media(max-width: 1136px) {
 	#cover {
-		background-color: rgb(182,15,5);
+		background-color: rgb(204,51,51);
 	  	background-size: cover;
 		height: 80%;
-		min-height: 700px;
+		min-height: 650px;
+	}
+}
+@media(max-width: 611px) {
+	#cover {
+		background-color: rgb(204,51,51);
+	  	background-size: cover;
+		height: 80%;
+		min-height: 750px;
 	}
 	.box {
 		width: 100%;
@@ -59,7 +66,7 @@
 		background-color: rgb(182,15,5);
 	  	background-size: cover;
 		height: 70%;
-		min-height: 800px;
+		min-height: 820px;
 	}
 	.box {
 		width: 100%;
@@ -95,7 +102,7 @@ a:hover{
 	height: 100%;
 }
 .navbar .navbar-brand {
-  background: url(/images/logo4.jpg) center no-repeat;
+  background: url(/images/corner-logo.jpg) center no-repeat;
   background-size: 100%;
   width: auto;
   margin: 0;
@@ -122,7 +129,7 @@ a:hover{
 /*-------Index CSS--------*/
 
 .box .logo {
-	height: 25vh;
+	height: 30vh;
 	position: relative;
 	width: auto;
 	display:block;
@@ -154,7 +161,7 @@ a:hover{
 	font-size: 4.2em;
 	margin-bottom: 1%;
 	opacity: 0;
-	margin-top: 37px;
+	margin-top: 25px;
 }
 
 .sub-sub-header {
@@ -162,10 +169,30 @@ a:hover{
 	opacity: 0;
 }
 
-.buttons {
+.app-buttons {
 	opacity: 0;
+	padding-top: 30px;
 }
 
+.download-button {
+	display: inline-block;
+}
+a.svg:after {
+  content: ""; 
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  bottom: 0; 
+  left: 0;
+}
+a.svg {
+  position: relative;
+  display: inline-block;
+}
+.android {
+	padding-bottom: 31px;
+    margin-left: 50px;
+}
 /* End */
 
 /* Content CSS */
