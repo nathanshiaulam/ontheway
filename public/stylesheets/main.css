@@ -10,6 +10,7 @@
 
 .symbol {
     padding: 0;
+    opacity: 0;
     border: none;
     border: thin double white;
     color: white;
