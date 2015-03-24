@@ -1,7 +1,7 @@
 extends layout
 
 block content   
-    div#cover
+    div.cover.red
         div.container.box
             img.logo(src="images/main-logo.png")
             hr.symbol
@@ -14,39 +14,39 @@ block content
                         object.download-button.apple(data='images/appledownload.svg', type='image/svg+xml',  class="mailicon")
                     a(href='/')
                         img.download-button.android(src='images/androiddownload.png')
-    div#content
+    div.full-page.white
         div#process.container
             div.steps.container
                 div.role.header
                     h1 Picking something up?
                 div.col-md-3
-                    h2 1. Describe what you want
-                    p Write a short description of an item you're looking for. 
+                    h2 1. Browse Requests
+                    p See what people are looking for
                 div.col-md-3
-                    h2 1. Set your location
-                    p Set your location so someone can deliver the item to you.
+                    h2 2. Click 'Go'
+                    p Accept requests that are on the way
                 div.col-md-3
-                    h2 1. Enjoy your delivery
-                    p Within minutes, you'll have exactly what you wanted.
+                    h2 3. Deliver
+                    p Purchase the item and deliver it
                 div.col-md-3
-                    h2 1. Enjoy your delivery
-                    p Within minutes, you'll have exactly what you wanted.  
+                    h2 4. Get Paid
+                    p You make money, and it was all on the way.
             div.steps.container
                 div.role.header
                     h1 Need something?
                 div.col-md-3
-                    h2 1. Browse requests
-                    p See if anyone's looking for something.
+                    h2 1. Describe 
+                    p Write a short description of what you want
                 div.col-md-3
-                    h2 1. Set your location
-                    p Accept any requests that are on the way.
+                    h2 2. Set your location
+                    p Let people know where you want
                 div.col-md-3
-                    h2 1. Get Paid
-                    p Purchase the item, deliver it, and get paid.
+                    h2 3. Make your payment
+                    p We handle the payment process for you
                  div.col-md-3
-                    h2 1. Get Paid
-                    p Purchase the item, deliver it, and get paid. 
-    div#next
+                    h2 4. Enjoy your delivery
+                    p It's as if you went there and got it yourself
+    //- div#next
 block script
     script(type='text/javascript', src='/javascripts/smoothscroll.js')
     script(type='text/javascript').
@@ -86,10 +86,12 @@ block script
             var logo = $('.logo');
             var main_head = $('.main-header');
             var sub_head = $('.sub-header');
+            var linebreak = $('.symbol');
             var sub_sub_header = $('.sub-sub-header');
             var app_buttons = $('.app-buttons');
             $(logo).fadeTo(1500, 1);
             $(main_head).delay(400).fadeTo(1500, 1);
+            $(linebreak).delay(800).fadeTo(1500, 1);
             $(sub_head).delay(800).fadeTo(1500, 1);
             $(sub_sub_header).delay(1200).fadeTo(1500, 1);
             $(app_buttons).delay(1200).fadeTo(1500, 1);

@@ -39,14 +39,70 @@ hr.symbol:after {
 .box {
 	width: 100%;
 	position: absolute;
-	margin-top: 6%;
+	margin-top: 5%;
 }
 
-#cover {
-	background-color: rgb(205,51,51);
+/* iPhone 6+ (portrait) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	.box {
+		margin-top: 20%!important;
+	}
+	.cover {
+	  	background-size: cover;
+		height: 10%!important;
+		min-height: 600px!important;
+		/*min-height: 600px!important;*/
+	}
+	.box .logo {
+		height: 10vh;
+		position: relative;
+		width: auto;
+		display:block;
+		margin: auto;
+		opacity: 0;
+		min-height: 200px;
+	}
+	.main-header {
+		margin-top: 0;
+		text-align: center;
+		font-size: 3em!important;
+		margin-bottom: 5px;
+		opacity: 0;
+	}
+
+	.sub-header {
+		font-size: 2em!important;
+		margin-bottom: 1%;
+		opacity: 0;
+		margin-top: 25px;
+	}
+
+	.sub-sub-header {
+		font-size: 1.5em!important;
+		opacity: 0;
+	}
+	.headerText .app-buttons {
+		padding-top: 16px!important;
+	}
+	.download-button.apple {
+		height: 35px;
+	}
+	.download-button.android {
+		height: 68px;
+	}
+
+}
+
+.cover {
   	background-size: cover;
-	height: 80%;
+	height: 82%;
 	min-height: 650px;
+}
+.red {
+	background-color: rgb(205,51,51);
+}
+.white {
+	background-color: #F4F5F5;
 }
 
 @media(max-width: 767px) {
@@ -70,8 +126,7 @@ hr.symbol:after {
 }
 
 @media(max-width: 1136px) {
-	#cover {
-		background-color: rgb(205,51,51);
+	.cover {
 	  	background-size: cover;
 		height: 80%;
 		min-height: 700px;
@@ -84,16 +139,14 @@ hr.symbol:after {
 		margin-top: 10%;
 		padding-top: 5px;
 	}
-	#cover {
-		background-color: rgb(205,51,51);
+	.cover {
 	  	background-size: cover;
 		height: 80%;
 		min-height: 750px;
 	}
 } 
 @media(max-width: 605px) {
-	#cover {
-		background-color: rgb(205,51,51);
+	.cover {
 	  	background-size: cover;
 		height: 80%;
 		min-height: 850px;
@@ -109,8 +162,7 @@ hr.symbol:after {
 
 }
 @media(max-width: 425px) {
-	#cover {
-		background-color: rgb(205,51,51);
+	.cover {
 	  	background-size: cover;
 		height: 70%;
 		min-height: 875px;
@@ -125,12 +177,12 @@ hr.symbol:after {
 	}
 }
 @media(max-width: 357px) {
-	#cover {
+/*	.cover {
 		background-color: rgb(205,51,51);
 	  	background-size: cover;
 		height: 70%;
 		min-height: 850px;
-	}
+	}*/
 	.box {
 		width: 100%;
 		position: absolute;
@@ -204,6 +256,7 @@ a:hover{
 	min-height: 200px;
 }
 
+
 .headerText {
 	display:block;
 	text-align: center;
@@ -263,9 +316,8 @@ a.svg {
 
 /* Content CSS */
 
-#content {
+.full-page {
 	height: 100vh;
-	background-color: #F4F5F5;
 }
 #process {
 	padding-top: 10px;
