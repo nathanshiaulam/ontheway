@@ -9,7 +9,8 @@
 }
 
 #footer {
-	padding: 0;
+	padding-bottom: 10px;
+	padding-top: 10px;
 	margin: 0;
 }
 .copyright {
@@ -337,10 +338,6 @@ a.svg {
 /* End */
 
 /* Content CSS */
-
-.full-page {
-	/*height: 100%;*/
-}
 
 #process {
 	padding-top: 10px;
