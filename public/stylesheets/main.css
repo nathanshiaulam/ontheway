@@ -114,7 +114,7 @@ a:hover{
 	height: 100%;
 }
 
-.nav-item:hover {
+.nav-item a.underline:hover {
 	border-bottom: 2px solid white;
 }
 
@@ -123,6 +123,9 @@ a:hover{
 	font-size: 1.2em;
 	padding-top: 20px;
 	padding-bottom: 8px;
+	margin: 0 5px;
+  	padding-left: 0;
+  	padding-right: 0;
 }
 
 #other-nav.navbar {
