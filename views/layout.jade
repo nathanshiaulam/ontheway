@@ -35,9 +35,19 @@ html
   script(type='text/javascript', src='https://code.jquery.com/jquery-latest.min.js')
   script(type='text/javascript', src='/javascripts/bootstrap.min.js')
   script(type='text/javascript').
-    if($(window).width() <= 767) {
-        $('#uniqueNav').removeClass('signup');
-    } else {
-        $('#uniqueNav').addClass('signup');
-    }
+    $(document).ready(function() {
+        if($(window).width() <= 767) {
+            $('#uniqueNav').removeClass('signup');
+        } else {
+            $('#uniqueNav').addClass('signup');
+        }
+    });
+    $(window).resize(function() {
+        if($(window).width() <= 767) {
+            $('#uniqueNav').removeClass('signup');
+        } else {
+            $('#uniqueNav').addClass('signup');
+        }
+    });
+    
   block script
