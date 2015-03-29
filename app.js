@@ -6,8 +6,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
+var about = require('./routes/about');
 var users = require('./routes/users');
-
+var faq = require('./routes/faq');
 var app = express();
 
 // view engine setup
@@ -22,7 +23,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// routes
 app.use('/', routes);
+app.use('/about', about);
+app.use('/faq', faq);
 app.use('/login', users);
 
 

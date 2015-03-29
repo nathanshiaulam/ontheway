@@ -24,7 +24,7 @@ html
                             a(href='/faq') FAQ
                         li.nav-item
                             a(href='/contact') Contact
-                        li.nav-item.login
+                        li#uniqueNav.nav-item
                             a(href='/signup') Sign Up
                         
     div#page-wrapper
@@ -33,4 +33,10 @@ html
             p.copyright © 2015 Enroute Innovations, LLC. All rights reserved.
   script(type='text/javascript', src='https://code.jquery.com/jquery-latest.min.js')
   script(type='text/javascript', src='/javascripts/bootstrap.min.js')
+  script(type='text/javascript').
+    if($(window).width() <= 767) {
+        $('#uniqueNav').removeClass('signup');
+    } else {
+        $('#uniqueNav').addClass('signup');
+    }
   block script

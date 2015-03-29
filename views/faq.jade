@@ -1,0 +1,21 @@
+extends layout
+block nav
+        nav#other-nav.navbar.navbar-default(role='navigation')
+            div#nav-box
+                div.navbar-header
+                    button(type='button', class="navbar-toggle collapsed", data-toggle='collapse', data-target='#myNav')
+                        span.icon-bar
+                        span.icon-bar
+                        span.icon-bar
+                    a.navbar-brand(href='/')
+                div.main-menu-container
+                    ul#myNav.nav.navbar-nav.navbar-right.collapse.navbar-collapse
+                        li.nav-item
+                            a(href='/about') About
+                        li.nav-item
+                            a(href='/faq') FAQ
+                        li.nav-item
+                            a(href='/contact') Contact
+                        li.nav-item.signup
+                            a(href='/signup') Sign Up
+block content 
