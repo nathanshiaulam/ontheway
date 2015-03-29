@@ -8,6 +8,18 @@
 	color: white;
 }
 
+#footer {
+	padding: 0;
+	margin: 0;
+}
+.copyright {
+	color: #34495E;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
 .symbol {
     padding: 0;
     opacity: 0;
@@ -24,11 +36,12 @@ hr.symbol:after {
 	content: '•';
 	display: inline;
 	position: relative;
-	top: -.7em;
+	top: -.69em;
 	font-size: 2em;
 	padding: 0 5px;
-	background-color: rgb(205,51,51);
+	/*background-color: rgb(205,51,51);*/
 }
+
 .center {
     position: absolute;
 	width: 100%;
@@ -91,7 +104,15 @@ hr.symbol:after {
 	.download-button.android {
 		height: 68px;
 	}
-
+	hr.symbol:after {
+		content: '•';
+		display: inline;
+		position: relative;
+		top: -.67em;
+		font-size: 2em;
+		padding: 0 5px;
+		/*background-color: rgb(205,51,51);*/
+	}
 }
 
 .cover {
@@ -318,8 +339,9 @@ a.svg {
 /* Content CSS */
 
 .full-page {
-	height: 100vh;
+	/*height: 100%;*/
 }
+
 #process {
 	padding-top: 10px;
 }
@@ -328,23 +350,29 @@ a.svg {
 	text-align: center;
 	color: #22313F;
 	font-weight: bold;
-	padding-top: 20px;
+}
+
+.example-image img{
+	width: 90%;
+	display: block;
+	margin: auto;
 }
 
 .steps {
 	padding-bottom: 20px;
 }
+
 .steps h2{
 	color: #34495E;
 	text-align: center;
 	margin-top: 10px;
+	font-size: 2em;
 }
 
 .steps p {
-	font-size: 1.5em;
+	font-size: 1.2em;
 	text-align: center;
 	color: #67809F;
-
 }
 
 /* Next CSS */
