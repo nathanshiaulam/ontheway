@@ -196,6 +196,7 @@ a:hover{
 	margin: auto;
 	opacity: 0;
 	min-height: 200px;
+	max-height: 210px;
 }
 
 
@@ -500,11 +501,7 @@ a.svg {
 		padding-top: 0!important;
 	}
 }
-@media(min-height: 771px) {
-	.cover {
-		min-height: 750px;
-	}
-}
+
 /*----------End-----------*/
 
 /*------Contact CSS-------*/
