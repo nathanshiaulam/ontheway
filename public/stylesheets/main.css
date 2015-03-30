@@ -7,6 +7,15 @@
 	font-family: 'lane_narrowregular';
 }
 
+#page-header {
+	width: 100%;
+	position: inherit;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #eaeaea;
+	border-top: 1px solid #eaeaea;
+}
+
 #footer {
 	padding-bottom: 10px;
 	padding-top: 10px;
@@ -83,9 +92,6 @@ hr.symbol:after {
 	background-color: #F9F9F9;
 }
 
-#page-wrapper {
-	height: 100vh;
-}
 .fullpage {
 	height: 100vh;
 }
@@ -586,4 +592,20 @@ a.svg {
 }
 #contact-boxes .contact-card-text p {
 	font-weight: 500;
+}
+
+/*----------End-----------*/
+
+/*--------FAQ CSS--------*/
+.q-and-a-box {
+	padding-bottom: 20px;
+}
+.q-and-a {
+	padding: 15px 50px 0px 0px;
+}
+.q-and-a .question {
+	font-weight: 500;
+}
+.q-and-a .answer {
+	padding-right: 10%;
 }

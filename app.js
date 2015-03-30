@@ -9,6 +9,7 @@ var routes = require('./routes/index');
 var about = require('./routes/about');
 var users = require('./routes/users');
 var faq = require('./routes/faq');
+var terms = require('./routes/terms');
 var contact = require('./routes/contact');
 
 var app = express();
@@ -29,6 +30,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', routes);
 app.use('/about', about);
 app.use('/faq', faq);
+app.use('/terms', terms);
 app.use('/contact', contact);
 app.use('/login', users);
 
