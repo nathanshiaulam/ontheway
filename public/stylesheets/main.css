@@ -248,6 +248,9 @@ a.svg {
 	padding-bottom: 31px;
     margin-left: 50px;
 }
+.apple {
+	padding-bottom: 31px;
+}
 /*----------End-----------*/
 
 /*-----Content CSS--------*/
@@ -400,7 +403,7 @@ a.svg {
 		padding-top: 16px!important;
 	}
 	.download-button.apple {
-		height: 35px;
+		height: 68px;
 	}
 	.download-button.android {
 		height: 68px;
