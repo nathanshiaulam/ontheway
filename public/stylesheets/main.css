@@ -581,6 +581,11 @@ a.svg {
 	margin-left: 13px;
 }
 
+@media(max-width: 885px) {
+	.contact-card a {
+		font-size: 20px;
+ 	}
+}
 #contact-boxes a {
 	color: #d8433d;
 }
