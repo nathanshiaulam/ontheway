@@ -21,8 +21,31 @@ block nav
                         li#uniqueNav.nav-item
                             a(href='/signup') Sign Up
 block content 
-    div.fullpage
+    div.large-page 
         div#contact-header.darkwhite
             div.container.text-center
                 h2.contact-main-head Ontheway Support <br>
-                h4.contact-sub-head We love our customers. We love our customers. Please contact us anytime with feedback, questions or concerns.
+                h4.contact-sub-head We love our customers. Please contact us anytime with feedback, questions or concerns.
+            div.social-media 
+                a(href="https://facebook.com")
+                    i.fa.fa-facebook-square
+                a(href="https://twitter.com")
+                    i.fa.fa-twitter-square    
+        div#contact-boxes.container
+            div.row
+                div.col-sm-6
+                    div.contact-card.roundify
+                        img(src="images/mail-icon.png")
+                        h3.contact-card-text
+                            a(href="mailto:support@ontheway-app.com") support@ontheway-app.com
+                div.col-sm-6
+                    div.contact-card.roundify
+                        img(src="images/iphone-icon.png")
+                        h3.contact-card-text
+                            p (626) 678-3418
+            p#faq-link.text-center You can also browse through our <a href="/faq">frequently asked questions</a>
+
+ block footer
+    div#footer
+        p.copyright © 2015 Enroute Innovations, LLC. All rights reserved.
+                    

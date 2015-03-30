@@ -5,7 +5,6 @@
 /*-------Global Classes--------*/
 * {
 	font-family: 'lane_narrowregular';
-	color: white;
 }
 
 #footer {
@@ -31,6 +30,16 @@
     margin-left: 11%;
     margin-right: 11%;
 
+}
+.roundify {
+	-webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.large-page {
+	height: 85vh;
 }
 
 hr.symbol:after {
@@ -64,6 +73,7 @@ hr.symbol:after {
   	background-size: cover;
 	height: 82%;
 	min-height: 650px;
+	color: white;
 }
 .red {
 	background-color: rgb(205,51,51);
@@ -72,7 +82,7 @@ hr.symbol:after {
 	background-color: #F9F9F9;
 }
 .darkwhite {
-	background-color: #F4F5F5;
+	background-color: #F9F9F9;
 }
 
 #page-wrapper {
@@ -131,21 +141,24 @@ a:hover{
 	color: white;
 	font-size: 1.2em;
 	padding-top: 20px;
-	padding-bottom: 8px;
+	padding-bottom: 4px;
 	margin: 0 5px;
-  	padding-left: 0;
-  	padding-right: 0;
+  	padding-left: 3px;
+ 	padding-right: 3px;
+
 }
 
 #other-nav.navbar {
 	background-color: rgb(205,51,51);
-	position: inherit;
+	position: relative;
 }
 
 .navbar #myNav .signup{
 	border: 2px solid white;
 	color: white;
     border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
     margin-top: 10px;
     transition: 0.5s;
 	-webkit-transition: 0.5s;
@@ -154,7 +167,7 @@ a:hover{
 	-o-transition: 0.5s;
 }
 .navbar #myNav .signup a{
-	padding-top: 10px;
+	padding: 8px 2px;
 }
 .signup:hover {
 	background-color: #22313F!important;
@@ -258,7 +271,7 @@ a.svg {
 
 .steps {
 	padding-bottom: 20px;
-	width: 75%;
+	width: 80%;
 }
 
 .steps h2{
@@ -484,17 +497,17 @@ a.svg {
 
 #contact-header {
 	width: 100%;
-	position: absolute;
-	padding-top: 30px;
-	padding-bottom: 30px;
+	position: inherit;
+	padding-top: 60px;
+	padding-bottom: 45px;
 	border-bottom: 1px solid #eaeaea;
 	border-top: 1px solid #eaeaea;
-
 }
+
 .contact-main-head {
 	font-weight: 700;
     color: black;
-    font-size: 30px;
+    font-size: 2.5em;
 }
 .contact-sub-head {
 	  font-weight: 300;
@@ -503,4 +516,69 @@ a.svg {
 	  line-height: 1.35;
 	  font-size: 1.15em;
 	  padding-top: 10px;
+}
+.social-media {
+	text-align: center;
+	font-size: 2.3em;
+	padding-top: 15px;
+}
+.social-media a i {
+	margin: 0 15px;
+	color: gray; 
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+.social-media a i:hover {
+	color: #6C7A89; 
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-ms-transition: 0.3s;
+	-o-transition: 0.3s;
+}
+#contact-boxes {
+	max-width: 960px;
+	width: auto;
+	padding-bottom: 70px;
+	padding-top: 30px;
+}
+
+.contact-card {
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #fffdfd;
+    border: 1px solid #d8d8d8;
+}
+
+.contact-card img {
+	height: 70px;
+	vertical-align: middle;
+}
+
+.contact-card-text {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 13px;
+}
+
+#contact-boxes a {
+	color: #d8433d;
+}
+#contact-boxes .contact-card a {
+	font-weight: 500;
+}
+#faq-link {
+	font-size: 1.2em;
+	padding-top: 20px;
+}
+#contact-boxes p {
+	color: black;
+}
+#contact-boxes .contact-card-text p {
+	font-weight: 500;
 }
