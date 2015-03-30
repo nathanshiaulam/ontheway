@@ -38,9 +38,7 @@
     overflow: hidden;
 }
 
-.large-page {
-	height: 85vh;
-}
+
 
 hr.symbol:after {
 	content: '•';
@@ -403,7 +401,7 @@ a.svg {
 		padding-top: 16px!important;
 	}
 	.download-button.apple {
-		height: 68px;
+		height: 69px;
 	}
 	.download-button.android {
 		height: 68px;
@@ -497,6 +495,10 @@ a.svg {
 /*----------End-----------*/
 
 /*------Contact CSS-------*/
+
+#contact-page {
+	padding-bottom: 150px;
+}
 
 #contact-header {
 	width: 100%;
