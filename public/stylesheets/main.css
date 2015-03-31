@@ -6,7 +6,9 @@
 * {
 	font-family: 'lane_narrowregular';
 }
-
+.visible {
+	opacity: 1!important;
+}
 #page-header {
 	width: 100%;
 	position: inherit;
@@ -111,14 +113,14 @@ a:hover{
 }
 
 .navbar {
-	background: none;
 	border: none;
 	height: 60px;
-	position: absolute;
 	width: 100%;
 	margin: 0;
 	border-radius: 0;
 	z-index: 100;
+	background-color: rgb(205,51,51);
+	position: relative;
 }
 
 .navbar-header {
@@ -155,8 +157,9 @@ a:hover{
 }
 
 #other-nav.navbar {
-	background-color: rgb(205,51,51);
-	position: relative;
+	position: absolute;
+	background: none;
+
 }
 
 .navbar #myNav .signup{
@@ -622,3 +625,18 @@ a.svg {
 	padding-right: 10%;
 	font-size: 1.2em;
 }
+/*----------End-----------*/
+
+/*------TEMPLOG CSS-------*/
+
+.cover .headerText .temp-log.sub-sub-header {
+	color: #34495E;
+	font-size: 1.5em;
+}
+.headerText .contact-card.app-buttons {
+	padding-top: 30px;
+	padding-bottom: 0;
+
+}
+
+/*----------End-----------*/

@@ -7,10 +7,13 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var about = require('./routes/about');
-var users = require('./routes/users');
 var faq = require('./routes/faq');
 var terms = require('./routes/terms');
 var contact = require('./routes/contact');
+
+var signup = require('./routes/signup');
+var templogin = require('./routes/templogin');
+var login = require('./routes/login');
 
 var app = express();
 
@@ -32,7 +35,10 @@ app.use('/about', about);
 app.use('/faq', faq);
 app.use('/terms', terms);
 app.use('/contact', contact);
-app.use('/login', users);
+app.use('/login', login);
+app.use('/templogin', templogin);
+app.use('/signup', signup);
+
 
 
 // Parse Shit
