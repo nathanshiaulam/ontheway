@@ -77,13 +77,13 @@ hr.symbol:after {
 .box {
 	width: 100%;
 	position: absolute;
-	margin-top: 5%;
+	margin-top: 1%;
 }
 
 .cover {
   	background-size: cover;
 	height: 82%;
-	min-height: 650px;
+	min-height: 600px;
 	color: white;
 }
 .red {
