@@ -372,6 +372,10 @@ a.svg {
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+	.contact-card img {
+		height: 60px;
+		vertical-align: middle;
+	}
 	.box {
 		margin-top: 20%!important;
 	}
@@ -510,7 +514,7 @@ a.svg {
 /*------Contact CSS-------*/
 
 #contact-page {
-	padding-bottom: 150px;
+	/*padding-bottom: 150px;*/
 }
 
 #contact-header {
@@ -604,6 +608,15 @@ a.svg {
 }
 #contact-boxes .contact-card-text p {
 	font-weight: 500;
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+	.contact-card img {
+		height: 60px;
+		vertical-align: middle;
+	}
+	.contact-card a {
+		font-size: 19px;
+ 	}
 }
 
 /*----------End-----------*/
