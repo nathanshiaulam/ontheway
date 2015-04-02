@@ -638,6 +638,16 @@ a.svg {
 	padding-right: 10%;
 	font-size: 1.2em;
 }
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+	.q-and-a .answer {
+		padding-right: 0;
+		font-size: 1.2em;
+	}
+	.q-and-a {
+		padding: 0;
+	}
+}
+
 /*----------End-----------*/
 
 /*------TEMPLOG CSS-------*/
