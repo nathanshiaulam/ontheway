@@ -4,7 +4,8 @@
 
 /*-------Global Classes--------*/
 * {
-	font-family: 'lane_narrowregular';
+	font-family: 'lh_line1_sansthin';
+
 }
 .visible {
 	opacity: 1!important;
@@ -277,7 +278,7 @@ a.svg {
 }
 
 .example-image img{
-	width: 100%;
+	width: 85%;
 	display: block;
 	margin: auto;
 }
@@ -529,14 +530,14 @@ a.svg {
 .contact-main-head {
 	font-weight: 700;
     color: black;
-    font-size: 2.5em;
+    font-size: 3.3em;
 }
 .contact-sub-head {
 	  font-weight: 300;
 	  color: #4a4a4a;
 	  padding-bottom: 5px;
 	  line-height: 1.35;
-	  font-size: 1.15em;
+	  font-size: 1.3em;
 	  padding-top: 10px;
 }
 .social-media {
@@ -598,13 +599,15 @@ a.svg {
 }
 #contact-boxes .contact-card a {
 	font-weight: 500;
+	font-family: 'lane_narrowregular'!important
 }
 #faq-link {
-	font-size: 1.2em;
+	font-size: 1.5em;
 	padding-top: 20px;
 }
 #contact-boxes p {
 	color: black;
+	font-family: 'lane_narrowregular'!important
 }
 #contact-boxes .contact-card-text p {
 	font-weight: 500;
@@ -650,6 +653,32 @@ a.svg {
 
 /*----------End-----------*/
 
+/*-------Terms CSS--------*/
+.padding-container {
+	padding-top: 15px;
+}
+.terms-header{
+	font-size: 2.5em;
+	font-weight: bold!important;
+}
+.terms-sub-header{
+	padding-top: 10px;
+	text-decoration: underline;
+	font-weight: bold;
+	color: black;
+}
+.terms-section {
+	font-size: 1.2em;
+}
+.company-name {
+	font-weight: bold;
+}
+.terms-footer {
+	line-height: .5;
+	padding-top: 15px;
+}
+/*----------End-----------*/
+
 /*------TEMPLOG CSS-------*/
 
 .cover .headerText .temp-log.sub-sub-header {
@@ -659,7 +688,6 @@ a.svg {
 .headerText .contact-card.app-buttons {
 	padding-top: 30px;
 	padding-bottom: 0;
-
 }
 
 /*----------End-----------*/

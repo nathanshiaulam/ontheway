@@ -9,6 +9,7 @@ var routes = require('./routes/index');
 var about = require('./routes/about');
 var faq = require('./routes/faq');
 var terms = require('./routes/terms');
+var privacy = require('./routes/privacy');
 var contact = require('./routes/contact');
 
 var signup = require('./routes/signup');
@@ -34,6 +35,7 @@ app.use('/', routes);
 app.use('/about', about);
 app.use('/faq', faq);
 app.use('/terms', terms);
+app.use('/privacy', privacy);
 app.use('/contact', contact);
 app.use('/login', login);
 app.use('/templogin', templogin);
