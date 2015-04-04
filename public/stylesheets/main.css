@@ -372,7 +372,7 @@ a.svg {
 		vertical-align: middle;
 	}
 	.box {
-		margin-top: 2%!important;
+		margin-top: 0!important;
 	}
 	.cover {
 	  	background-size: cover;
