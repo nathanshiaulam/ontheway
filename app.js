@@ -48,7 +48,7 @@ app.use('/signup', signup);
 GLOBAL.Parse = require('parse').Parse;
 Parse.initialize("zzxmLD2oQWhZZYG7fst95oV4gxRVUWC47dZAVTIT", "iPqBhzqkCZ1wxvFQAwGNr18LgEM7LnkUB7a1jfDu");
 
-app.post('/login', function(req,res){
+app.post('/templogin', function(req,res){
    var username = req.body.username;
    var password = req.body.password;
    Parse.User.logIn(username, password, {
@@ -56,7 +56,7 @@ app.post('/login', function(req,res){
          res.redirect('/');
       },
       error: function(users, error) {
-        res.redirect('/login');
+        res.redirect('/faq');
       }
    });
 });

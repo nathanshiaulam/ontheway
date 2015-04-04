@@ -399,7 +399,7 @@ a.svg {
 	.cover {
 	  	background-size: cover;
 		height: 10%!important;
-		min-height: 600px!important;
+		min-height: 500px!important;
 		/*min-height: 600px!important;*/
 	}
 	.cover .box .logo {
