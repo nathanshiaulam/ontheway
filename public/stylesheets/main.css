@@ -207,7 +207,7 @@ a:hover{
 .headerText {
 	display:block;
 	text-align: center;
-
+    font-family: 'lane_narrowregular'!important;
 }
 
 .headerText h1 {
