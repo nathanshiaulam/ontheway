@@ -371,6 +371,16 @@ a.svg {
 		height: 60px;
 		vertical-align: middle;
 	}
+	.navbar-nav {
+		transition: 0.5s;
+		-webkit-transition: 0.5s;
+		-moz-transition: 0.5s;
+		-ms-transition: 0.5s;
+		-o-transition: 0.5s;
+		background-color: rgba(0,0,0,0.7);
+		padding: 0;
+		margin-top: 0;
+	}
 	.navbar .navbar-brand {
 	  background: url() center no-repeat;
 	  background-size: 100%;
