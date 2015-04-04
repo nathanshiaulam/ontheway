@@ -444,7 +444,7 @@ a.svg {
 	.box {
 		width: 100%;
 		position: absolute;
-		margin-top: 6%;
+		/*margin-top: 6%;*/
 		padding-top: 5px;
 	}
 	.cover {
@@ -458,8 +458,8 @@ a.svg {
 	.box {
 		width: 100%;
 		position: absolute;
-		margin-top: 10%;
-		padding-top: 5px;
+/*		margin-top: 10%;
+*/		padding-top: 5px;
 	}
 	.cover {
 	  	background-size: cover;
@@ -476,7 +476,7 @@ a.svg {
 	.box {
 		width: 100%;
 		position: absolute;
-		margin-top: 15%;
+		/*margin-top: 15%;*/
 	}
 	.app-buttons {
 		padding-top: 10px!important;
@@ -492,7 +492,7 @@ a.svg {
 	.box {
 		width: 100%;
 		position: absolute;
-		margin-top: 10%;
+		/*margin-top: 10%;*/
 	}
 	.app-buttons {
 		padding-top: 0!important;
@@ -503,7 +503,7 @@ a.svg {
 	.box {
 		width: 100%;
 		position: absolute;
-		margin-top: 10%;
+		/*margin-top: 10%;*/
 	}
 	.app-buttons {
 		padding-top: 0!important;
@@ -688,6 +688,9 @@ a.svg {
 .headerText .contact-card.app-buttons {
 	padding-top: 30px;
 	padding-bottom: 0;
+}
+.inverted-logo {
+	margin-top: 7%;
 }
 
 /*----------End-----------*/
