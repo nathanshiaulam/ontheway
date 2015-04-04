@@ -352,17 +352,23 @@ a.svg {
 		-moz-transition: 0.5s;
 		-ms-transition: 0.5s;
 		-o-transition: 0.5s;
-		background-color: rgba(0,0,0,0.2);
+		background-color: rgba(0,0,0,0.7);
 		padding: 0;
 		margin-top: 0;
 	}
 	.navbar-nav:hover {
-		background-color: rgba(0,0,0,0.7);
+		background-color: rgba(0,0,0,0.9);
 		transition: 0.5s;
 		-webkit-transition: 0.5s;
 		-moz-transition: 0.5s;
 		-ms-transition: 0.5s;
 		-o-transition: 0.5s;
+	}
+	.nav-item a.underline:hover {
+		border-bottom: none;
+	}
+	.nav-item a:hover {
+		color: gray!important;
 	}
 }
 
@@ -370,6 +376,12 @@ a.svg {
 	.contact-card img {
 		height: 60px;
 		vertical-align: middle;
+	}
+	.nav-item a.underline:hover {
+		border-bottom: none;
+	}
+	.nav-item a:hover {
+		color: gray!important;
 	}
 	.navbar-nav {
 		transition: 0.5s;
