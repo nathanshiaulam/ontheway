@@ -3,13 +3,13 @@ extends layout
 block content   
     div.cover.red
         div.container.box
-            img.logo(src="images/main-logo.png")
-            hr.symbol
+            img.wow.fadeInLeft.logo(src="images/main-logo.png")
+            hr.symbol.wow.fadeInLeft
             div.headerText
-                h2.sub-header The world's first peer-to-peer delivery network.
-                h3.sub-sub-header No middlemen. No markups. No commissions.
-                h3.sub-sub-header You make all the profit.
-                div.app-buttons
+                h2.sub-header.wow.fadeInRight(data-wow-delay=".5s") The world's first peer-to-peer delivery network.
+                h3.sub-sub-header.wow.fadeIn(data-wow-duration="1.5s",data-wow-delay="1.2s") No middlemen. No markups. No commissions.
+                h3.sub-sub-header.wow.fadeIn(data-wow-duration="1.5s",data-wow-delay="1.2s") You make all the profit.
+                div.wow.fadeIn.app-buttons(data-wow-duration="1.5s",data-wow-delay="1.2s")
                     a(href='/')
                         img.download-button.apple(src="images/appledownload.svg" onerror="this.src='images/appledownload.png'")
                     a(href='/')
@@ -58,49 +58,50 @@ block footer
 block script
     script(type='text/javascript', src='/javascripts/smoothscroll.js')
     script(type='text/javascript').
-        function fadeIn($elts) {
-          $elts.each(function() {
-            var $this = $(this);
-            if ($this.css('opacity') == 0 || !$this.is(':visible'))
-              $this.fadeIn('slow');
-          });
-        }
-        function fadeOut($elts) {
-          $elts.each(function() {
-            var $this = $(this);
-            if ($this.css('opacity') == 1 || $this.is(':visible'))
-              $this.fadeOut('fast');
-          });
-        }
-        function displayNone($elts) {
-          $elts.each(function() {
-            var $this = $(this);
-            if ($this.css('opacity') == 1 || $this.is(':visible'))
-              $this.css('display', 'none');('fast');
-          });
-        }
-        $(".download-btns").hover(function(){
-            $(".download-text").css('display', 'none');
-            $(".download-btns").css('padding', '0');
-            fadeIn($(".windows-btn, a.mac-btn, #download-info"));
-            },
-            function(){  
-                displayNone($(".windows-btn, a.mac-btn, #download-info"));
-                $(".download-btns").css('padding-top', '10%');
-                $(".download-btns").css('padding-bottom', '10%');
-                $(".download-text").fadeIn('slow');
-        });
-        $(document).ready(function() {
-            var logo = $('.logo');
-            var sub_head = $('.sub-header');
-            var linebreak = $('.symbol');
-            var sub_sub_header = $('.sub-sub-header');
-            var app_buttons = $('.app-buttons');
-            $(logo).fadeTo(1500, 1);
-            $(linebreak).delay(800).fadeTo(1500, 1);
-            $(sub_head).delay(800).fadeTo(1500, 1);
-            $(sub_sub_header).delay(1200).fadeTo(1500, 1);
-            $(app_buttons).delay(1200).fadeTo(1500, 1);
-        });
+        new WOW().init();
+        //- function fadeIn($elts) {
+        //-   $elts.each(function() {
+        //-     var $this = $(this);
+        //-     if ($this.css('opacity') == 0 || !$this.is(':visible'))
+        //-       $this.fadeIn('slow');
+        //-   });
+        //- }
+        //- function fadeOut($elts) {
+        //-   $elts.each(function() {
+        //-     var $this = $(this);
+        //-     if ($this.css('opacity') == 1 || $this.is(':visible'))
+        //-       $this.fadeOut('fast');
+        //-   });
+        //- }
+        //- function displayNone($elts) {
+        //-   $elts.each(function() {
+        //-     var $this = $(this);
+        //-     if ($this.css('opacity') == 1 || $this.is(':visible'))
+        //-       $this.css('display', 'none');('fast');
+        //-   });
+        //- }
+        //- $(".download-btns").hover(function(){
+        //-     $(".download-text").css('display', 'none');
+        //-     $(".download-btns").css('padding', '0');
+        //-     fadeIn($(".windows-btn, a.mac-btn, #download-info"));
+        //-     },
+        //-     function(){  
+        //-         displayNone($(".windows-btn, a.mac-btn, #download-info"));
+        //-         $(".download-btns").css('padding-top', '10%');
+        //-         $(".download-btns").css('padding-bottom', '10%');
+        //-         $(".download-text").fadeIn('slow');
+        //- });
+        //- $(document).ready(function() {
+        //-     var logo = $('.logo');
+        //-     var sub_head = $('.sub-header');
+        //-     var linebreak = $('.symbol');
+        //-     var sub_sub_header = $('.sub-sub-header');
+        //-     var app_buttons = $('.app-buttons');
+        //-     $(logo).fadeTo(1500, 1);
+        //-     $(linebreak).delay(800).fadeTo(1500, 1);
+        //-     $(sub_head).delay(800).fadeTo(1500, 1);
+        //-     $(sub_sub_header).delay(1200).fadeTo(1500, 1);
+        //-     $(app_buttons).delay(1200).fadeTo(1500, 1);
+        //- });
        
 
