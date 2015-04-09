@@ -7,13 +7,13 @@ block content
             form.pure-form.pure-form-aligned(name="signup", action="/signup", method="post", onsubmit="return numInUse();")
                 fieldset.text-center
                     div.pure-control-group
-                        input#username(type="text", placeholder="Username", required)
+                        input#username(type="text", placeholder="Username", onfocus="this.placeholder = ''", onblur="this.placeholder = 'Username'", required)
                     div.pure-control-group
-                        input#email(type="email", name="email", placeholder="E-mail", required)
+                        input#email(type="email", name="email", placeholder="E-mail", onfocus="this.placeholder = ''", onblur="this.placeholder = 'E-mail'", required)
                     div.pure-control-group
-                        input#phone(type="tel", name="phone", placeholder="Phone Number", maxlength="10", required)
+                        input#phone(type="tel", name="phone", placeholder="Phone Number", onfocus="this.placeholder = ''", onblur="this.placeholder = 'Phone Number'", maxlength="10", required)
                     div.pure-control-group
-                        input#password(type="password", name="password", placeholder="Password", required)
+                        input#password(type="password", name="password", placeholder="Password", onfocus="this.placeholder = ''", onblur="this.placeholder = 'Password'", required)
                     div
                         div.read-terms
                             input.cb(type="checkbox", required)

@@ -10,6 +10,7 @@
 .visible {
 	/*opacity: */1!important;
 }
+
 #page-header {
 	width: 100%;
 	position: inherit;
@@ -738,6 +739,13 @@ a.svg {
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
 	#other-cover {
 		margin-top: 15%;
+	}
+	.no-transition {
+	  -webkit-transition: height 0.01s!important;
+	  -moz-transition: height 0.01s!important;
+	  -ms-transition: height 0.01s!important;
+	  -o-transition: height 0.01s!important;
+	  transition: height 0.01s!important;
 	}
 }
 /*------TEMPLOG CSS-------*/
