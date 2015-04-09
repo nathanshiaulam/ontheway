@@ -1,3 +1,86 @@
 extends layout
 
-block content 
+block content
+    div.cover#other-cover
+        div.container.box.inverted-logo
+            img.visible.logo(src="images/inverted-logo.png")
+            form.pure-form.pure-form-aligned(name="signup", action="/signup", method="post", onsubmit="return numInUse();")
+                fieldset.text-center
+                    div.pure-control-group
+                        input#username(type="text", placeholder="Username", required)
+                    div.pure-control-group
+                        input#email(type="email", name="email", placeholder="E-mail", required)
+                    div.pure-control-group
+                        input#phone(type="tel", name="phone", placeholder="Phone Number", maxlength="10", required)
+                    div.pure-control-group
+                        input#password(type="password", name="password", placeholder="Password", required)
+                    div
+                        div.read-terms
+                            input.cb(type="checkbox", required)
+                            p.cbnext I've read the terms and conditions
+                        input.submit-button.pure-button.pure-botton-primary(type="submit", name="submit", value="Sign Up") 
+block script 
+    script(type='text/javascript').
+        
+        // CHECKS IF NUMBER IS IN CORRECT FORMAT 
+        function formatNumber(phone) {
+            var newPhone = "";
+            for (var i = 0; i < phone.length; i++) {
+                var num = /^[0-9]+$/.test(phone.charAt(i));
+                if (num) {
+                    newPhone += phone.charAt(i);
+                }
+            }
+          return newPhone;
+        }
+
+        $("#phone").mask("(999) 999-9999");
+
+        function numInUse() {
+            var phone = document.forms["signup"]["phone"].value;
+            phone = formatNumber(phone);
+            phone = "1" + phone;
+            var query = new Parse.Query(Parse.User);
+            query.equalTo("username", phone);
+            var iable = true;
+            query.find({
+                success: function(results) {
+                    if (results.length > 0) {
+                        alert("Sorry, this phone number is already in use.");
+                        iable = false;
+                    }
+                }
+            });
+        }   
+        $(document).ready(function() {
+            $('#phone').keyup(function() {
+                var num = formatNumber(document.forms["signup"]["phone"].value);
+                console.log(num);
+                if (num.length != 10) {
+                    $('#phone').addClass('invalid-form');
+                }
+                else {
+                    $('#phone').removeClass('invalid-form');
+                }
+            });
+            $("form").submit(function(e){
+                var phone = document.forms["signup"]["phone"].value;
+                phone = formatNumber(phone);
+                phone = "1" + phone;
+                var query = new Parse.Query(Parse.User);
+                query.equalTo("username", phone);
+                query.find({
+                    success: function(results) {
+                        if (results.length > 0) {
+ 
+                        }
+                    },
+                    error: function(results) {
+                        if (results.length == 0) {
+
+                        }
+                    }
+                });
+            });
+        });
+
