@@ -15,7 +15,9 @@ html, body {
 }
 .visible {
 }
-
+.navbar-toggle {
+	margin-top: 12px;
+}
 #page-header {
 	width: 100%;
 	position: inherit;
@@ -437,7 +439,7 @@ a.svg {
 	}
 }
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+@media only screen and (max-device-width: 568px) and (min-device-width: 320px){
 	.contact-card img {
 		height: 60px;
 		vertical-align: middle;
@@ -514,6 +516,54 @@ a.svg {
 		width: 100%;
 		display: block;
 		margin: auto;
+	}
+}
+
+@media screen and (device-aspect-ratio: 40/71) {
+	.contact-main-head {
+		font-weight: 700;
+		color: black;
+		font-size: 2.3em!important;
+	}
+
+	.contact-card img {
+		height: 50px!important;
+		vertical-align: middle;
+	}
+	.contact-card a {
+	  font-size: 15px!important;
+	  margin-bottom: 4px;
+	  display: block;
+	}
+	#contact-boxes .contact-card-text p {
+		font-size: 18px;
+	}
+	.contact-sub-head {
+		font-weight: 300;
+		color: #4a4a4a;
+		padding-bottom: 5px;
+		line-height: 1.35;
+		font-size: .9em!important;
+		padding-top: 10px;
+	}
+	#contact-header {
+		width: 100%;
+		position: inherit;
+		padding-top: 30px!important;
+		padding-bottom: 35px!important;
+		border-bottom: 1px solid #eaeaea;
+		border-top: 1px solid #eaeaea;
+	}
+	#faq-link {
+	    font-size: 1.2em!important;
+	    padding-top: 20px;
+	}
+	#footer {
+		font-size:12px!important;
+	}
+	.terms-footer {
+		line-height: 1!important;
+		padding-top: 15px;
 	}
 }
 
@@ -689,7 +739,8 @@ a.svg {
 #contact-boxes .contact-card-text p {
 	font-weight: 500;
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+@media only screen and (max-device-width: 568px) and (min-device-width: 320px) {
 	.contact-card img {
 		height: 60px;
 		vertical-align: middle;
@@ -718,13 +769,36 @@ a.svg {
 	padding-right: 10%;
 	font-size: 1.2em;
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+@media screen and (device-aspect-ratio: 40/71) {
 	.q-and-a .answer {
 		padding-right: 0;
 		font-size: 1.2em;
 	}
 	.q-and-a {
 		padding: 0;
+	}
+	#contact-boxes {
+	  max-width: 960px;
+	  width: auto;
+	  padding-bottom: 20px;
+	  padding-top: 30px;
+	}
+}
+
+@media only screen and (max-device-width: 568px) and (min-device-width: 320px) {
+	.q-and-a .answer {
+		padding-right: 0;
+		font-size: 1.2em;
+	}
+	.q-and-a {
+		padding: 0;
+	}
+	#contact-boxes {
+	  max-width: 960px;
+	  width: auto;
+	  padding-bottom: 20px;
+	  padding-top: 30px;
 	}
 }
 
@@ -754,7 +828,8 @@ a.svg {
 	line-height: .5;
 	padding-top: 15px;
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+@media only screen and (max-device-width: 568px) and (min-device-width: 320px) {
 	.terms-footer {
 	  line-height: inherit;
 	  padding-top: 15px;
@@ -796,7 +871,8 @@ a.svg {
 	display: block;
 	margin: auto;
 }
-@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+
+@media only screen and (max-device-width: 568px) and (min-device-width: 320px) {
 	#other-cover {
 		margin-top: 15%;
 	}
@@ -819,6 +895,10 @@ a.svg {
 		  line-height: 1.35;
 		  font-size: 1.3em;
 		  padding-top: 10px;
+	}
+	.terms-footer {
+		line-height: 1!important;
+		padding-top: 15px;
 	}
 }
 /*------TEMPLOG CSS-------*/
