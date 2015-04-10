@@ -22,6 +22,8 @@ html
                 div.main-menu-container
                     ul#myNav.nav.navbar-nav.navbar-right.collapse.navbar-collapse.no-transition
                         li.nav-item
+                            a.underline(href='/about') About
+                        li.nav-item
                             a.underline(href='/faq') FAQ
                         li.nav-item
                             a.underline(href='/terms') Terms 
@@ -32,11 +34,30 @@ html
                         li#uniqueNav.nav-item
                             a(href='/login') Log In
                         
-    div
+    div#wrapper
         block content
+        div#content
         block footer
             div#footer
-                p.copyright © 2015 Enroute Innovations, LLC. All rights reserved.
+                div.footer-nav
+                    a(href='/about') About 
+                    • 
+                    a(href='/faq') FAQ 
+                    • 
+                    a(href='/terms') Terms 
+                    •  
+                    a(href='/privacy') Privacy 
+                    •  
+                    a(href='/contact') Contact 
+                    • 
+                    a(href='/login') Log In
+                div.footer-social
+                    a(href="https://facebook.com")
+                        i.fa.fa-facebook-square
+                    a(href="https://twitter.com")
+                        i.fa.fa-twitter-square 
+                div.footer-copyright
+                    p © 2015 Enroute Innovations, LLC. All rights reserved.
   script(type='text/javascript', src='https://code.jquery.com/jquery-latest.min.js')
   script(type='text/javascript', src='/javascripts/bootstrap.min.js')
   script(type='text/javascript', src='javascripts/wow.min.js')
