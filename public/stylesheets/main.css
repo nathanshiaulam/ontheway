@@ -468,6 +468,9 @@ a.svg {
 	.nav-item a:hover {
 		color: gray!important;
 	}
+	.box .logo {
+		z-index: 0;
+	}
 }
 
 @media only screen and (max-device-width: 568px) and (min-device-width: 320px){
