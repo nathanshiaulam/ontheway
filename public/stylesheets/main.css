@@ -7,7 +7,10 @@
 	font-family: 'lh_line1_sansthin';
 
 }
-
+.container-no-padding {
+	padding-left: 0;
+	padding-right: 0;
+}
 html, body {
 	margin:0;
 	padding:0;
@@ -216,7 +219,7 @@ a:hover{
 	color: white;
 	font-size: 1.2em;
 	padding-top: 20px;
-	padding-bottom: 4px;
+	padding-bottom: 2px;
 	margin: 0 5px;
   	padding-left: 3px;
  	padding-right: 3px;
@@ -266,13 +269,14 @@ a:hover{
 	margin: auto;
 	min-height: 200px;
 	max-height: 210px;
+	z-index: 100;
 }
 
 
 .headerText {
 	display:block;
 	text-align: center;
-    font-family: 'lane_narrowregular'!important;
+    font-family: 'lh_line1_sansthin'!important;
 }
 
 .headerText h1 {
@@ -288,13 +292,13 @@ a:hover{
 }
 
 .sub-header {
-	font-size: 4.2em;
+	font-size: 3.5em;
 	margin-bottom: 1%;
 	margin-top: 25px;
 }
 
 .sub-sub-header {
-	font-size: 2.5em;
+	font-size: 2.35em;
 }
 
 .app-buttons {
@@ -319,9 +323,13 @@ a.svg {
 .android {
 	padding-bottom: 31px;
     margin-left: 50px;
+    width: auto;
+  	height: 90px;
 }
 .apple {
 	padding-bottom: 31px;
+	height: 86px;
+  	width: auto;
 }
 /*----------End-----------*/
 
@@ -330,50 +338,73 @@ a.svg {
 #process {
 	padding-top: 10px;
 }
-
+.step-text {
+	width: 40%;
+	display: inline-block;
+}
+.example-image {
+	width: 60%;
+	display: inline-block;
+}
+.example-image img{
+	width: 100%;
+}
 .header {
 	text-align: center;
 	color: #22313F;
 	font-weight: bold;
 	padding-bottom: 20px;
+	font-size: 1.3em;
 }
 
-.example-image img{
-	width: 85%;
-	display: block;
-	margin: auto;
+.steps-red-container {
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
 }
-
+.steps-red-container .steps .step-text h2,
+.steps-red-container .steps .step-text p {
+	color: white;
+}
+.steps-red-container .steps {
+	margin-bottom: 0;
+}
 .steps {
-	padding-bottom: 20px;
+	margin-bottom: 30px;
 	width: 80%;
 }
-
+.steps h1 {
+	color: #22313F;
+	font-weight: bold;
+	text-align: left;
+}
 .steps h2{
 	color: #34495E;
-	text-align: center;
+	text-align: left;
 	margin-top: 10px;
-	font-size: 2em;
+	font-size: 1.9em;
 }
 
 .steps p {
 	font-size: 1.2em;
-	text-align: center;
+	text-align: left;
 	color: #67809F;
 }
-
+.border-image {
+	border-left: 1px solid #eaeaea;
+}
 
 @media(max-width: 1175px) {
 	.steps h2{
 		color: #34495E;
-		text-align: center;
+		text-align: left;
 		margin-top: 10px;
 		font-size: 1.6em;
 	}
 
 	.steps p {
 		font-size: 1em;
-		text-align: center;
+		text-align: left;
 		color: #67809F;
 	}
 }
@@ -385,14 +416,14 @@ a.svg {
 	}
 	.steps h2{
 		color: #34495E;
-		text-align: center;
+		text-align: left;
 		margin-top: 30px;
 		font-size: 2em;
 	}
 
 	.steps p {
 		font-size: 1.2em;
-		text-align: center;
+		text-align: left;
 		color: #67809F;
 	}
 }
@@ -764,12 +795,25 @@ a.svg {
 }
 .q-and-a .question {
 	font-weight: 500;
-}
-.q-and-a .answer {
-	padding-right: 10%;
-	font-size: 1.2em;
+	margin-bottom: 8px;
 }
 
+.q-and-a .answer {
+	padding-right: 10%;
+	font-size: 1.1em;
+	line-height: 1.2;
+	margin-top: 0;
+}
+
+
+.side-logo {
+	display: inline-block;
+	position: absolute;
+	left: 70px;
+	width: auto;
+	height: 55px;
+	margin-top: 11px;
+}
 @media screen and (device-aspect-ratio: 40/71) {
 	.q-and-a .answer {
 		padding-right: 0;
