@@ -16,6 +16,7 @@ html, body {
 	padding:0;
 	height:100%;
 }
+
 .visible {
 }
 .navbar-toggle {
@@ -34,8 +35,9 @@ html, body {
 }
 
 #wrapper {
-	min-height:100%;
 	position:relative;
+	width: 100%;
+	min-height: 100%;
 }
 
 #content {
@@ -372,6 +374,10 @@ a.svg {
 .steps {
 	margin-bottom: 30px;
 	width: 80%;
+}
+.last-steps {
+	margin-bottom: 0;
+	padding-bottom: 30px;
 }
 .steps h1 {
 	color: #22313F;
@@ -789,6 +795,7 @@ a.svg {
 /*--------FAQ CSS--------*/
 .q-and-a-box {
 	padding-bottom: 20px;
+	padding-top: 20px;
 }
 .q-and-a-box .q-and-a {
 	color: #22313F;
@@ -796,27 +803,35 @@ a.svg {
 .q-and-a {
 	padding: 15px 50px 0px 0px;
 }
+.q-and-a-text{ 
+	display: inline-block;	
+}
+.q-and-image {
+	display: inline-block;
+}
+.side-logo {
+	display: inline-block;
+	width: auto;
+	height: 55px;
+	margin-bottom: 20px;
+}
+
 .q-and-a .question {
 	font-weight: 500;
 	margin-bottom: 8px;
+	display: inline;
+	font-size: 25px;
+	padding-left: 15px;
 }
 
 .q-and-a .answer {
-	padding-right: 10%;
 	font-size: 1.1em;
 	line-height: 1.2;
 	margin-top: 0;
+	padding-top: 10px;
+	padding-left: 70px;
 }
 
-
-.side-logo {
-	display: inline-block;
-	position: absolute;
-	left: 70px;
-	width: auto;
-	height: 55px;
-	margin-top: 11px;
-}
 @media screen and (device-aspect-ratio: 40/71) {
 	.q-and-a .answer {
 		padding-right: 0;
