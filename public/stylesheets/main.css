@@ -150,6 +150,7 @@ hr.symbol:after {
 }
 
 .cover {
+	background: no-repeat left top url(../images/background-image.jpg);
   	background-size: cover;
 	height: 82%;
 	min-height: 600px;
@@ -180,7 +181,8 @@ a:hover{
 /*-------NavBar CSS-------*/
 
 #nav-box {
-	margin: 0 3%;
+	margin-left: 3%;
+	margin-right: 1%;
 	height: 100%;
 }
 
@@ -209,7 +211,8 @@ a:hover{
 }
 
 .nav-item {
-	padding: 0 8px;
+	 /*8px*/
+	padding: 0;
 	height: 100%;
 }
 
@@ -219,7 +222,7 @@ a:hover{
 
 .navbar #myNav .nav-item a {
 	color: white;
-	font-size: 1.2em;
+	font-size: 1em;
 	padding-top: 20px;
 	padding-bottom: 2px;
 	margin: 0 5px;
@@ -271,7 +274,7 @@ a:hover{
 	margin: auto;
 	min-height: 200px;
 	max-height: 210px;
-	z-index: 100;
+	/*z-index: 100;*/
 }
 
 
@@ -304,7 +307,7 @@ a:hover{
 }
 
 .app-buttons {
-	padding-top: 30px;
+	padding-top: 50px;
 }
 
 .download-button {
@@ -414,11 +417,14 @@ a.svg {
 		color: #67809F;
 	}
 }
-@media(max-width: 992px) {
+@media(max-width: 991px) {
 	.example-image img{
-		width: 55%;
+		width: 65%;
 		display: block;
 		margin: auto;
+	}
+	.border-image {
+		border-left: none;
 	}
 	.steps h2{
 		color: #34495E;
@@ -800,8 +806,14 @@ a.svg {
 .q-and-a-box .q-and-a {
 	color: #22313F;
 }
-.q-and-a {
-	padding: 15px 50px 0px 0px;
+.no-bullet {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+.q-and-a-bullet{
+	background: url(../images/bullet-logo.png) no-repeat left;
+	padding-left: 58px;
 }
 .q-and-a-text{ 
 	display: inline-block;	
@@ -809,27 +821,21 @@ a.svg {
 .q-and-image {
 	display: inline-block;
 }
-.side-logo {
-	display: inline-block;
-	width: auto;
-	height: 55px;
-	margin-bottom: 20px;
-}
 
-.q-and-a .question {
+.question {
 	font-weight: 500;
 	margin-bottom: 8px;
 	display: inline;
 	font-size: 25px;
-	padding-left: 15px;
+	padding-top: 10px;
 }
 
-.q-and-a .answer {
+.answer {
 	font-size: 1.1em;
 	line-height: 1.2;
 	margin-top: 0;
 	padding-top: 10px;
-	padding-left: 70px;
+	padding-left: 56px;
 }
 
 @media screen and (device-aspect-ratio: 40/71) {
