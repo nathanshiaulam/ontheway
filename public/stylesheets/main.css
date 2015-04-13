@@ -8,6 +8,9 @@
 
 }
 
+.relative {
+	position: relative!important;
+}
 .container-no-padding {
 	padding-left: 0;
 	padding-right: 0;
@@ -157,7 +160,7 @@ hr.symbol:after {
 
 .box {
 	width: 100%;
-	padding-top: 1%;
+	padding-top: 70px;
 	background-color: rgba(0,0,0,.2);
 	min-height: 600px;
 }
@@ -174,7 +177,7 @@ hr.symbol:after {
 	color: black;
 }
 .red {
-	background-color: rgb(205,51,51);
+	background-color: rgb(205,51,51)!important;
 }
 .white {
 	background-color: #F9F9F9;
@@ -207,8 +210,8 @@ a:hover{
 	margin: 0;
 	border-radius: 0;
 	z-index: 100;
-	background-color: rgb(205,51,51);
-	position: relative;
+	background-color: rgba(0,0,0,0);
+	position: absolute;
 }
 
 .navbar-header {
@@ -217,6 +220,14 @@ a:hover{
 
 .navbar .navbar-brand {
   background: url(/images/corner-logo.png) center no-repeat;
+  background-size: 100%;
+  width: auto;
+  margin: 0;
+  height: 100%;
+  min-width: 60px;
+}
+.navbar .navbar-brand.white {
+  background: url(/images/all-white-corner-logo.png) center no-repeat;
   background-size: 100%;
   width: auto;
   margin: 0;
@@ -530,8 +541,8 @@ a.svg {
 	.box {
 		width: 100%;
 		padding-top: 0;
-		background-color: rgba(0,0,0,.2);
-		min-height: 500px;
+		background: none;
+		min-height: 500px!important;
 	}
 	.cover .box .logo {
 		height: 10vh;
@@ -635,7 +646,7 @@ a.svg {
 @media(max-width: 1136px) {
 	.box {
 		width: 100%;
-		padding-top: 1%;
+		padding-top: 70px;
 		background-color: rgba(0,0,0,.2);
 		min-height: 700px;
 	}
@@ -649,7 +660,7 @@ a.svg {
 @media(max-width: 768px) {
 	.box {
 		width: 100%;
-		padding-top: 1%;
+		padding-top: 70px;
 		background-color: rgba(0,0,0,.2);
 		min-height: 750px;
 	}
@@ -667,7 +678,7 @@ a.svg {
 	}
 	.box {
 		width: 100%;
-		padding-top: 1%;
+		padding-top: 70px;
 		background-color: rgba(0,0,0,.2);
 		min-height: 850px;
 	}
@@ -684,7 +695,7 @@ a.svg {
 	}
 	.box {
 		width: 100%;
-		padding-top: 1%;
+		padding-top: 70px;
 		background-color: rgba(0,0,0,.2);
 		min-height: 875px;
 	}
@@ -858,6 +869,7 @@ a.svg {
 	padding-left: 56px;
 }
 
+/*iphone5*/
 @media screen and (device-aspect-ratio: 40/71) {
 	.q-and-a .answer {
 		padding-right: 0;
@@ -871,6 +883,18 @@ a.svg {
 	  width: auto;
 	  padding-bottom: 20px;
 	  padding-top: 30px;
+	}
+	.cover {
+	  	background-size: cover;
+		height: 10%!important;
+		/*min-height: 500px!important;*/
+		min-height: 600px!important;
+	}
+	.box {
+		background: none;
+	}
+	#footer {
+		padding-top: 21px;
 	}
 }
 
@@ -1001,6 +1025,8 @@ a.svg {
 }
 .inverted-logo {
 	margin-top: 5%;
+	background-color: rgba(0,0,0,0);
+	padding-top: 20px;
 }
 
 /*----------End-----------*/
