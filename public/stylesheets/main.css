@@ -180,7 +180,7 @@ hr.symbol:after {
 	background-color: rgb(205,51,51)!important;
 }
 .diamonds {
-	background: top left no-repeat url(../images/background-image.jpg);
+	background: top left no-repeat url(../images/background-image.JPG);
 	background-size: cover;
 }
 .white {
@@ -223,7 +223,7 @@ a:hover{
 }
 
 .navbar .navbar-brand {
-  background: url(/images/all-white-corner-logo.png) center no-repeat;
+  background: url(../images/all-white-corner-logo.png) center no-repeat;
   background-size: 100%;
   width: auto;
   margin: 0;
@@ -231,7 +231,7 @@ a:hover{
   min-width: 60px;
 }
 .navbar .navbar-brand.white {
-  background: url(/images/all-white-corner-logo.png) center no-repeat;
+  background: url(../images/all-white-corner-logo.png) center no-repeat;
   background-size: 100%;
   width: auto;
   margin: 0;
