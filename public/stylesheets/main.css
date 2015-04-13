@@ -7,6 +7,7 @@
 	font-family: 'lh_line1_sansthin';
 
 }
+
 .container-no-padding {
 	padding-left: 0;
 	padding-right: 0;
@@ -156,8 +157,9 @@ hr.symbol:after {
 
 .box {
 	width: 100%;
-	position: absolute;
-	margin-top: 1%;
+	padding-top: 1%;
+	background-color: rgba(0,0,0,.2);
+	min-height: 600px;
 }
 
 .cover {
@@ -166,6 +168,7 @@ hr.symbol:after {
 	height: 82%;
 	min-height: 600px;
 	color: white;
+	background-color: rgba(0,0,0,.5);
 }
 #other-cover {
 	color: black;
@@ -517,14 +520,18 @@ a.svg {
 		padding: 0;
 		margin-top: 0;
 	}
-	.box {
-		margin-top: 0!important;
-	}
+
 	.cover {
 	  	background-size: cover;
 		height: 10%!important;
 		min-height: 500px!important;
 		/*min-height: 600px!important;*/
+	}
+	.box {
+		width: 100%;
+		padding-top: 0;
+		background-color: rgba(0,0,0,.2);
+		min-height: 500px;
 	}
 	.cover .box .logo {
 		height: 10vh;
@@ -628,9 +635,9 @@ a.svg {
 @media(max-width: 1136px) {
 	.box {
 		width: 100%;
-		position: absolute;
-		/*margin-top: 6%;*/
-		padding-top: 5px;
+		padding-top: 1%;
+		background-color: rgba(0,0,0,.2);
+		min-height: 700px;
 	}
 	.cover {
 	  	background-size: cover;
@@ -642,9 +649,9 @@ a.svg {
 @media(max-width: 768px) {
 	.box {
 		width: 100%;
-		position: absolute;
-/*		margin-top: 10%;
-*/		padding-top: 5px;
+		padding-top: 1%;
+		background-color: rgba(0,0,0,.2);
+		min-height: 750px;
 	}
 	.cover {
 	  	background-size: cover;
@@ -660,8 +667,9 @@ a.svg {
 	}
 	.box {
 		width: 100%;
-		position: absolute;
-		/*margin-top: 15%;*/
+		padding-top: 1%;
+		background-color: rgba(0,0,0,.2);
+		min-height: 850px;
 	}
 	.app-buttons {
 		padding-top: 10px!important;
@@ -676,8 +684,9 @@ a.svg {
 	}
 	.box {
 		width: 100%;
-		position: absolute;
-		/*margin-top: 10%;*/
+		padding-top: 1%;
+		background-color: rgba(0,0,0,.2);
+		min-height: 875px;
 	}
 	.app-buttons {
 		padding-top: 0!important;
