@@ -116,10 +116,19 @@ block script
         /* particlesJS('dom-id', params);
         /* @dom-id : set the html tag id [string, optional, default value : particles-js]
         /* @params: set the params [object, optional, default values : check particles.js] */
-        new WOW().init();
-
+        function isiPhone(){
+            return (
+                //Detect iPhone
+                (navigator.platform.indexOf("iPhone") != -1) ||
+                //Detect iPod
+                (navigator.platform.indexOf("iPod") != -1)
+            );
+        }
         /* config dom id (optional) + config particles params */
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || isiPhone()) {
+              $(".symbol").addClass("relative");
+              $(".headerText").addClass("relative");
+              $(".app-buttons").addClass("relative");
               particlesJS('particles-js', {
               particles: {
                 color: '#fff',
@@ -183,6 +192,7 @@ block script
             });
         }
         else {
+              new WOW().init();
               particlesJS('particles-js', {
               particles: {
                 color: '#fff',
