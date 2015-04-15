@@ -22,8 +22,9 @@ block nav
                             a.underline(href='/contact') Contact
                         li#uniqueNav.nav-item
                             a(href='/login') Log In
-block content   
-    div.cover
+block content
+    div.cover 
+        div#particles-js 
         div.container.box
             img.wow.fadeInDown.logo(src="images/all-white-main-logo.png")
             hr.symbol.wow.fadeInUp(data-wow-delay=".4s")
@@ -38,73 +39,212 @@ block content
                         img.download-button.android(src='images/androiddownload.png')
     div.full-page.white 
         div#process
-            div.container.padding
-                div.col-lg-6.header.wow.fadeInLeft
+            div.container-fluid.remove-padding
+                div.col-lg-6.header.wow.fadeInLeft.remove-padding
                     h1 Make a Delivery
-                div.col-lg-6.header.border-image.wow.fadeInRight
+                    div.steps.container-fluid.remove-padding
+                        div.col-lg-6.remove-padding
+                            div.step-text.wow.fadeInLeft
+                                h2 Browse Requests
+                                p 
+                                    |See what people are looking for.
+                                    |You just need to click the picture and figure out
+                                    |how it all works.
+                        div.col-lg-6.remove-padding
+                            div.example-image.wow.fadeInLeft
+                                img(src='/images/placeholder1.png')
+                    div.steps.diamonds.container-fluid.remove-padding
+                        div.col-lg-6.remove-padding
+                            div.step-text.wow.fadeInLeft
+                                h2 Browse Requests
+                                p 
+                                    |See what people are looking for.
+                                    |You just need to click the picture and figure out
+                                    |how it all works.
+                        div.col-lg-6.remove-padding
+                            div.example-image.wow.fadeInLeft
+                                img(src='/images/placeholder1.png')
+                    div.steps.container-fluid.remove-padding
+                        div.col-lg-6.remove-padding
+                            div.step-text.wow.fadeInLeft
+                                h2 Browse Requests
+                                p 
+                                    |See what people are looking for.
+                                    |You just need to click the picture and figure out
+                                    |how it all works.
+                        div.col-lg-6.remove-padding
+                            div.example-image.wow.fadeInLeft
+                                img(src='/images/placeholder1.png')
+                div.col-lg-6.header.border-image.wow.fadeInRight.remove-padding
                     h1 Place an Order
-            div.steps.container.container-no-padding
-                div.col-md-6
-                    div.step-text.wow.fadeInLeft
-                        h2 Browse Requests
-                        p 
-                            |See what people are looking for.
-                            |You just need to click the picture and figure out
-                            |how it all works.
-                    div.example-image.wow.fadeInLeft
-                        img(src='/images/placeholder1.png')
-                div.col-md-6.border-image
-                    div.example-image.wow.fadeInRight
-                        img(src='/images/placeholder1.png')
-                    div.step-text.wow.fadeInRight
-                        h2 Browse Requests
-                        p 
-                            |See what people are looking for.
-                            |You just need to click the picture and figure out
-                            |how it all works.
-            div.steps-red-container.red
-                div.steps.container.container-no-padding
-                    div.col-md-6
-                        div.step-text.wow.fadeInLeft
-                            h2 Browse Requests
-                            p 
-                                |See what people are looking for.
-                                |You just need to click the picture and figure out
-                                |how it all works.
-                        div.example-image.wow.fadeInLeft
-                            img(src='/images/placeholder1.png')
-                    div.col-md-6.border-image
-                        div.example-image.wow.fadeInRight
-                            img(src='/images/placeholder1.png')
-                        div.step-text.wow.fadeInRight
-                            h2 Browse Requests
-                            p 
-                                |See what people are looking for.
-                                |You just need to click the picture and figure out
-                                |how it all works.
-            div.steps.last-steps.container.container-no-padding
-                div.col-md-6
-                    div.step-text.wow.fadeInLeft
-                        h2 Browse Requests
-                        p 
-                            |See what people are looking for.
-                            |You just need to click the picture and figure out
-                            |how it all works.
-                    div.example-image.wow.fadeInLeft
-                        img(src='/images/placeholder1.png')
-                div.col-md-6.border-image
-                    div.example-image.wow.fadeInRight
-                        img(src='/images/placeholder1.png')
-                    div.step-text.wow.fadeInRight
-                        h2 Browse Requests
-                        p 
-                            |See what people are looking for.
-                            |You just need to click the picture and figure out
-                            |how it all works.
+                    div.steps.container-fluid.remove-padding
+                        div.col-lg-6.remove-padding
+                            div.example-image.wow.fadeInRight
+                                img(src='/images/placeholder1.png')
+                        div.col-lg-6.remove-padding
+                            div.step-text.wow.fadeInRight
+                                h2 Browse Requests
+                                p 
+                                    |See what people are looking for.
+                                    |You just need to click the picture and figure out
+                                    |how it all works.
+                    div.steps.diamonds.container-fluid.remove-padding
+                        div.col-lg-6.remove-padding
+                            div.example-image.wow.fadeInRight
+                                img(src='/images/placeholder1.png')
+                        div.col-lg-6.remove-padding
+                            div.step-text.wow.fadeInRight
+                                h2 Browse Requests
+                                p 
+                                    |See what people are looking for.
+                                    |You just need to click the picture and figure out
+                                    |how it all works. 
+                    div.steps.container-fluid.remove-padding
+                        div.col-lg-6.remove-padding
+                            div.example-image.wow.fadeInRight
+                                img(src='/images/placeholder1.png')
+                        div.col-lg-6.remove-padding
+                            div.step-text.wow.fadeInRight
+                                h2 Browse Requests
+                                p 
+                                    |See what people are looking for.
+                                    |You just need to click the picture and figure out
+                                    |how it all works.
 block script
     script(type='text/javascript', src='/javascripts/smoothscroll.js')
     script(type='text/javascript').
         new WOW().init();
+        /* particlesJS('dom-id', params);
+        /* @dom-id : set the html tag id [string, optional, default value : particles-js]
+        /* @params: set the params [object, optional, default values : check particles.js] */
+
+        /* config dom id (optional) + config particles params */
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+              particlesJS('particles-js', {
+              particles: {
+                color: '#fff',
+                color_random: false,
+                shape: 'circle', // "circle", "edge" or "triangle"
+                opacity: {
+                  opacity: 1,
+                  anim: {
+                    enable: true,
+                    speed: 2,
+                    opacity_min: 0,
+                    sync: false
+                  }
+                },
+                size: 1,
+                size_random: true,
+                nb: 30,
+                line_linked: {
+                  enable_auto: true,
+                  distance: 100,
+                  color: '#fff',
+                  opacity: 1,
+                  width: 1,
+                  condensed_mode: {
+                    enable: false,
+                    rotateX: 600,
+                    rotateY: 600
+                  }
+                },
+                anim: {
+                  enable: true,
+                  speed: 1
+                }
+              },
+              interactivity: {
+                enable: true,
+                mouse: {
+                  distance: 100
+                },
+                detect_on: 'canvas', // "canvas" or "window"
+                mode: "grab", // "grab" of false
+                line_linked: {
+                  opacity: .5
+                },
+                events: {
+                  onclick: {
+                    enable: true,
+                    mode: 'push', // "push" or "remove"
+                    nb: 4
+                  },
+                  onresize: {
+                    enable: true,
+                    mode: 'out', // "out" or "bounce"
+                    density_auto: false,
+                    density_area: 800 // nb_particles = particles.nb * (canvas width *  canvas height / 1000) / density_area
+                  }
+                }
+              },
+              /* Retina Display Support */
+              retina_detect: false
+            });
+        }
+        else {
+              particlesJS('particles-js', {
+              particles: {
+                color: '#fff',
+                color_random: false,
+                shape: 'circle', // "circle", "edge" or "triangle"
+                opacity: {
+                  opacity: 1,
+                  anim: {
+                    enable: true,
+                    speed: 2,
+                    opacity_min: 0,
+                    sync: false
+                  }
+                },
+                size: 1,
+                size_random: true,
+                nb: 100,
+                line_linked: {
+                  enable_auto: true,
+                  distance: 100,
+                  color: '#fff',
+                  opacity: 1,
+                  width: 1,
+                  condensed_mode: {
+                    enable: false,
+                    rotateX: 600,
+                    rotateY: 600
+                  }
+                },
+                anim: {
+                  enable: true,
+                  speed: 1
+                }
+              },
+              interactivity: {
+                enable: true,
+                mouse: {
+                  distance: 200
+                },
+                detect_on: 'canvas', // "canvas" or "window"
+                mode: "grab", // "grab" of false
+                line_linked: {
+                  opacity: .5
+                },
+                events: {
+                  onclick: {
+                    enable: true,
+                    mode: 'push', // "push" or "remove"
+                    nb: 2
+                  },
+                  onresize: {
+                    enable: true,
+                    mode: 'out', // "out" or "bounce"
+                    density_auto: false,
+                    density_area: 800 // nb_particles = particles.nb * (canvas width *  canvas height / 1000) / density_area
+                  }
+                }
+              },
+              /* Retina Display Support */
+              retina_detect: false
+            });
+        }
         
        
 

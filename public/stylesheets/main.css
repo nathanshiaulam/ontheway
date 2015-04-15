@@ -7,7 +7,19 @@
 	font-family: 'lh_line1_sansthin';
 
 }
+ul {
+	list-style: none;
+}
+.contact-info .octicon {
+	font-size: 1.5em;
+	color: rgb(205,51,51);
+	padding-right: 10px;
+	position:absolute;
+}
+.inline {
+	display: inline;
 
+}
 .relative {
 	position: relative!important;
 }
@@ -161,7 +173,7 @@ hr.symbol:after {
 .box {
 	width: 100%;
 	padding-top: 70px;
-	background-color: rgba(0,0,0,.2);
+	/*background-color: rgba(0,0,0,.2);*/
 	min-height: 600px;
 }
 
@@ -171,7 +183,7 @@ hr.symbol:after {
 	height: 82%;
 	min-height: 600px;
 	color: white;
-	background-color: rgba(0,0,0,.5);
+	/*background-color: rgba(0,0,0,.5);*/
 }
 #other-cover {
 	color: black;
@@ -368,20 +380,56 @@ a.svg {
 /*----------End-----------*/
 
 /*-----Content CSS--------*/
-
+#particles-js {
+	position: absolute;
+	left: 0;
+	/*background:  rgb(205,51,51);*/
+	background: no-repeat left top url(../images/background-image.JPG);
+  	background-size: cover;
+  	height: 50%;
+  	width: 100%;
+  	max-height: 650px;
+	top: 0;
+	z-index: 0;
+	padding-bottom: 20px;
+}
+@media (max-width: 1168px) {
+	#particles-js {
+		max-height: 700px;
+	}
+}
+@media (max-width: 768px) {
+	#particles-js {
+		max-height: 750px;
+	}
+}
+@media (max-width: 637px) {
+	#particles-js {
+		max-height: 750px;
+	}
+}
+@media (max-width: 605px) {
+	#particles-js {
+		max-height: 760px;
+	}
+}
+@media (max-width: 425px) {
+	#particles-js {
+		max-height: 840px;
+	}
+}
 #process {
 	padding-top: 10px;
 }
-.step-text {
-	width: 40%;
-	display: inline-block;
+.remove-padding {
+	padding-left: 0;
+	padding-right: 0;
 }
 .example-image {
-	width: 60%;
-	display: inline-block;
-}
-.example-image img{
 	width: 100%;
+	max-width: 332px;
+	margin-left:auto;
+	margin-right:auto;
 }
 .header {
 	text-align: center;
@@ -390,26 +438,24 @@ a.svg {
 	padding-bottom: 20px;
 	font-size: 1.3em;
 }
-
-.steps-red-container {
+.step-text {
+	padding-left: 45px;
+	padding-right: 45px;
+}
+.diamonds.steps {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	margin-bottom: 30px;
 }
-.steps-red-container .steps .step-text h2,
-.steps-red-container .steps .step-text p {
+.diamonds.steps  h2,
+.diamonds.steps  p {
 	color: white;
-}
-.steps-red-container .steps {
-	margin-bottom: 0;
+	padding-right:0;
+	padding-left:0;
 }
 .steps {
 	margin-bottom: 30px;
-	width: 80%;
-}
-.last-steps {
-	margin-bottom: 0;
-	padding-bottom: 30px;
+	width: 100%;
 }
 .steps h1 {
 	color: #22313F;
@@ -422,7 +468,6 @@ a.svg {
 	margin-top: 10px;
 	font-size: 1.9em;
 }
-
 .steps p {
 	font-size: 1.2em;
 	text-align: left;
@@ -548,6 +593,16 @@ a.svg {
 		background: none;
 		min-height: 500px!important;
 	}
+	#particles-js {
+		position: absolute;
+		left: 0;
+		background:  rgb(205,51,51);
+	  	height: 50%;
+	  	width: 100%;
+	  	max-height: 540px;
+		top: 0;
+		z-index: 0;
+	}
 	.cover .box .logo {
 		height: 10vh;
 		position: relative;
@@ -644,6 +699,16 @@ a.svg {
 		line-height: 1!important;
 		padding-top: 15px;
 	}
+	#particles-js {
+		position: absolute;
+		left: 0;
+		background:  rgb(205,51,51);
+	  	height: 50%;
+	  	width: 100%;
+	  	max-height: 600px;
+		top: 0;
+		z-index: 0;
+	}
 }
 
 
@@ -651,7 +716,7 @@ a.svg {
 	.box {
 		width: 100%;
 		padding-top: 70px;
-		background-color: rgba(0,0,0,.2);
+		/*background-color: rgba(0,0,0,.2);*/
 		min-height: 700px;
 	}
 	.cover {
@@ -665,7 +730,7 @@ a.svg {
 	.box {
 		width: 100%;
 		padding-top: 70px;
-		background-color: rgba(0,0,0,.2);
+		/*background-color: rgba(0,0,0,.2);*/
 		min-height: 750px;
 	}
 	.cover {
@@ -678,16 +743,16 @@ a.svg {
 	.cover {
 	  	background-size: cover;
 		height: 80%;
-		min-height: 850px;
+		min-height: 700px;
 	}
 	.box {
 		width: 100%;
 		padding-top: 70px;
-		background-color: rgba(0,0,0,.2);
-		min-height: 850px;
+		/*background-color: rgba(0,0,0,.2);*/
+		min-height: 700px;
 	}
 	.app-buttons {
-		padding-top: 10px!important;
+		padding-top: 20px!important;
 	}
 
 }
@@ -695,17 +760,24 @@ a.svg {
 	.cover {
 	  	background-size: cover;
 		height: 70%;
-		min-height: 875px;
+		min-height: 700px;
 	}
 	.box {
 		width: 100%;
 		padding-top: 70px;
-		background-color: rgba(0,0,0,.2);
-		min-height: 875px;
+		/*background-color: rgba(0,0,0,.2);*/
+		min-height: 700px;
 	}
-	.app-buttons {
-		padding-top: 0!important;
+
+}
+@media(max-width: 452px) {
+	.apple {
+		height: 70px;
 	}
+	.android {
+		height: 75px;
+	}
+
 }
 @media(max-width: 357px) {
 
@@ -722,11 +794,32 @@ a.svg {
 /*----------End-----------*/
 
 /*------Contact CSS-------*/
-
-#contact-page {
-	/*padding-bottom: 150px;*/
+.contact-collection {
+	display:block;
+	margin: auto;
 }
-
+.marginauto {
+	margin-left: auto;
+	margin-right: auto;
+}
+.contact-info {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.contact-info .contact-name {
+	font-size: 1.5em;
+	padding-left: 20px;
+} 
+.contact-info .info-list .info-item a {
+	font-size: .9em;
+}
+.info-list {
+	margin-top: 5px;
+	padding-left: 20px;
+}
+.info-item {
+	padding-left: 30px;
+}
 #contact-header {
 	width: 100%;
 	position: inherit;
