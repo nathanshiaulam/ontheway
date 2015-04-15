@@ -31,8 +31,8 @@ block content
             div.headerText
                 h2.sub-header.wow.fadeInUp(data-wow-delay=".4s") The world's first peer-to-peer delivery network.
                 h3.sub-sub-header.wow.fadeInUp(data-wow-duration=".8s",data-wow-delay=".7s") Get paid for going where you're already going.
-                h3.sub-sub-header.wow.fadeInUp(data-wow-duration=".8s",data-wow-delay="1s") You make all the profit.
-                div.wow.fadeIn.pulse.app-buttons(data-wow-duration=".5s",data-wow-delay="1.3s")
+                h3.sub-sub-header.wow.fadeInUp(data-wow-duration=".8s",data-wow-delay="1s") No middlemen. No comissions. No detours. No cuts.
+                div.wow.fadeIn.app-buttons(data-wow-duration=".5s",data-wow-delay="1.3s")
                     a(href='/')
                         img.download-button.apple(src="images/appledownload.svg" onerror="this.src='images/appledownload.png'")
                     a(href='/')
@@ -125,6 +125,11 @@ block script
             );
         }
         if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+                $(".symbol").addClass("relative");
+              $(".headerText").addClass("relative");
+              $(".app-buttons").addClass("relative");
+        }
+        if (navigator.userAgent.indexOf('Firefox') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
                 $(".symbol").addClass("relative");
               $(".headerText").addClass("relative");
               $(".app-buttons").addClass("relative");

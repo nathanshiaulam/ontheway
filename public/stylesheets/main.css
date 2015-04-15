@@ -190,6 +190,7 @@ hr.symbol:after {
 }
 #other-cover {
 	color: black;
+	background: none;
 }
 .red {
 	background-color: rgb(205,51,51)!important;
@@ -912,6 +913,15 @@ a.svg {
 		font-size: 19px;
  	}
 }
+
+/*----------End-----------*/
+
+/*--------About CSS-------*/
+.about-info {
+	font-size: 1.2em;
+	line-height: 1.7;
+}
+
 
 /*----------End-----------*/
 
