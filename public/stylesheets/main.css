@@ -821,7 +821,10 @@ a.svg {
 	font-size: 1.5em;
 	padding-left: 20px;
 } 
-.contact-info .info-list .info-item a {
+.contact-info .info-list p.info-item,
+.contact-info .info-list .info-item a
+ {
+ 	color:  #d8433d;
 	font-size: .9em;
 }
 .info-list {
@@ -917,12 +920,11 @@ a.svg {
 	font-size: 1.5em;
 	padding-top: 20px;
 }
-#contact-boxes p {
+
+.contact-card .contact-card-text p {
+	font-weight: 500;
 	color: black;
 	font-family: 'lane_narrowregular'!important
-}
-#contact-boxes .contact-card-text p {
-	font-weight: 500;
 }
 
 @media only screen and (max-device-width: 568px) and (min-device-width: 320px) {
