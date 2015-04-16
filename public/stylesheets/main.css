@@ -827,6 +827,9 @@ a.svg {
  	color:  #d8433d;
 	font-size: .9em;
 }
+.contact-info .info-list p#roleinfo.info-item {
+	color: black;
+}
 .info-list {
 	margin-top: 5px;
 	padding-left: 20px;
