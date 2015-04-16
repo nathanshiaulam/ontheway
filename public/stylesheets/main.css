@@ -424,9 +424,17 @@ a.svg {
 #process {
 	padding-top: 10px;
 }
+.process-container {
+	padding-top: 15px;
+}
 .remove-padding {
 	padding-left: 0;
 	padding-right: 0;
+}
+.steps.remove-padding,
+.steps .remove-padding {
+	margin-bottom: 30px;
+	margin-top: 30px;
 }
 .example-image {
 	width: 100%;
@@ -441,9 +449,13 @@ a.svg {
 	padding-bottom: 20px;
 	font-size: 1.3em;
 }
-.step-text {
-	padding-left: 45px;
-	padding-right: 45px;
+.step-text.right {
+	padding-left: 10px;
+	padding-right: 60px;
+}
+.step-text.left {
+	padding-left: 60px;
+	padding-right: 10px;
 }
 .diamonds.steps {
 	padding-top: 30px;
@@ -459,38 +471,47 @@ a.svg {
 .steps {
 	margin-bottom: 30px;
 	width: 100%;
+	margin-top: 40px;
 }
-.steps h1 {
-	color: #22313F;
-	font-weight: bold;
-	text-align: left;
-}
+
 .steps h2{
 	color: #34495E;
-	text-align: left;
+	text-align: center;
 	margin-top: 10px;
-	font-size: 1.9em;
+	font-size: 1.8em;
 }
 .steps p {
-	font-size: 1.2em;
-	text-align: left;
+	font-size: 1.1em;
+	text-align: center;
 	color: #67809F;
 }
 .border-image {
 	border-left: 1px solid #eaeaea;
 }
-
-@media(max-width: 1175px) {
+.role-title {
+	border-bottom: 1px solid #22313F;
+	margin-left: 10%;
+	margin-right: 10%;
+	padding-bottom: 10px;
+}
+@media(max-width: 1200px) {
 	.steps h2{
 		color: #34495E;
-		text-align: left;
+		text-align: center;
 		margin-top: 10px;
 		font-size: 1.6em;
 	}
-
+	.step-text.right {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.step-text.left {
+		padding-left: 0;
+		padding-right: 0;
+	}
 	.steps p {
 		font-size: 1em;
-		text-align: left;
+		text-align: center;
 		color: #67809F;
 	}
 }
@@ -505,14 +526,14 @@ a.svg {
 	}
 	.steps h2{
 		color: #34495E;
-		text-align: left;
+		text-align: center;
 		margin-top: 30px;
 		font-size: 2em;
 	}
 
 	.steps p {
 		font-size: 1.2em;
-		text-align: left;
+		text-align: center;
 		color: #67809F;
 	}
 }
