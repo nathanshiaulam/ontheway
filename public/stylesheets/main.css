@@ -814,8 +814,8 @@ a.svg {
 	margin-right: auto;
 }
 .contact-info {
-	padding-top: 15px;
-	padding-bottom: 15px;
+	padding-top: 30px;
+  	padding-bottom: 30px;
 }
 .contact-info .contact-name {
 	font-size: 1.5em;
@@ -986,7 +986,7 @@ a.svg {
 	font-weight: 500;
 	margin-bottom: 8px;
 	display: inline;
-	font-size: 25px;
+	font-size: 28px;
 	padding-top: 10px;
 }
 
