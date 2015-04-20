@@ -76,8 +76,8 @@ html, body {
 /*-------Footer CSS--------*/
 
 #footer {
-	padding-bottom: 10px;
-	padding-top: 10px;
+	padding-bottom: 5px;
+	padding-top: 5px;
 	margin-top: 20px;
 	border-top: 1px solid #eaeaea;
 	background: #F9F9F9;
@@ -225,7 +225,7 @@ a:hover{
 
 .navbar {
 	border: none;
-	height: 60px;
+	height: 52px;
 	width: 100%;
 	margin: 0;
 	border-radius: 0;
@@ -244,7 +244,7 @@ a:hover{
   width: auto;
   margin: 0;
   height: 100%;
-  min-width: 60px;
+  min-width: 52px;
 }
 .navbar .navbar-brand.white {
   background: url(../images/all-white-corner-logo.png) center no-repeat;
@@ -252,7 +252,7 @@ a:hover{
   width: auto;
   margin: 0;
   height: 100%;
-  min-width: 60px;
+  min-width: 52px;
 }
 
 .nav-item {
@@ -268,7 +268,7 @@ a:hover{
 .navbar #myNav .nav-item a {
 	color: white;
 	font-size: 1em;
-	padding-top: 20px;
+	padding-top: 16px;
 	padding-bottom: 2px;
 	margin: 0 5px;
   	padding-left: 3px;
@@ -288,7 +288,7 @@ a:hover{
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    margin-top: 10px;
+    margin-top: 6px;
     transition: 0.5s;
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
@@ -700,13 +700,10 @@ a.svg {
 	#contact-header {
 		width: 100%;
 		position: inherit;
-		padding-top: 30px!important;
-		padding-bottom: 35px!important;
 		border-bottom: 1px solid #eaeaea;
 		border-top: 1px solid #eaeaea;
 	}
 	#faq-link {
-	    font-size: 1.2em!important;
 	    padding-top: 20px;
 	}
 	#footer {
@@ -813,8 +810,7 @@ a.svg {
 	margin-right: auto;
 }
 .contact-info {
-	padding-top: 30px;
-  	padding-bottom: 30px;
+	padding-top: 25px;
 }
 .contact-info .contact-name {
 	font-size: 1.5em;
@@ -835,12 +831,13 @@ a.svg {
 }
 .info-item {
 	padding-left: 30px;
+	margin-bottom: 5px;
 }
 #contact-header {
 	width: 100%;
 	position: inherit;
-	padding-top: 40px;
-  	padding-bottom: 45px;
+	padding-top: 10px;
+  	padding-bottom: 15px;
 	border-bottom: 1px solid #eaeaea;
 	border-top: 1px solid #eaeaea;
 }
@@ -848,7 +845,7 @@ a.svg {
 .contact-main-head {
 	font-weight: 700;
     color: black;
-    font-size: 3.3em;
+    font-size: 3em;
 }
 .contact-sub-head {
 	  font-weight: 300;
@@ -882,21 +879,20 @@ a.svg {
 #contact-boxes {
 	max-width: 960px;
 	width: auto;
-	padding-bottom: 70px;
+	padding-bottom: 10px;
 	padding-top: 30px;
 }
 
 .contact-card {
     text-align: center;
-    margin-bottom: 20px;
-    padding: 15px;
+    padding: 5px;
     box-sizing: border-box;
     background-color: #fffdfd;
     border: 1px solid #d8d8d8;
 }
 
 .contact-card img {
-	height: 70px;
+	height: 60px;
 	vertical-align: middle;
 }
 
@@ -904,6 +900,7 @@ a.svg {
 	display: inline-block;
 	vertical-align: middle;
 	margin-left: 13px;
+	font-size: 1.4em;
 }
 
 @media(max-width: 885px) {
@@ -919,7 +916,7 @@ a.svg {
 	font-family: 'lane_narrowregular'!important
 }
 #faq-link {
-	font-size: 1.5em;
+	font-size: 1.1em;
 	padding-top: 20px;
 }
 

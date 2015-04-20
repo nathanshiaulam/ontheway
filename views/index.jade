@@ -24,6 +24,7 @@ block nav
                             a(href='/login') Log In
 block content
     div.cover 
+        div.overlay
         div#particles-js 
         div.container.box
             img.wow.fadeInDown.logo(src="images/all-white-main-logo.png")
@@ -41,46 +42,42 @@ block content
         div#process
             div.container-fluid.remove-padding.process-container
                 div.col-md-6.header.wow.fadeInLeft.remove-padding
-                    h1.role-title Make a Delivery
-                    div.steps.container-fluid.remove-padding
-                        div.col-md-6.remove-padding
-                            div.step-text.left.wow.fadeInLeft
-                                h2 Browse Requests
-                                p 
-                                    |See what people are looking for.
-                                    |You just need to click the picture and figure out
-                                    |how it all works.
-                        div.col-md-6.remove-padding
-                            div.example-image.wow.fadeInLeft
-                                img(src='/images/placeholder1.png')
-                    div.steps.diamonds.container-fluid.remove-padding
-                        div.col-md-6.remove-padding
-                            div.step-text.left.wow.fadeInLeft
-                                h2 Browse Requests
-                                p 
-                                    |See what people are looking for.
-                                    |You just need to click the picture and figure out
-                                    |how it all works.
-                        div.col-md-6.remove-padding
-                            div.example-image.wow.fadeInLeft
-                                img(src='/images/placeholder1.png')
-                    div.steps.container-fluid.remove-padding
-                        div.col-md-6.remove-padding
-                            div.step-text.left.wow.fadeInLeft
-                                h2 Browse Requests
-                                p 
-                                    |See what people are looking for.
-                                    |You just need to click the picture and figure out
-                                    |how it all works.
-                        div.col-md-6.remove-padding
-                            div.example-image.wow.fadeInLeft
-                                img(src='/images/placeholder1.png')
-                div.col-md-6.header.border-image.wow.fadeInRight.remove-padding
                     h1.role-title Place an Order
                     div.steps.container-fluid.remove-padding
                         div.col-md-6.remove-padding
+                            div.step-text.left.wow.fadeInLeft
+                                h2 Add a Request
+                                p 
+                                    |Write a description of what you're
+                                    |looking for and set a delivery fee.
+                        div.col-md-6.remove-padding
+                            div.example-image.wow.fadeInLeft
+                                img(src='/images/s1.png')
+                    div.steps.diamonds.container-fluid.remove-padding
+                        div.col-md-6.remove-padding
+                            div.step-text.left.wow.fadeInLeft
+                                h2 Browse Paths
+                                p 
+                                    |Look through the list of deliveries to see
+                                    |if anyone's headed in your direction.
+                        div.col-md-6.remove-padding
+                            div.example-image.wow.fadeInLeft
+                                img(src='/images/s2.png')
+                    div.steps.container-fluid.remove-padding
+                        div.col-md-6.remove-padding
+                            div.step-text.left.wow.fadeInLeft
+                                h2 Confirm
+                                p 
+                                    |Easy.
+                        div.col-md-6.remove-padding
+                            div.example-image.wow.fadeInLeft
+                                img(src='/images/s6.png')
+                div.col-md-6.header.border-image.wow.fadeInRight.remove-padding
+                    h1.role-title Make a Delivery
+                    div.steps.container-fluid.remove-padding
+                        div.col-md-6.remove-padding
                             div.example-image.wow.fadeInRight
-                                img(src='/images/placeholder1.png')
+                                img(src='/images/s5.png')
                         div.col-md-6.remove-padding
                             div.step-text.right.wow.fadeInRight
                                 h2 Browse Requests
@@ -91,25 +88,23 @@ block content
                     div.steps.diamonds.container-fluid.remove-padding
                         div.col-md-6.remove-padding
                             div.example-image.wow.fadeInRight
-                                img(src='/images/placeholder1.png')
+                                img(src='/images/s4.png')
                         div.col-md-6.remove-padding
                             div.step-text.right.wow.fadeInRight
-                                h2 Browse Requests
+                                h2 Set Path
                                 p 
-                                    |See what people are looking for.
-                                    |You just need to click the picture and figure out
-                                    |how it all works. 
+                                    |Get matched with additional requests on
+                                    |the way. We help you make as much money
+                                    |as possible. 
                     div.steps.container-fluid.remove-padding
                         div.col-md-6.remove-padding
                             div.example-image.wow.fadeInRight
-                                img(src='/images/placeholder1.png')
+                                img(src='/images/s3.png')
                         div.col-md-6.remove-padding
                             div.step-text.right.wow.fadeInRight
-                                h2 Browse Requests
+                                h2 Get Paid
                                 p 
-                                    |See what people are looking for.
-                                    |You just need to click the picture and figure out
-                                    |how it all works.
+                                    |Easier.
 block script
     script(type='text/javascript', src='/javascripts/smoothscroll.js')
     script(type='text/javascript').
