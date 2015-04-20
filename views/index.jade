@@ -40,48 +40,48 @@ block content
     div.full-page.white 
         div#process
             div.container-fluid.remove-padding.process-container
-                div.col-lg-6.header.wow.fadeInLeft.remove-padding
+                div.col-md-6.header.wow.fadeInLeft.remove-padding
                     h1.role-title Make a Delivery
                     div.steps.container-fluid.remove-padding
-                        div.col-lg-6.remove-padding
+                        div.col-md-6.remove-padding
                             div.step-text.left.wow.fadeInLeft
                                 h2 Browse Requests
                                 p 
                                     |See what people are looking for.
                                     |You just need to click the picture and figure out
                                     |how it all works.
-                        div.col-lg-6.remove-padding
+                        div.col-md-6.remove-padding
                             div.example-image.wow.fadeInLeft
                                 img(src='/images/placeholder1.png')
                     div.steps.diamonds.container-fluid.remove-padding
-                        div.col-lg-6.remove-padding
+                        div.col-md-6.remove-padding
                             div.step-text.left.wow.fadeInLeft
                                 h2 Browse Requests
                                 p 
                                     |See what people are looking for.
                                     |You just need to click the picture and figure out
                                     |how it all works.
-                        div.col-lg-6.remove-padding
+                        div.col-md-6.remove-padding
                             div.example-image.wow.fadeInLeft
                                 img(src='/images/placeholder1.png')
                     div.steps.container-fluid.remove-padding
-                        div.col-lg-6.remove-padding
+                        div.col-md-6.remove-padding
                             div.step-text.left.wow.fadeInLeft
                                 h2 Browse Requests
                                 p 
                                     |See what people are looking for.
                                     |You just need to click the picture and figure out
                                     |how it all works.
-                        div.col-lg-6.remove-padding
+                        div.col-md-6.remove-padding
                             div.example-image.wow.fadeInLeft
                                 img(src='/images/placeholder1.png')
-                div.col-lg-6.header.border-image.wow.fadeInRight.remove-padding
+                div.col-md-6.header.border-image.wow.fadeInRight.remove-padding
                     h1.role-title Place an Order
                     div.steps.container-fluid.remove-padding
-                        div.col-lg-6.remove-padding
+                        div.col-md-6.remove-padding
                             div.example-image.wow.fadeInRight
                                 img(src='/images/placeholder1.png')
-                        div.col-lg-6.remove-padding
+                        div.col-md-6.remove-padding
                             div.step-text.right.wow.fadeInRight
                                 h2 Browse Requests
                                 p 
@@ -89,10 +89,10 @@ block content
                                     |You just need to click the picture and figure out
                                     |how it all works.
                     div.steps.diamonds.container-fluid.remove-padding
-                        div.col-lg-6.remove-padding
+                        div.col-md-6.remove-padding
                             div.example-image.wow.fadeInRight
                                 img(src='/images/placeholder1.png')
-                        div.col-lg-6.remove-padding
+                        div.col-md-6.remove-padding
                             div.step-text.right.wow.fadeInRight
                                 h2 Browse Requests
                                 p 
@@ -100,10 +100,10 @@ block content
                                     |You just need to click the picture and figure out
                                     |how it all works. 
                     div.steps.container-fluid.remove-padding
-                        div.col-lg-6.remove-padding
+                        div.col-md-6.remove-padding
                             div.example-image.wow.fadeInRight
                                 img(src='/images/placeholder1.png')
-                        div.col-lg-6.remove-padding
+                        div.col-md-6.remove-padding
                             div.step-text.right.wow.fadeInRight
                                 h2 Browse Requests
                                 p 
@@ -129,12 +129,13 @@ block script
               $(".headerText").addClass("relative");
               $(".app-buttons").addClass("relative");
               $(".diamonds").addClass("relative");
+              $(".role-title").addClass("relative");
         }
         if (navigator.userAgent.indexOf('Firefox') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
                 $(".symbol").addClass("relative");
               $(".headerText").addClass("relative");
               $(".app-buttons").addClass("relative");
-              $(".diamonds").addClass("relative");
+              $(".diamonds").addClass("relative");g
         }
 
         /* config dom id (optional) + config particles params */
