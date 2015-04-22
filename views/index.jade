@@ -27,12 +27,12 @@ block content
         div.overlay
         div#particles-js 
         div.container.box
-            img.wow.fadeInDown.logo(src="images/all-white-main-logo.png")
-            hr.symbol.wow.fadeInUp(data-wow-delay=".4s")
+            img.wow.fadeInDown.logo(src="images/all-white-main-logo.png", data-wow-delay=".2s")
+            hr.symbol.wow.fadeInUp
             div.headerText
                 h2.sub-header.wow.fadeInUp(data-wow-delay=".4s") The world's first peer-to-peer delivery network.
                 h3.sub-sub-header.wow.fadeInUp(data-wow-duration=".8s",data-wow-delay=".7s") Get paid for going where you're already going.
-                h3.sub-sub-header.wow.fadeInUp(data-wow-duration=".8s",data-wow-delay="1s") No middlemen. No comissions. No detours. No cuts.
+                h3.sub-sub-header.wow.fadeInUp(data-wow-duration=".8s",data-wow-delay="1s") No middlemen. No detours. No cuts.
                 div.wow.fadeIn.app-buttons(data-wow-duration=".5s",data-wow-delay="1.3s")
                     a(href='/')
                         img.download-button.apple(src="images/appledownload.svg" onerror="this.src='images/appledownload.png'")
@@ -48,63 +48,61 @@ block content
                             div.step-text.left.wow.fadeInLeft
                                 h2 Add a Request
                                 p 
-                                    |Write a description of what you're
-                                    |looking for and set a delivery fee.
+                                    |Write a description of what you’re looking 
+                                    |for a set a delivery fee.
                         div.col-md-6.remove-padding
                             div.example-image.wow.fadeInLeft
-                                img(src='/images/s1.png')
+                                img(src='/images/sp1.png')
                     div.steps.diamonds.container-fluid.remove-padding
                         div.col-md-6.remove-padding
                             div.step-text.left.wow.fadeInLeft
-                                h2 Browse Paths
+                                h2 Verify the Receipt
                                 p 
-                                    |Look through the list of deliveries to see
-                                    |if anyone's headed in your direction.
+                                    |Review the receipt your deliverer uploads 
+                                    |once the items are purchased.
                         div.col-md-6.remove-padding
                             div.example-image.wow.fadeInLeft
-                                img(src='/images/s2.png')
+                                img(src='/images/sp2.png')
                     div.steps.container-fluid.remove-padding
                         div.col-md-6.remove-padding
                             div.step-text.left.wow.fadeInLeft
-                                h2 Confirm
+                                h2 Complete the Order
                                 p 
-                                    |Easy.
+                                    |One tap.<br>Easy.
                         div.col-md-6.remove-padding
                             div.example-image.wow.fadeInLeft
-                                img(src='/images/s6.png')
+                                img(src='/images/sp3.png')
                 div.col-md-6.header.wow.fadeInRight.remove-padding
                     h1.role-title Make a Delivery
                     div.border-image.steps.container-fluid.remove-padding
-                        div.col-md-6.remove-padding
+                        div.col-md-6.remove-padding.left-image
                             div.example-image.wow.fadeInRight
-                                img(src='/images/s5.png')
-                        div.col-md-6.remove-padding
+                                img(src='/images/sm1.png')
+                        div.col-md-6.remove-padding.left-text
                             div.step-text.right.wow.fadeInRight
-                                h2 Browse Requests
+                                h2 Claim a Request
                                 p 
-                                    |See what people are looking for.
-                                    |You just need to click the picture and figure out
-                                    |how it all works.
+                                    |Find a request that’s ontheway for you, 
+                                    |or let us find one for you.
                     div.steps.diamonds.container-fluid.remove-padding
-                        div.col-md-6.remove-padding
+                        div.col-md-6.remove-padding.left-image
                             div.example-image.wow.fadeInRight
-                                img(src='/images/s4.png')
-                        div.col-md-6.remove-padding
+                                img(src='/images/sm2.png')
+                        div.col-md-6.remove-padding.left-text
                             div.step-text.right.wow.fadeInRight
-                                h2 Set Path
+                                h2 Upload the Receipt
                                 p 
-                                    |Get matched with additional requests on
-                                    |the way. We help you make as much money
-                                    |as possible. 
+                                    |Once you purchase the items, upload a 
+                                    |picture of the receipt.
                     div.border-image.steps.container-fluid.remove-padding
-                        div.col-md-6.remove-padding
+                        div.col-md-6.remove-padding.left-image
                             div.example-image.wow.fadeInRight
-                                img(src='/images/s3.png')
-                        div.col-md-6.remove-padding
+                                img(src='/images/sm3.png')
+                        div.col-md-6.remove-padding.left-text
                             div.step-text.right.wow.fadeInRight
                                 h2 Get Paid
                                 p 
-                                    |Easier.
+                                    |Automatically.<br>Even easier.
 block script
     script(type='text/javascript', src='/javascripts/smoothscroll.js')
     script(type='text/javascript').
