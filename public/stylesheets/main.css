@@ -677,9 +677,7 @@ a.svg {
 		margin-left: 25px;
 	}
 
-	.cover .download-buttom.android {
-		
-	}
+
 	#element_to_pop_up .download-button.apple {
 		height: 69px;
 		padding-bottom: 26px;
@@ -693,7 +691,13 @@ a.svg {
 	}
 	#element_to_pop_up .header {
 		padding-bottom: 20px;
+		font-size: 1.8em;
 	}
+
+	#element_to_pop_up p {
+		font-size: .9em;
+	} 
+
 	#element_to_pop_up .header.sub {
 		padding-bottom: 10px;
 
