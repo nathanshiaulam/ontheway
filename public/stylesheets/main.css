@@ -1269,6 +1269,9 @@ a.svg {
 #element_to_pop_up ul {
 	text-align: left;
 }
+#element_to_pop_up li {
+	padding-top: 10px;
+}
 .remove-padding-all {
 	padding: 0;
 }
