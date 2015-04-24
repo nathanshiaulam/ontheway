@@ -263,10 +263,12 @@ a:hover{
 	margin-right: 1%;
 	height: 100%;
 }
-
+#myNav {
+	padding-top: 4px;
+}
 .navbar {
 	border: none;
-	height: 52px;
+	height: 60px;
 	width: 100%;
 	margin: 0;
 	border-radius: 0;
@@ -308,12 +310,12 @@ a:hover{
 
 .navbar #myNav .nav-item a {
 	color: white;
-	font-size: 1em;
+	font-size: 15px;
 	padding-top: 16px;
 	padding-bottom: 2px;
 	margin: 0 5px;
-  	padding-left: 3px;
- 	padding-right: 3px;
+	padding-left: 6px;
+	padding-right: 6px;
 
 }
 
@@ -329,7 +331,8 @@ a:hover{
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
-    margin-top: 6px;
+    margin-top: 8px;
+    margin-left: 5px;
     transition: 0.5s;
 	-webkit-transition: 0.5s;
 	-moz-transition: 0.5s;
@@ -337,7 +340,7 @@ a:hover{
 	-o-transition: 0.5s;
 }
 .navbar #myNav .signup a{
-	padding: 8px 2px;
+	padding: 6px 1px;
 }
 .signup:hover {
 	background-color: #22313F!important;
