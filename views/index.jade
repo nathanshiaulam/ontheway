@@ -24,6 +24,22 @@ block nav
                             a(href='/login') Log In
 block content
     div.cover 
+        div#element_to_pop_up
+          a.b-close x 
+          h1.header.larger Promotions!
+          div.app-buttons.remove-padding-all
+            a(href='/')
+              img.download-button.apple(src="images/appledownload.svg" onerror="this.src='images/appledownload.png'")
+            a(href='/')
+              img.download-button.android(src='images/androiddownload.png')
+          h2.header.sub Download our App today and...
+          ul.no-bullet
+            li.q-and-a-bullet-normal
+              p You make $2 for every friend you refer that makes a request or delivery. (Applies to all United States users)
+            li.q-and-a-bullet-normal
+              p Your first delivery is free. (Princeton area only)
+            li.q-and-a-bullet-normal
+              p If your delivery isn't made within 30 minutes, we will personally deliver it. 24/7. (Princeton area only)
         div.overlay
         div#particles-js 
         div.container.box
@@ -106,6 +122,9 @@ block content
 block script
     script(type='text/javascript', src='/javascripts/smoothscroll.js')
     script(type='text/javascript').
+      $(document).ready(function() {
+         $('#element_to_pop_up').bPopup();
+        });
         /* particlesJS('dom-id', params);
         /* @dom-id : set the html tag id [string, optional, default value : particles-js]
         /* @params: set the params [object, optional, default values : check particles.js] */

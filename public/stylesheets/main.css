@@ -668,9 +668,52 @@ a.svg {
 	}
 	.download-button.apple {
 		height: 69px;
+		padding-bottom: 28px;
+
 	}
 	.download-button.android {
 		height: 68px;
+		padding-bottom: 26px;
+		margin-left: 25px;
+	}
+
+	.cover .download-buttom.android {
+		
+	}
+	#element_to_pop_up .download-button.apple {
+		height: 69px;
+		padding-bottom: 26px;
+	}
+	#element_to_pop_up .download-button.android {
+		height: 68px;
+		padding-bottom: 22px;
+		margin-left: 25px;
+
+		
+	}
+	#element_to_pop_up .header {
+		padding-bottom: 20px;
+	}
+	#element_to_pop_up .header.sub {
+		padding-bottom: 10px;
+
+	}
+	.steps h2 {
+	  color: #34495E;
+	  text-align: center;
+	  margin-top: 30px;
+	  font-size: 1.6em;
+	}
+	.steps p {
+	  font-size: 1em;
+	  text-align: center;
+	}
+	.diamonds.steps {
+	  padding-top: 0;
+	  padding-bottom: 0;
+	}
+	.navbar .navbar-brand.white {
+		margin-left: 10px;
 	}
 	hr.symbol:after {
 		content: '•';
@@ -683,7 +726,7 @@ a.svg {
 	}
 	.example-image img{
 		display: block;
-		width: 100%;
+		width: 80%;
 		margin: auto;
 	}
 }
@@ -1194,3 +1237,45 @@ a.svg {
 }
 
 /*----------End-----------*/
+
+.b-close{
+    border-radius: 7px 7px 7px 7px;
+	box-shadow: none;
+	font: bold 131% sans-serif;
+	padding: 0 6px 2px;
+	position: absolute;
+	right: -7px;
+	top: -7px;
+	color: #fff;
+  	cursor: pointer;
+  	display: inline-block;
+  	text-align: center;
+  	text-decoration: none;
+  	background-color: rgb(205,51,51);
+}
+
+#element_to_pop_up { 
+    background-color:#fff;
+  	border-radius: 10px 10px 10px 10px;
+  	box-shadow: 0 0 25px 5px #999;
+  	min-width: 350px;
+  	padding: 25px;
+    color:#000;
+    display:none; 
+    padding:20px;
+    min-height: 180px;
+    text-align:center;
+}
+#element_to_pop_up ul {
+	text-align: left;
+}
+.remove-padding-all {
+	padding: 0;
+}
+#element_to_pop_up .header {
+	margin-top: 0;
+}
+.larger {
+	font-size: 2em;
+	margin-bottom: 0;
+}
