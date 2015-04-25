@@ -3,6 +3,7 @@
 
 
 /*-------Global Classes--------*/
+
 #particles-js {
 	position: absolute;
 	left: 0;
@@ -601,6 +602,9 @@ a.svg {
 }
 
 @media only screen and (max-device-width: 568px) and (min-device-width: 320px){
+	#uniqueNav {
+		padding-bottom: 10px;
+	}
 	.contact-card img {
 		height: 60px;
 		vertical-align: middle;
@@ -686,20 +690,23 @@ a.svg {
 		height: 68px;
 		padding-bottom: 22px;
 		margin-left: 25px;
-
-		
 	}
+	#element_to_pop_up .q-and-a-bullet-normal {
+		padding-left: 43px;
+	}
+
 	#element_to_pop_up .header {
 		padding-bottom: 20px;
 		font-size: 1.8em;
 	}
 
 	#element_to_pop_up p {
-		font-size: .9em;
+		font-size: .8em;
 	} 
 
 	#element_to_pop_up .header.sub {
-		padding-bottom: 10px;
+		padding-bottom: 8px;
+		font-size: 1.3em;
 
 	}
 	.steps h2 {
@@ -1013,7 +1020,9 @@ a.svg {
 	font-size: 1.2em;
 	line-height: 1.7;
 }
-
+.desc-section .about-info {
+	padding-top: 5px;
+}
 
 /*----------End-----------*/
 
@@ -1241,7 +1250,10 @@ a.svg {
 }
 
 /*----------End-----------*/
-
+.desc-section li {
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
 .b-close{
     border-radius: 7px 7px 7px 7px;
 	box-shadow: none;
@@ -1274,7 +1286,7 @@ a.svg {
 	text-align: left;
 }
 #element_to_pop_up li {
-	padding-top: 10px;
+	/*padding-top: 10px;*/
 }
 .remove-padding-all {
 	padding: 0;
