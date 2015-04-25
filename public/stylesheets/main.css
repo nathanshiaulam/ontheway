@@ -1166,6 +1166,12 @@ a.svg {
 	  line-height: inherit;
 	  padding-top: 15px;
 	}
+	.bottom-buttons .app-buttons {
+		text-align: center;
+	    padding-top: 35px!important;
+	    padding-bottom: 0px;
+	}
+	  
 }
 
 /*----------End-----------*/
@@ -1297,4 +1303,10 @@ a.svg {
 .larger {
 	font-size: 2em;
 	margin-bottom: 0;
+}
+.bottom-buttons .app-buttons {
+	text-align: center;
+	padding-top: 35px;
+  	padding-bottom: 0px;
+
 }
