@@ -88,7 +88,7 @@ html, body {
 }
 
 .navbar-toggle {
-	margin-top: 9px;
+	margin-top: 12px;
 	margin-bottom:  0px;
 }
 #page-header {
@@ -724,6 +724,9 @@ a.svg {
 	  padding-bottom: 0;
 	}
 	.navbar .navbar-brand.white {
+		margin-left: 10px;
+	}
+	.navbar .navbar-brand {
 		margin-left: 10px;
 	}
 	hr.symbol:after {
