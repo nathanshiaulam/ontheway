@@ -1,6 +1,6 @@
 extends layout
 block nav
-        nav.navbar.navbar-default(role='navigation')
+        nav.navbar.navbar-default.non-diamond(role='navigation')
             div#nav-box
                 div.navbar-header
                     button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#myNav')
@@ -161,6 +161,7 @@ block script
               $(".symbol").addClass("relative");
               $(".headerText").addClass("relative");
               $(".app-buttons").addClass("relative");
+              $(".non-diamond").addClass("no-background");
               particlesJS('particles-js', {
               particles: {
                 color: '#fff',
