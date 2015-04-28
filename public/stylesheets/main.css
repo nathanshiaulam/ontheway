@@ -274,8 +274,9 @@ a:hover{
 	margin: 0;
 	border-radius: 0;
 	z-index: 100;
-	background-color: rgba(0,0,0,0);
-	position: absolute;
+	position: fixed;
+	background: no-repeat left top url(../images/background-overlay.jpg);
+	background-size: cover;
 }
 
 .navbar-header {
