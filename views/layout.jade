@@ -76,7 +76,15 @@ html
 
       ga('create', 'UA-62269890-1', 'auto');
       ga('send', 'pageview');
+
   script(type='text/javascript').
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || isiPhone()) {
+        $(".diamonds.navbar").removeClass("relative");
+        $(".diamonds.navbar").addClass("fixed");
+        $("#page-header.bigger-page-header").addClass("mobile-header");
+        $("#contact-header").addClass("mobile-contact-header");
+        $(".inverted-logo").addClass("mobile-margin-top")
+    }
     Parse.initialize("zzxmLD2oQWhZZYG7fst95oV4gxRVUWC47dZAVTIT", "iPqBhzqkCZ1wxvFQAwGNr18LgEM7LnkUB7a1jfDu");
     $(document).ready(function() {
         if($(window).width() <= 767) {
