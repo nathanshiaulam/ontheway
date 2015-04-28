@@ -254,8 +254,8 @@ hr.symbol:after {
 	background-color: rgb(205,51,51);
 }
 .diamonds {
-	background: top left no-repeat url(../images/background-overlay.jpg);
-	background-size: cover;
+	background: top left no-repeat url(../images/background-overlay.jpg)!important;
+	background-size: cover!important;
 }
 .white {
 	background-color: #F9F9F9;
@@ -290,7 +290,7 @@ a:hover{
 	margin: 0;
 	border-radius: 0;
 	z-index: 100;
-	position: fixed;
+	position: absolute;
 	background: none;
 }
 
@@ -337,6 +337,24 @@ a:hover{
 
 }
 
+ #myNav .nav-item#uniqueNav {
+	border: 2px solid white;
+	border-radius: 15px;
+	padding-bottom: 5px;
+	padding-top: 0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#myNav .nav-item#uniqueNav a{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 4px;
+}
+#uniqueNav:hover {
+	background-color:;
+}
+
 #other-nav.navbar {
 	position: absolute;
 	background: none;
@@ -368,6 +386,13 @@ a:hover{
 	-moz-transition: 0.5s;
 	-ms-transition: 0.5s;
 	-o-transition: 0.5s;
+}
+
+@media only screen and (max-device-width: 568px) and (min-device-width: 320px){
+	.navbar #myNav .signup {
+		border: none;
+		padding-bottom: 10px;
+	}
 }
 /*----------End-----------*/
 

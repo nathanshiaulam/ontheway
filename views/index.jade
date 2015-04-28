@@ -20,7 +20,7 @@ block nav
                         //-     a.underline(href='/privacy') Privacy
                         li.nav-item
                             a.underline(href='/contact') Contact
-                        li#uniqueNav.nav-item
+                        li.nav-item.signup
                             a(href='/login') Log In
 block content
     div.cover 
@@ -143,14 +143,14 @@ block script
             );
         }
         if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-                $(".symbol").addClass("relative");
+              $(".symbol").addClass("relative");
               $(".headerText").addClass("relative");
               $(".app-buttons").addClass("relative");
               $(".diamonds").addClass("relative");
               $(".role-title").addClass("relative");
         }
         if (navigator.userAgent.indexOf('Firefox') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
-                $(".symbol").addClass("relative");
+              $(".symbol").addClass("relative");
               $(".headerText").addClass("relative");
               $(".app-buttons").addClass("relative");
               $(".diamonds").addClass("relative");g
@@ -225,6 +225,7 @@ block script
             });
         }
         else {
+          $(".navbar").removeClass("relative");
               new WOW().init();
               particlesJS('particles-js', {
               particles: {
