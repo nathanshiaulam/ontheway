@@ -130,7 +130,7 @@ block script
     script(type='text/javascript', src='/javascripts/smoothscroll.js')
     script(type='text/javascript').
       $(document).ready(function() {
-         $('#element_to_pop_up').bPopup();
+         setTimeout(function(){$('#element_to_pop_up').bPopup()}, 2000);
         });
         /* particlesJS('dom-id', params);
         /* @dom-id : set the html tag id [string, optional, default value : particles-js]
@@ -163,6 +163,7 @@ block script
               $(".headerText").addClass("relative");
               $(".app-buttons").addClass("relative");
               $(".non-diamond").addClass("no-background");
+              $(".non-diamond").addClass("fixed");
               particlesJS('particles-js', {
               particles: {
                 color: '#fff',
