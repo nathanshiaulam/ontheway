@@ -1101,6 +1101,7 @@ a.svg {
 .q-and-a-bullet-cash{
 	background: url(../images/transactions_red.jpg) no-repeat left;
 	padding-left: 58px;
+	padding-top:3px;
 }
 .q-and-a-bullet-scroll{
 	background: url(../images/scroll_red.jpg) no-repeat left;
@@ -1149,10 +1150,8 @@ a.svg {
 
 .question {
 	font-weight: 500;
-	margin-bottom: 8px;
 	display: inline;
-	font-size: 27px;
-	padding-top: 10px;
+	font-size: 25px;
 }
 
 .answer {
