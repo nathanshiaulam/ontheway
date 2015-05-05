@@ -1139,17 +1139,14 @@ a.svg {
 	.q-and-a-bullet-normal{
 		background: url(../images/pathsIcon_red.jpg) no-repeat left;
 		padding-left: 58px;
-		padding-bottom: 10px;
 	}
 	.q-and-a-bullet-cash{
 		background: url(../images/transactions_red.jpg) no-repeat left;
 		padding-left: 58px;
-		padding-bottom: 10px;
 	}
 	.q-and-a-bullet-scroll{
 		background: url(../images/scroll_red.jpg) no-repeat left;
 		padding-left: 58px;
-		padding-bottom: 10px;
 	}
 	.q-and-a-bullet-path{
 		background: url(../images/composePath_red.jpg) no-repeat left;
