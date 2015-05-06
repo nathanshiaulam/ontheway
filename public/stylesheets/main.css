@@ -790,7 +790,7 @@ a.svg {
 	}
 	.example-image img{
 		display: block;
-		width: 50%;
+		width: 45%;
 		margin: auto;
 	}
 }
@@ -1416,26 +1416,27 @@ a.svg {
 
 @media only screen and (max-device-width: 568px) and (min-device-width: 320px) {
 	h1 {
-		font-size: 1.5em!important;
+		font-size: 1.3em!important;
 	}
 	.role-title {
 		margin-left: 20%;
 		margin-right: 20%;
+		margin-bottom: 0;
 	}
 	.remove-padding {
 		margin-top: 0!important;
 		margin-bottom: 0!important;
 	}
 	.steps.remove-padding {
-		margin-top: 20px!important;
+		margin-top: 10px!important;
 		margin-bottom: 10px!important;
 	}
 	.steps h2 {
-		font-size: 1.3em;
+		font-size: 1em;
 		margin-top: 10px;
 	}
 	.steps p {
-		font-size: .8em;
+		font-size: .7em;
 		margin-left: 10%;
 		margin-right: 10%;
 	}
@@ -1472,6 +1473,9 @@ a.svg {
 	}
 	.diamond-title-bottom {
 		margin-bottom: 20px!important;
+	}
+	.header {
+		padding-bottom: 0px;
 	}
 }
 
