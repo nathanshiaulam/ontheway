@@ -3,7 +3,7 @@ var router = express.Router();
 
 /* GET about page. */
 router.get('/', function(req, res, next) {
-   		res.render('privacy', { title: 'ontheway' });
+   		res.render('privacy', { title: 'Ontheway' });
 });
 
 module.exports = router;
