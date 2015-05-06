@@ -1490,13 +1490,19 @@ a.svg {
 	    background-color:#fff;
 	  	border-radius: 10px 10px 10px 10px;
 	  	box-shadow: 0 0 25px 5px #999;
-	  	width: 350px;
+	  	width: 330px;
 	  	padding: 25px;
 	    color:#000;
 	    display:none; 
 	    padding:15px;
 	    min-height: 180px;
 	    text-align:center;
+	}
+	#element_to_pop_up .app-buttons {
+		padding-top: 0px!important;
+	}
+	#element_to_pop_up li {
+		padding-bottom: 10px;
 	}
 }
 
