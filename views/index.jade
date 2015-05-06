@@ -48,7 +48,8 @@ block content
             div.headerText
                 h2.sub-header.wow.fadeInUp(data-wow-delay=".4s") The world's first peer-to-peer delivery network.
                 h3.sub-sub-header.wow.fadeInUp(data-wow-duration=".8s",data-wow-delay=".7s") Get paid for going where you're already going.
-                h3.sub-sub-header.wow.fadeInUp(data-wow-duration=".8s",data-wow-delay="1s") No middlemen. No detours. No cuts.
+                h3.sub-sub-header.other-stuff.wow.fadeInUp(data-wow-duration=".8s",data-wow-delay="1s") No middlemen. No detours. 
+                h3.sub-sub-header.no-cuts.wow.fadeInUp(data-wow-duration=".8s",data-wow-delay="1s")  No cuts.
                 div.wow.fadeIn.app-buttons(data-wow-duration=".5s",data-wow-delay="1.3s")
                     a(href='https://itunes.apple.com/us/app/ontheway./id979445666?mt=8&uo=6&at=&ct=', target="_blank")
                         img.download-button.apple(src="images/appledownload.svg" onerror="this.src='images/appledownload.png'")
@@ -164,6 +165,7 @@ block script
               $(".app-buttons").addClass("relative");
               $(".non-diamond").addClass("no-background");
               $(".non-diamond").addClass("fixed");
+              $(".sub-sub-header").removeClass("no-cuts");
               particlesJS('particles-js', {
               particles: {
                 color: '#fff',

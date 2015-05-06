@@ -2,6 +2,7 @@
 @import url('fonts.css');
 
 
+
 /*-------Global Classes--------*/
 
 .no-background {
@@ -789,7 +790,7 @@ a.svg {
 	}
 	.example-image img{
 		display: block;
-		width: 80%;
+		width: 65%;
 		margin: auto;
 	}
 }
@@ -1162,6 +1163,12 @@ a.svg {
 	}
 
 }
+.no-cuts {
+	display: inline;
+}
+.other-stuff{
+	display: inline;
+}
 .q-and-a-text{ 
 	display: inline-block;	
 }
@@ -1404,3 +1411,56 @@ a.svg {
   	padding-bottom: 0px;
 
 }
+
+/*--------Mobile CSS-----------*/
+
+@media only screen and (max-device-width: 568px) and (min-device-width: 320px) {
+	h1 {
+		font-size: 1.5em!important;
+	}
+	.role-title {
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+	.remove-padding {
+		margin-top: 0!important;
+		margin-bottom: 0!important;
+	}
+	.steps.remove-padding {
+		margin-top: 20px!important;
+		margin-bottom: 10px!important;
+	}
+	.steps h2 {
+		font-size: 1.3em;
+		margin-top: 10px;
+	}
+	.steps p {
+		font-size: .8em;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.process-container {
+		padding-top: 0;
+	}
+	.about-info {
+		font-size: .9em;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+	.contact-main-head {
+		font-size: 2.5em;
+	}
+	.contact-info .contact-name {
+		font-size: 1.4em;
+	}
+	#page-header {
+		padding-top: 80px;
+	}
+	.terms-section {
+	  font-size: 1em;
+	  margin-left: 10px;
+	  margin-right: 10px;
+	}
+}
+
+
