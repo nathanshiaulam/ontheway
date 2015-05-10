@@ -1095,61 +1095,84 @@ a.svg {
 	color: #d8433d;
 	font-size: 2.5em;
 }
+
 .about-section {
 	text-align: center;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
+
 .about-section img.inline {
 	padding-bottom: 10px;
   	padding-right: 10px;
 }
+
 .col-md-8 .about-title {
 	margin-bottom: 10px;
 	text-align: left;
 }
+
 .gray .about-section {
 	margin-top: 40px;
 }
+
 .about-section .fa-check-square {
 	padding-right: 20px;
 	font-size: 2.1em;
 	color: #d8433d;
 }
+
 .about-image {
 	height: auto;
 	width: 60%;
 	margin-left: auto;
 	display: block;
 }
+
 .about-title {
 	margin-top: 0px;
 	margin-bottom: 10px;
 	text-align: center;
 }
+
 .about-info {
 	font-size: 1.2em;
 	line-height: 1.7;
 	margin-left: 15%;
 	margin-right: 15%;
 }
+
 .desc-section .about-info {
 	padding-top: 10px;
 }
+
 .desc-section {
 	/*padding-top: 20px;*/
 	padding-bottom: 30px;
 }
+
 .desc-section ul {
 	padding-top: 10px;
 }
+
 .desc-section li {
 	margin-right: 15%;
 }
+
 .with-pic {
 	margin-left: 0;
 }
 
+.icon-steps-container {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.icon-step .fa {
+	display: block;
+	text-align: center;
+	color: #d8433d;
+	font-size: 4em;
+}
 .about-header-container.mobile-header {
 	padding-top:60px;
 	padding-bottom: 10px;
