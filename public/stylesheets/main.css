@@ -1226,6 +1226,9 @@ a.svg {
 		padding-top: 10px;
 		padding-bottom: 10px;
 	}
+	.icon-step .fa {
+		font-size: 3em;
+	}
 
 }
 
@@ -1234,16 +1237,24 @@ a.svg {
 /*--------FAQ CSS--------*/
 .faq-sub-section {
 	padding-bottom: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
 }
-.faq-sub-section h1{
+.faq-sub-section .faq-sub-header{
 	font-size: 2.5em;
-	margin-top: 0px;
-	margin-bottom: 30px;
-	border-bottom: 2px solid black;
-	display: inline-block;
+	padding-top: 30px;
+	margin-top: 0;
+	text-align: center;
+}
+.faq-header-container {
+	text-align: center;
+	padding-top: 20px;
+}
+.faq-header-container.mobile-header {
+	padding-top:70px;
+	padding-bottom: 0px;
 }
 .q-and-a-box {
-	padding-bottom: 20px;
 	padding-top: 20px;
 }
 .q-and-a-box .q-and-a {
@@ -1254,9 +1265,9 @@ a.svg {
 	padding: 0;
 	margin: 0;
 }
-	.getPaid {
-		margin-bottom: 20px;
-	}
+.getPaid {
+	margin-bottom: 20px;
+}
 .q-and-a-bullet-normal{
 	background: url(../images/pathsIcon_red.jpg) no-repeat left;
 	padding-left: 58px;
@@ -1274,22 +1285,32 @@ a.svg {
 	background: url(../images/composePath_red.jpg) no-repeat left;
 	padding-left: 58px;
 }
+
+.answer {
+	font-size: 1.1em;
+	line-height: 1.5;
+	margin-top: 0;
+	padding-top: 10px;
+	padding-left: 60px;
+	padding-bottom: 20px;
+}
+
 @media only screen and (max-device-width: 568px) and (min-device-width: 320px) {
 	.q-and-a-bullet-normal{
 		background: url(../images/pathsIcon_red.jpg) no-repeat left;
-		padding-left: 58px;
+		padding-left: 50px;
 	}
 	.q-and-a-bullet-cash{
 		background: url(../images/transactions_red.jpg) no-repeat left;
-		padding-left: 58px;
+		padding-left: 50px;
 	}
 	.q-and-a-bullet-scroll{
 		background: url(../images/scroll_red.jpg) no-repeat left;
-		padding-left: 58px;
+		padding-left: 50px;
 	}
 	.q-and-a-bullet-path{
 		background: url(../images/composePath_red.jpg) no-repeat left;
-		padding-left: 58px;
+		padding-left: 50px;
 		padding-bottom: 10px;
 	}
 	li .question {
@@ -1298,6 +1319,27 @@ a.svg {
 		display: inline;
 		font-size: 22px;
 		padding-top: 10px;
+	}
+	.faq-sub-section .faq-sub-header{
+		font-size: 1.8em;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		margin-top: 0;
+		text-align: center;
+	}
+	.answer {
+		font-size: 1em;
+		padding-left: 50px;
+		padding-bottom: 10px;
+	}
+	.faq-sub-section {
+		padding-bottom: 0px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	#footer {
+		  padding-top: 15px;
+
 	}
 
 }
@@ -1318,15 +1360,6 @@ a.svg {
 	font-weight: 500;
 	display: inline;
 	font-size: 25px;
-}
-
-.answer {
-	font-size: 1.1em;
-	line-height: 1.5;
-	margin-top: 0;
-	padding-top: 10px;
-	padding-left: 86px;
-	padding-bottom: 20px;
 }
 
 /*iphone5*/

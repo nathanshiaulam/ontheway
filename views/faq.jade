@@ -1,15 +1,14 @@
 extends layout
 block content 
     div
-        div.padding-container
-            div.container-fluid.container-no-padding
-                div.about-header-container
-                    h2.about-header FAQ
+        div.container-fluid.container-no-padding
+            div.faq-header-container
+                h2.about-header FAQ
         div
-            div.container.q-and-a-box
+            div.container-fluid.container-no-padding
                 ul.no-bullet
                     div.faq-sub-section
-                        h1 General 
+                        h2.faq-sub-header The Basics    
                         li.q-and-a-bullet-normal
                             h2.question What is Ontheway?
                         p.answer 
@@ -28,53 +27,54 @@ block content
                             |offering a slightly higher delivery fee to incentivize people to go out of their way for you. <br/><br/>
                             |If you're about to go somewhere: set a path. We'll automatically match you with requests that are as ontheway 
                             |for you as possible. We strive to maximize your profit/effort ratio.
+                    div.gray
+                        div.faq-sub-section
+                            h2.faq-sub-header Payment Process
+                            li.q-and-a-bullet-cash
+                                h2.question Do I need to have Venmo/Paypal/cash?
+                            p.answer 
+                                |Ontheway is an all-in-one app which you can use to request, deliver, set your path, get matched, 
+                                |track progress, navigate roads, pay for and get paid for local items delivered. There's no need 
+                                |for you to have exact change on hand, and there's no need to try to find your deliverer on Venmo or Paypal. 
+                                |It's all handled in one app -- quick, simple, and easy.
+                            li.q-and-a-bullet-cash
+                                h2.question Are there restrictions on deposits/withdrawals?
+                            p.answer 
+                                |Nope!
+                            li.q-and-a-bullet-cash
+                                h2.question How do I deposit funds?
+                            p.answer 
+                                |You can deposit funds via debit or credit card. Deposits are instantaneous.
+                            li.q-and-a-bullet-cash
+                                h2.question How do I withdraw funds?
+                            p.answer 
+                                |You can withdraw funds directly to your debit card or to your bank account. 
+                                |Withdrawals take less than 48 hours.
+                            li.q-and-a-bullet-cash
+                                h2.question I am delivering something through Ontheway. Does Ontheway take a fee?
+                            p.answer 
+                                |No. The payment offer you see list is the payment you receive.
+                            li.q-and-a-bullet-cash
+                                h2.question Are you serious?
+                            p.answer 
+                                |Yes.
+                            li.q-and-a-bullet-cash
+                                h2.question I am requesting a delivery. How do I pay upon completion? 
+                            p.answer 
+                                |Open the relevant cell in the In-Progress tab on the Home page. 
+                                |Once you have viewed the receipt for the items and have verified that the price the deliverer 
+                                |entered matches the receipt, press Confirm Transaction and you're done!
+                            li.q-and-a-bullet-cash
+                                h2.question I am delivering an order. How do I get paid upon completion?
+                            p.answer 
+                                |Open the relevant cell in the In-Progress tab on the Home page. 
+                                |Once you've purchased the items, enter the price on the receipt and, when prompted, 
+                                |take a picture of the receipt. We'll automatically notify the requester so he/she can 
+                                |verify that you've entered the correct price. Once you hand over the items to your 
+                                |requester, we'll automatically reimburse you for the price of the items and give you 
+                                |the delivery fee you earned.
                     div.faq-sub-section
-                        h1 Payment Process
-                        li.q-and-a-bullet-cash
-                            h2.question Do I need to have Venmo/Paypal/cash?
-                        p.answer 
-                            |Ontheway is an all-in-one app which you can use to request, deliver, set your path, get matched, 
-                            |track progress, navigate roads, pay for and get paid for local items delivered. There's no need 
-                            |for you to have exact change on hand, and there's no need to try to find your deliverer on Venmo or Paypal. 
-                            |It's all handled in one app -- quick, simple, and easy.
-                        li.q-and-a-bullet-cash
-                            h2.question Are there restrictions on deposits/withdrawals?
-                        p.answer 
-                            |Nope!
-                        li.q-and-a-bullet-cash
-                            h2.question How do I deposit funds?
-                        p.answer 
-                            |You can deposit funds via debit or credit card. Deposits are instantaneous.
-                        li.q-and-a-bullet-cash
-                            h2.question How do I withdraw funds?
-                        p.answer 
-                            |You can withdraw funds directly to your debit card or to your bank account. 
-                            |Withdrawals take less than 48 hours.
-                        li.q-and-a-bullet-cash
-                            h2.question I am delivering something through Ontheway. Does Ontheway take a fee?
-                        p.answer 
-                            |No. The payment offer you see list is the payment you receive.
-                        li.q-and-a-bullet-cash
-                            h2.question Are you serious?
-                        p.answer 
-                            |Yes.
-                        li.q-and-a-bullet-cash
-                            h2.question I am requesting a delivery. How do I pay upon completion? 
-                        p.answer 
-                            |Open the relevant cell in the In-Progress tab on the Home page. 
-                            |Once you have viewed the receipt for the items and have verified that the price the deliverer 
-                            |entered matches the receipt, press Confirm Transaction and you're done!
-                        li.q-and-a-bullet-cash
-                            h2.question I am delivering an order. How do I get paid upon completion?
-                        p.answer 
-                            |Open the relevant cell in the In-Progress tab on the Home page. 
-                            |Once you've purchased the items, enter the price on the receipt and, when prompted, 
-                            |take a picture of the receipt. We'll automatically notify the requester so he/she can 
-                            |verify that you've entered the correct price. Once you hand over the items to your 
-                            |requester, we'll automatically reimburse you for the price of the items and give you 
-                            |the delivery fee you earned.
-                    div.faq-sub-section
-                        h1 Paths
+                        h2.faq-sub-header Paths
                         li.q-and-a-bullet-path
                             h2.question What is a Path?
                         p.answer 
@@ -96,59 +96,60 @@ block content
                             |When you claim a delivery request, we automatically update your Path to include the store 
                             |and delivery location you're heading to. That means that if you didn't already have a Path, 
                             |we made a new one for you!
-                    div.faq-sub-section
-                        h1 Requests
-                        li.q-and-a-bullet-scroll
-                            h2.question How do I browse local requests?
-                        p.answer 
-                            |The Requests tab (left) on the Home page shows all the unclaimed requests in the area. 
-                        li.q-and-a-bullet-scroll
-                            h2.question How do I request a delivery?
-                        p.answer 
-                            |Press the Create Request button in the top right corner of the Requests tab on the Home page. 
-                            |Describe what you want and where you need it delivered. Your request will be automatically 
-                            |sent to every relevant local Path so it can get claimed as fast as possible. 
-                        li.q-and-a-bullet-scroll
-                            h2.question What if my deliverer never shows up?
-                        p.answer 
-                            |If your deliverer claimed your order and made no further actions, we will punish the 
-                            |deliverer accordingly and also reward you with up to $3 as an apology. <br><br/>
-                            |If your deliverer claims to have purchased the items but never shows up, you have 
-                            |the option of reporting him/her once the deadline is over. We highly recommend that you 
-                            |do this once you've already tried to contact them (via message or phone) multiple times. 
-                            |We will review each case carefully and take the appropriate actions.     
-                        li.q-and-a-bullet-scroll
-                            h2.question What if my requester never shows up?
-                        p.answer 
-                            |If your requester never shows up to the meeting spot, you have the option of reporting him/her 
-                            |once the deadline is over. We highly recommend that you do this once you've already tried to 
-                            |contact them (via message or phone) multiple times. If you uploaded a receipt of the purchase, 
-                            |we will look at that receipt to verify that you indeed did make the purchase. We can't guarantee 
-                            |that you'll get all of your money back, but we will always reimburse you for the majority of the 
-                            |cost of the items, which you can keep, return, or resell! You will also get the agreed upon delivery fee, 
-                            |regardless.
-                        li.q-and-a-bullet-scroll
-                            h2.question How many requests can I claim at once?
-                        p.answer 
-                            |Depending on what your deliverer rating is, you will be able to accept anywhere from 2 to 8 requests 
-                            |at once. Someone with a deliverer rating of 50 will be able to accept 5 requests at once.
-                        li.q-and-a-bullet-scroll
-                            h2.question How many requests can I make at once?
-                        p.answer 
-                            |You can make as many requests at once as you want! Just keep in mind that we take the delivery fee 
-                            |from your account for holding while your request is active, so you'd need enough funds in your account 
-                            |to cover all the delivery fees.
-                        li.q-and-a-bullet-scroll
-                            h2.question Can I use this app to both post requests as well as make deliveries?
-                        p.answer 
-                            |Yes.
-                        li.q-and-a-bullet-scroll
-                            h2.question Can I request/deliver alcohol or tobacco?
-                        p.answer 
-                            |No. We want to make sure that our deliverers are not 
-                            |unintentionally providing underage requesters with alcohol. 
-                            |You will be held responsible for the legal repercussions if you decide 
-                            |to request/deliver alcohol - we will not be liable.
+                    div.gray
+                        div.faq-sub-section
+                            h2.faq-sub-header Requests
+                            li.q-and-a-bullet-scroll
+                                h2.question How do I browse local requests?
+                            p.answer 
+                                |The Requests tab (left) on the Home page shows all the unclaimed requests in the area. 
+                            li.q-and-a-bullet-scroll
+                                h2.question How do I request a delivery?
+                            p.answer 
+                                |Press the Create Request button in the top right corner of the Requests tab on the Home page. 
+                                |Describe what you want and where you need it delivered. Your request will be automatically 
+                                |sent to every relevant local Path so it can get claimed as fast as possible. 
+                            li.q-and-a-bullet-scroll
+                                h2.question What if my deliverer never shows up?
+                            p.answer 
+                                |If your deliverer claimed your order and made no further actions, we will punish the 
+                                |deliverer accordingly and also reward you with up to $3 as an apology. <br><br/>
+                                |If your deliverer claims to have purchased the items but never shows up, you have 
+                                |the option of reporting him/her once the deadline is over. We highly recommend that you 
+                                |do this once you've already tried to contact them (via message or phone) multiple times. 
+                                |We will review each case carefully and take the appropriate actions.     
+                            li.q-and-a-bullet-scroll
+                                h2.question What if my requester never shows up?
+                            p.answer 
+                                |If your requester never shows up to the meeting spot, you have the option of reporting him/her 
+                                |once the deadline is over. We highly recommend that you do this once you've already tried to 
+                                |contact them (via message or phone) multiple times. If you uploaded a receipt of the purchase, 
+                                |we will look at that receipt to verify that you indeed did make the purchase. We can't guarantee 
+                                |that you'll get all of your money back, but we will always reimburse you for the majority of the 
+                                |cost of the items, which you can keep, return, or resell! You will also get the agreed upon delivery fee, 
+                                |regardless.
+                            li.q-and-a-bullet-scroll
+                                h2.question How many requests can I claim at once?
+                            p.answer 
+                                |Depending on what your deliverer rating is, you will be able to accept anywhere from 2 to 8 requests 
+                                |at once. Someone with a deliverer rating of 50 will be able to accept 5 requests at once.
+                            li.q-and-a-bullet-scroll
+                                h2.question How many requests can I make at once?
+                            p.answer 
+                                |You can make as many requests at once as you want! Just keep in mind that we take the delivery fee 
+                                |from your account for holding while your request is active, so you'd need enough funds in your account 
+                                |to cover all the delivery fees.
+                            li.q-and-a-bullet-scroll
+                                h2.question Can I use this app to both post requests as well as make deliveries?
+                            p.answer 
+                                |Yes.
+                            li.q-and-a-bullet-scroll
+                                h2.question Can I request/deliver alcohol or tobacco?
+                            p.answer 
+                                |No. We want to make sure that our deliverers are not 
+                                |unintentionally providing underage requesters with alcohol. 
+                                |You will be held responsible for the legal repercussions if you decide 
+                                |to request/deliver alcohol - we will not be liable.
 
 
 
