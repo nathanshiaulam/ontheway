@@ -1245,6 +1245,7 @@ a.svg {
 	padding-top: 30px;
 	margin-top: 0;
 	text-align: center;
+	padding-bottom: 10px;
 }
 .faq-header-container {
 	text-align: center;
@@ -1387,7 +1388,7 @@ a.svg {
 		background: none;
 	}
 	#footer {
-		padding-top: 21px;
+		padding-top: 25px;
 	}
 }
 
