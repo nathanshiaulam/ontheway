@@ -46,9 +46,20 @@
 		max-height: 840px;
 	}
 }
+.cover {
+	font-family: 'lh_line1_sansthin'!important;
+}
 * {
-	font-family: 'lh_line1_sansthin';
-
+	font-family: "sourcesanspro_light";
+}
+.lane-narrow {
+	font-family: 'lane_narrowregular'!important
+}
+.noto_regular {
+	font-family: "NotoSansRegular"!important;
+}
+.lh_line_font {
+	font-family: 'lh_line1_sansthin'!important;
 }
 ul {
 	list-style: none;
@@ -333,7 +344,7 @@ a:hover{
 
 .navbar #myNav .nav-item a {
 	color: white;
-	font-size: 15px;
+	font-size: 18px;
 	padding-top: 16px;
 	padding-bottom: 2px;
 	margin: 0 5px;
@@ -944,7 +955,7 @@ a.svg {
 .contact-info .info-list .info-item a
  {
  	color:  #d8433d;
-	font-size: .9em;
+	font-size: 1.1em;
 }
 .contact-info .info-list p#roleinfo.info-item {
 	color: black;
@@ -1062,7 +1073,7 @@ a.svg {
 	font-family: 'lane_narrowregular'!important
 }
 #faq-link {
-	font-size: 1.1em;
+	font-size: 1.3em;
 	padding-top: 20px;
 }
 
@@ -1206,6 +1217,11 @@ a.svg {
 	  	font-size: 1.5em;
 	  	color: #d8433d;
 	}
+	.desc-section .about-image {
+		width: 40%;
+		margin-left:auto;
+		margin-right: auto;
+	}
 	.desc-section {
 		padding-bottom: 10px;
 	}
@@ -1236,16 +1252,18 @@ a.svg {
 
 /*--------FAQ CSS--------*/
 .faq-sub-section {
-	padding-bottom: 20px;
-	margin-left: 10%;
-	margin-right: 10%;
+  padding-bottom: 20px;
+  margin-left: 12%;
+  margin-right: 12%;
 }
 .faq-sub-section .faq-sub-header{
-	font-size: 2.5em;
+	font-size: 2.2em;
 	padding-top: 30px;
 	margin-top: 0;
 	text-align: center;
 	padding-bottom: 10px;
+	font-family: "NotoSansRegular";
+
 }
 .faq-header-container {
 	text-align: center;
@@ -1283,13 +1301,14 @@ a.svg {
 	padding-left: 58px;
 }
 .q-and-a-bullet-path{
-	background: url(../images/composePath_red.jpg) no-repeat left;
+	background: url(../images/composePath.svg) no-repeat left;
 	padding-left: 58px;
+	background-size: 25px 25px;
 }
 
 .answer {
-	font-size: 1.1em;
-	line-height: 1.5;
+	font-size: 1.2em;
+	line-height: 1.4;
 	margin-top: 0;
 	padding-top: 10px;
 	padding-left: 60px;
@@ -1310,10 +1329,11 @@ a.svg {
 		padding-left: 50px;
 	}
 	.q-and-a-bullet-path{
-		background: url(../images/composePath_red.jpg) no-repeat left;
+		background: url(../images/composePathSmaller.svg) no-repeat left;
 		padding-left: 50px;
-		padding-bottom: 10px;
+		background-size: 25px 25px;
 	}
+
 	li .question {
 		font-weight: 500;
 		margin-bottom: 8px;
