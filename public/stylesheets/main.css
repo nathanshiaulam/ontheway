@@ -1292,13 +1292,14 @@ a.svg {
 	padding-left: 58px;
 }
 .q-and-a-bullet-cash{
-	background: url(../images/transactions_red.jpg) no-repeat left;
+	background: url(../images/transactions.svg) no-repeat left;
 	padding-left: 58px;
-	padding-top:3px;
+	background-size: 25px 25px;
 }
 .q-and-a-bullet-scroll{
-	background: url(../images/scroll_red.jpg) no-repeat left;
+	background: url(../images/scroll.svg) no-repeat left;
 	padding-left: 58px;
+	background-size: 25px 25px;
 }
 .q-and-a-bullet-path{
 	background: url(../images/composePath.svg) no-repeat left;
@@ -1321,12 +1322,14 @@ a.svg {
 		padding-left: 50px;
 	}
 	.q-and-a-bullet-cash{
-		background: url(../images/transactions_red.jpg) no-repeat left;
+		background: url(../images/transactions.svg) no-repeat left;
 		padding-left: 50px;
+		background-size: 25px 25px;
 	}
 	.q-and-a-bullet-scroll{
-		background: url(../images/scroll_red.jpg) no-repeat left;
+		background: url(../images/scroll.svg) no-repeat left;
 		padding-left: 50px;
+		background-size: 25px 25px;
 	}
 	.q-and-a-bullet-path{
 		background: url(../images/composePathSmaller.svg) no-repeat left;
