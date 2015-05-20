@@ -464,7 +464,11 @@ a:hover{
 .value-prop p {
 	height: 7rem;
 }
-
+@media (min-width: 768px) {
+	.value-prop p {
+		height: 10rem;
+	}
+}
 
 @media only screen and (max-device-width: 568px) and (min-device-width: 320px) {
 	.value-prop img {
