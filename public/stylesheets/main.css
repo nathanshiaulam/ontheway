@@ -417,6 +417,9 @@ a:hover{
 .container-small, .container-large {
     max-width: 100%;
 }
+.path-small {
+	font-size: 1.1em;
+}
 @media (min-width: 768px) {
     .container-small {
         width: 750px;
