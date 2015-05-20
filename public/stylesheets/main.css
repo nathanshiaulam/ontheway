@@ -414,6 +414,71 @@ a:hover{
 
 /*-------Index CSS--------*/
 
+.container-small, .container-large {
+    max-width: 100%;
+}
+@media (min-width: 768px) {
+    .container-small {
+        width: 750px;
+    }
+    .container-large {
+        width: 970px;
+    }
+}
+@media (min-width: 992px) {
+    .container-small {
+        width: 970px;
+    }
+    .container-large {
+        width: 1170px;
+    }
+}
+@media (min-width: 1200px) {
+    .container-small {
+        width: 970px;
+    }
+}
+
+
+.value-prop-in-threes {
+	text-align: center;
+	list-style-type: none;
+	padding: 0;
+}
+.value-prop {
+	max-width: 450px;
+	margin: .5em auto;
+}
+.value-prop img {
+	max-height: 100vh;
+	max-width: 100%;
+	display: block;
+	margin: auto;
+}
+.value-prop h2 {
+	font-size: 2em;
+}
+.value-prop p {
+	height: 7rem;
+}
+
+
+@media only screen and (max-device-width: 568px) and (min-device-width: 320px) {
+	.value-prop img {
+		max-height: 80vh;
+	}
+	.value-prop p.about-info {
+		height: 5rem;
+		font-size: 1.3em;
+		padding-top: 0;
+	}
+
+}
+@media only screen and (min-device-width: 601px) and (min-width: 601px) {
+	.value-prop img {
+	  	max-height: auto;
+	}
+}
 .box .logo {
 	height: 30vh;
 	position: relative;
@@ -454,6 +519,12 @@ a:hover{
 	font-size: 2.35em;
 }
 
+.about-header-container.index-about {
+	padding-bottom: 10px;
+}
+.about-header.index-about {
+	margin-bottom: 0px;
+}
 .app-buttons {
 	padding-top: 50px;
 }
@@ -1144,6 +1215,7 @@ a.svg {
 	margin-top: 0px;
 	margin-bottom: 10px;
 	text-align: center;
+	color: #d8433d;
 }
 
 .about-info {
@@ -1161,7 +1233,9 @@ a.svg {
 	/*padding-top: 20px;*/
 	padding-bottom: 30px;
 }
-
+.desc-section.about-desc {
+	padding-bottom: 10px;
+}
 .desc-section ul {
 	padding-top: 10px;
 }
@@ -1315,7 +1389,16 @@ a.svg {
 	padding-left: 60px;
 	padding-bottom: 20px;
 }
+.paragraph {
+	margin-bottom: 10px;
+	margin-top: 0;	
+	padding-bottom: 0;
+}
+.paragraph.paragraph2 {
+	padding-top: 0;
+	padding-bottom: 20px;
 
+}
 @media only screen and (max-device-width: 568px) and (min-device-width: 320px) {
 	.q-and-a-bullet-normal{
 		background: url(../images/pathsIcon_red.jpg) no-repeat left;

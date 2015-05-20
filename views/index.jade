@@ -12,8 +12,6 @@ block nav
                 div.main-menu-container
                     ul#myNav.nav.navbar-nav.navbar-right.collapse.navbar-collapse.no-transition
                         li.nav-item
-                            a.underline(href='/about') About
-                        li.nav-item
                             a.underline(href='/faq') FAQ
                         //- li.nav-item
                         //-     a.underline(href='/terms') Terms
@@ -56,72 +54,167 @@ block content
                         img.download-button.apple(src="images/appledownload.svg" onerror="this.src='images/appledownload.png'")
                     a(href='https://play.google.com/store/apps/details?id=innovations.enroute.jjiang.ontheway', target="_blank")
                         img.download-button.android(src='images/androiddownload.png')
-    div.full-page.white 
-        div#process
-            div.container-fluid.remove-padding.process-container
-                div.col-md-6.header.wow.fadeInLeft.remove-padding
-                    h1.role-title Place an Order
-                    div.steps.container-fluid.remove-padding
-                        div.col-md-6.remove-padding
-                            div.step-text.left.wow.fadeInLeft
-                                h2 Add a Request
-                                p 
-                                    |Write a description of what you’re looking 
-                                    |for and set a delivery fee.
-                        div.col-md-6.remove-padding
-                            div.example-image.wow.fadeInLeft
-                                img(src='/images/sp1.png')
-                    div.steps.diamonds.container-fluid.remove-padding
-                        div.col-md-6.remove-padding
-                            div.step-text.left.wow.fadeInLeft
-                                h2.diamond-title Verify the Receipt
-                                p 
-                                    |Review the receipt your deliverer uploads 
-                                    |once the items are purchased.
-                        div.col-md-6.remove-padding
-                            div.example-image.wow.fadeInLeft.diamond-phone
-                                img(src='/images/sp2.png')
-                    div.steps.container-fluid.remove-padding
-                        div.col-md-6.remove-padding
-                            div.step-text.left.wow.fadeInLeft
-                                h2 Complete the Order
-                                p 
-                                    |One tap.<br>Easy.
-                        div.col-md-6.remove-padding
-                            div.example-image.wow.fadeInLeft
-                                img(src='/images/sp3.png')
-                div.col-md-6.header.wow.fadeInRight.remove-padding
-                    h1.role-title Make a Delivery
-                    div.border-image.steps.container-fluid.remove-padding
-                        div.col-md-6.remove-padding.left-image
-                            div.example-image.wow.fadeInRight
-                                img(src='/images/sm1.png')
-                        div.col-md-6.remove-padding.left-text
-                            div.step-text.right.wow.fadeInRight
-                                h2 Claim a Request
-                                p 
-                                    |Find a request that’s ontheway for you, 
-                                    |or let us find one for you.
-                    div.steps.diamonds.container-fluid.remove-padding
-                        div.col-md-6.remove-padding.left-image
-                            div.example-image.wow.fadeInRight.diamond-phone-bottom
-                                img(src='/images/sm2.png')
-                        div.col-md-6.remove-padding.left-text
-                            div.step-text.right.wow.fadeInRight
-                                h2.diamond-title-bottom Set Your Path
-                                p 
-                                    |Let other people know where you're headed
-                                    |so that you can make more deliveries that
-                                    |are ontheway. 
-                    div.border-image.steps.container-fluid.remove-padding
-                        div.col-md-6.remove-padding.left-image
-                            div.example-image.wow.fadeInRight
-                                img(src='/images/sm3.png')
-                        div.col-md-6.remove-padding.left-text
-                            div.step-text.right.wow.fadeInRight
-                                h2 Get Paid
-                                p 
-                                    |Automatically.<br>Even easier.
+       div.padding-container
+          div.container-fluid.container-no-padding
+              div.about-header-container.index-about
+                  h2.index-about.about-header.noto_regular What We're All About
+               div.desc-section.about-desc
+                  div.about-section
+                      i.inline.fa.fa-check-square
+                      h1.inline.about-title Delivery Made Easy
+                  p.about-info.text-center
+                      |Ontheway lets anybody make <i>paid deliveries</i> and 
+                      |shop at local stores from the comfort of their homes. 
+                  div.icon-steps-container.container
+                      div.icon-step.col-md-4
+                          i.fa.fa-cart-plus
+                          p.about-info.text-center
+                              |Post a request describing what you need and someone nearby will deliver it to you.
+                      div.icon-step.col-md-4
+                          i.fa.fa-bicycle
+                          p.about-info.text-center
+                              |If you're out shopping, make a delivery and earn money Ontheway home.
+                      div.icon-step.col-md-4
+                          i.fa.fa-usd
+                          p.about-info.text-center
+                              |Tap a button to confirm and complete the transaction. Everyone wins!
+        div.container-fluid.container-no-padding.gray
+          div.desc-section
+              div.container.container-small
+                div.about-header-container.index-about
+                  h2.index-about.about-header.noto_regular Place an Order
+                div.value-prop-in-threes.row
+                  div.col-sm-4.value-prop
+                    h2 Add a Request
+                    p.about-info 
+                      |Describe what you're looking for 
+                      |and set a delivery fee.
+                    img(src='/images/sp1.png')
+                  div.col-sm-4.value-prop
+                    h2 Verify the Receipt
+                    p.about-info
+                      |Review the receipt to make sure they 
+                      |got your order right.
+                    img(src='/images/sp2.png')
+                  div.col-sm-4.value-prop
+                    h2 Complete the Order
+                    p.about-info 
+                      |One tap. <br>Easy.
+                    img(src='/images/sp3.png')
+        div.container-fluid.container-no-padding
+          div.desc-section
+              div.container.container-small
+                div.about-header-container.index-about
+                  h2.index-about.about-header.noto_regular Making a Delivery
+                div.value-prop-in-threes.row
+                  div.col-sm-4.value-prop
+                    h2 Claim a Request
+                    p.about-info 
+                      |Find a request that’s Ontheway for you
+                    img(src='/images/sm1.png')
+                  div.col-sm-4.value-prop
+                    h2 Get Connected
+                    p.about-info
+                      |We connect you with all other deliveries 
+                      |that are Ontheway
+                    img(src='/images/sm2.png')
+                  div.col-sm-4.value-prop
+                    h2 Get Paid
+                    p.about-info 
+                      |Automatically. <br>Even Easier.
+                    img(src='/images/sm3.png')
+        div.container-fluid.container-no-padding.gray
+          div.desc-section
+              div.container-fluid
+                  div.about-section
+                  div.row
+                      div.col-md-4
+                          img.about-image(src="images/pathssc.png")
+                      div.col-md-8
+                          h1.about-title.noto_regular Make Every Delivery Ontheway
+                          p.about-info.with-pic
+                              |We've designed Paths, a powerful tool that helps you make every delivery Ontheway. Just tell us where you're
+                              |headed, and we'll notify you of new requests that are Ontheway. 
+                              |There are two ways you can set a Path:
+                              ul.no-bullet
+                                  li.q-and-a-bullet-path
+                                      p 
+                                          |Manually set your Path. Tell everyone a place you know you'll be going in the near future, 
+                                          |and we'll notify you about requests Ontheway.
+                                  li.q-and-a-bullet-path 
+                                      p
+                                          |Claim an Request. If you already have a Path, we'll automatically update 
+                                          |it to include the store location and the delivery location. 
+                          p.about-info.with-pic
+                              |The more you deliver, the more money you make Ontheway. And you're probably making someone's life easier too,
+                              |so set those paths and get the most out of your time!
+
+    //- div.full-page.white 
+    //-     div#process
+    //-         div.container-fluid.remove-padding.process-container
+    //-             div.col-md-6.header.wow.fadeInLeft.remove-padding
+    //-                 h1.role-title Place an Order
+    //-                 div.steps.container-fluid.remove-padding
+    //-                     div.col-md-6.remove-padding
+    //-                         div.step-text.left.wow.fadeInLeft
+    //-                             h2 Add a Request
+    //-                             p 
+    //-                                 |Write a description of what you’re looking 
+    //-                                 |for and set a delivery fee.
+    //-                     div.col-md-6.remove-padding
+    //-                         div.example-image.wow.fadeInLeft
+    //-                             img(src='/images/sp1.png')
+    //-                 div.steps.diamonds.container-fluid.remove-padding
+    //-                     div.col-md-6.remove-padding
+    //-                         div.step-text.left.wow.fadeInLeft
+    //-                             h2.diamond-title Verify the Receipt
+    //-                             p 
+    //-                                 |Review the receipt your deliverer uploads 
+    //-                                 |once the items are purchased.
+    //-                     div.col-md-6.remove-padding
+    //-                         div.example-image.wow.fadeInLeft.diamond-phone
+    //-                             img(src='/images/sp2.png')
+    //-                 div.steps.container-fluid.remove-padding
+    //-                     div.col-md-6.remove-padding
+    //-                         div.step-text.left.wow.fadeInLeft
+    //-                             h2 Complete the Order
+    //-                             p 
+    //-                                 |One tap.<br>Easy.
+    //-                     div.col-md-6.remove-padding
+    //-                         div.example-image.wow.fadeInLeft
+    //-                             img(src='/images/sp3.png')
+    //-             div.col-md-6.header.wow.fadeInRight.remove-padding
+    //-                 h1.role-title Make a Delivery
+    //-                 div.border-image.steps.container-fluid.remove-padding
+    //-                     div.col-md-6.remove-padding.left-image
+    //-                         div.example-image.wow.fadeInRight
+    //-                             img(src='/images/sm1.png')
+    //-                     div.col-md-6.remove-padding.left-text
+    //-                         div.step-text.right.wow.fadeInRight
+    //-                             h2 Claim a Request
+    //-                             p 
+    //-                                 |Find a request that’s ontheway for you, 
+    //-                                 |or let us find one for you.
+    //-                 div.steps.diamonds.container-fluid.remove-padding
+    //-                     div.col-md-6.remove-padding.left-image
+    //-                         div.example-image.wow.fadeInRight.diamond-phone-bottom
+    //-                             img(src='/images/sm2.png')
+    //-                     div.col-md-6.remove-padding.left-text
+    //-                         div.step-text.right.wow.fadeInRight
+    //-                             h2.diamond-title-bottom Set Your Path
+    //-                             p 
+    //-                                 |Let other people know where you're headed
+    //-                                 |so that you can make more deliveries that
+    //-                                 |are ontheway. 
+    //-                 div.border-image.steps.container-fluid.remove-padding
+    //-                     div.col-md-6.remove-padding.left-image
+    //-                         div.example-image.wow.fadeInRight
+    //-                             img(src='/images/sm3.png')
+    //-                     div.col-md-6.remove-padding.left-text
+    //-                         div.step-text.right.wow.fadeInRight
+    //-                             h2 Get Paid
+    //-                             p 
+    //-                                 |Automatically.<br>Even easier.
     div.bottom-buttons.container-fluid.diamonds.remove-padding
       div.app-buttons.remove-padding-all
           a(href='https://itunes.apple.com/us/app/ontheway./id979445666?mt=8&uo=6&at=&ct=', target="_blank")

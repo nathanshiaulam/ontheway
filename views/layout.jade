@@ -24,8 +24,6 @@ html
                 div.main-menu-container
                     ul#myNav.nav.navbar-nav.navbar-right.collapse.navbar-collapse.no-transition
                         li.nav-item
-                            a.underline(href='/about') About
-                        li.nav-item
                             a.underline(href='/faq') FAQ
                         //- li.nav-item
                         //-     a.underline(href='/terms') Terms
@@ -85,6 +83,7 @@ html
         $("#contact-header").addClass("mobile-contact-header");
         $(".inverted-logo").addClass("mobile-margin-top");
         $(".about-header-container").addClass("mobile-header");
+        $(".index-about").removeClass("mobile-header");
         $(".faq-header-container").addClass("mobile-header");
     }
     Parse.initialize("zzxmLD2oQWhZZYG7fst95oV4gxRVUWC47dZAVTIT", "iPqBhzqkCZ1wxvFQAwGNr18LgEM7LnkUB7a1jfDu");
