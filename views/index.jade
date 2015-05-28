@@ -19,8 +19,8 @@ block nav
                         //-     a.underline(href='/privacy') Privacy
                         li.nav-item
                             a.underline(href='/contact') Contact
-                        li.nav-item.signup
-                            a(href='/login') Log In
+                        //- li.nav-item.signup
+                        //-     a(href='/login') Log In
 block content
     div.cover 
         div#element_to_pop_up
@@ -42,9 +42,9 @@ block content
         div.overlay
         div#particles-js 
         div.container.box
-            img.wow.fadeInDown.logo(src="images/all-white-main-logo.png", data-wow-delay=".2s")
-            hr.symbol.wow.fadeInUp
-            div.headerText
+            img.logo.remove(src="images/all-white-main-logo.png", data-wow-delay=".2s")
+            hr.symbol.wow.fadeInUp.remove
+            div.headerText.headerText-desktop
                 h2.sub-header.wow.fadeInUp.lh_line_font(data-wow-delay=".4s") The world's first peer-to-peer delivery network.
                 h3.sub-sub-header.getPaid.wow.fadeInUp.lh_line_font(data-wow-duration=".8s",data-wow-delay=".7s") Get paid for going where you're already going.
                 h3.sub-sub-header.other-stuff.wow.fadeInUp.lh_line_font(data-wow-duration=".8s",data-wow-delay="1s") No middlemen. No detours. 
@@ -261,6 +261,8 @@ block script
               $(".non-diamond").addClass("fixed");
                $(".no-cuts").addClass("no-cuts-mobile");
               $(".sub-sub-header").removeClass("no-cuts");
+              $(".headerText").removeClass("headerText-desktop");
+              $(".headerText").addClass("headerText-mobile");
 
               particlesJS('particles-js', {
               particles: {
@@ -325,6 +327,7 @@ block script
             });
         }
         else {
+          $(".remove").remove();
           $(".navbar").removeClass("relative");
               new WOW().init();
               particlesJS('particles-js', {
@@ -343,7 +346,7 @@ block script
                 },
                 size: 1,
                 size_random: true,
-                nb: 110,
+                nb: 80,
                 line_linked: {
                   enable_auto: true,
                   distance: 100,

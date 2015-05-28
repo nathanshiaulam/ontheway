@@ -13,17 +13,19 @@
 	position: absolute;
 	left: 0;
 	/*background:  rgb(205,51,51);*/
-	background: no-repeat left top url(../images/background-overlay.jpg);
+	background: no-repeat center center fixed url(../images/newbackground.jpg);
   	background-size: cover;
-  	height: 50%;
+  	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	height: 100vh;
   	width: 100%;
-  	max-height: 650px;
 	top: 0;
 	padding-bottom: 20px;
 }
 @media (max-width: 1168px) {
 	#particles-js {
-		max-height: 700px;
+		max-height: 600px;
 	}
 }
 @media (max-width: 768px) {
@@ -252,12 +254,15 @@ hr.symbol:after {
 }
 
 .cover {
-	background: no-repeat left top url(../images/background-overlay.jpg);
+	background: no-repeat left top url(../images/newbackground.png);
   	background-size: cover;
 	height: 82%;
 	min-height: 600px;
 	color: white;
 	/*background-color: rgba(0,0,0,.5);*/
+}
+.cover-mobile {
+	background: no-repeat left top url(../images/mobile-background.png)!important;
 }
 #other-cover {
 	color: black;
@@ -498,7 +503,15 @@ a:hover{
 }
 
 
-.headerText {
+.headerText-desktop {
+	display: block;
+  	text-align: center;
+  	font-family: 'lh_line1_sansthin'!important;
+  	width: 50%;
+  	float: right;
+  	padding-top: 3%;
+}
+.headerText-mobile {
 	display:block;
 	text-align: center;
     font-family: 'lh_line1_sansthin'!important;
@@ -937,80 +950,244 @@ a.svg {
 		width: 100%;
 		padding-top: 70px;
 		/*background-color: rgba(0,0,0,.2);*/
-		min-height: 700px;
+		min-height: 600px;
 	}
 	.cover {
 	  	background-size: cover;
-		height: 80%;
-		min-height: 700px;
+		height: 60%;
+		min-height: 600px;
+	}
+	.headerText-desktop {
+		width: 40%;
+	}
+	.headerText-desktop .sub-header {
+		font-size: 3em;
+	}
+	.headerText-desktop .sub-sub-header {
+		font-size: 2em;
+	}
+	.android {
+	  	padding-bottom: 31px;
+	 	margin-left: 20px;
+	  	width: auto;
+	  	height: 82px;
+	}
+	.apple {
+	  	padding-bottom: 31px;
+	  	height: 80px;
+	  	width: auto;
+	}
+}
+@media(max-width: 958px) {
+
+	.box {
+		width: 100%;
+		padding-top: 70px;
+		/*background-color: rgba(0,0,0,.2);*/
+		min-height: 500px;
+	}
+	.cover {
+	  	background-size: cover;
+		height: 60%;
+		min-height: 500px;
+	}
+	.headerText-desktop {
+		width: 40%;
+	}
+	
+	.app-buttons {
+		padding-top: 30px;
 	}
 
+}
+@media(max-width: 920px) {
+	.headerText-desktop {
+		padding-top: 1%;
+	}
+	.headerText-desktop .sub-header {
+		font-size: 2.8em;
+	}
+	.headerText-desktop .sub-sub-header {
+		font-size: 1.8em;
+	}
+	.app-buttons {
+		padding-top: 20px;
+	}
+	.android {
+	  	padding-bottom: 31px;
+	 	margin-left: 20px;
+	  	width: auto;
+	  	height: 75px;
+	}
+	.apple {
+	  	padding-bottom: 31px;
+	  	height: 75px;
+	  	width: auto;
+
+	}
+}
+@media(max-width: 800px) {
+	.headerText-desktop {
+		padding-top: 0;
+	}
+	.headerText-desktop .sub-header {
+		font-size: 2.3em;
+	}
+	.headerText-desktop .sub-sub-header {
+		font-size: 1.5em;
+	}
+	.android {
+	  	padding-bottom: 31px;
+	 	margin-left: 20px;
+	  	width: auto;
+	  	height: 70px;
+	}
+	.apple {
+	  	padding-bottom: 31px;
+	  	height: 70px;
+	  	width: auto;
+
+	}
 }
 @media(max-width: 768px) {
 	.box {
 		width: 100%;
 		padding-top: 70px;
 		/*background-color: rgba(0,0,0,.2);*/
-		min-height: 750px;
+		min-height: 400px;
 	}
 	.cover {
 	  	background-size: cover;
-		height: 80%;
-		min-height: 750px;
+		min-height: 400px;
+	}
+	.headerText-desktop {
+		padding-top: 0;
+		width: 45%;
+	}
+	.headerText-desktop .sub-header {
+		margin-top: 0;
+		font-size: 2.3em;
+	}
+	.headerText-desktop .sub-sub-header {
+		font-size: 1.5em;
+	}
+	.android {
+	  	padding-bottom: 31px;
+	 	margin-left: 20px;
+	  	width: auto;
+	  	height: 70px;
+	}
+	.apple {
+	  	padding-bottom: 31px;
+	  	height: 70px;
+	  	width: auto;
+
 	}
 } 
-@media(max-width: 605px) {
-	.cover {
-	  	background-size: cover;
-		height: 80%;
-		min-height: 700px;
-	}
+@media(max-width: 665px) {
 	.box {
 		width: 100%;
 		padding-top: 70px;
 		/*background-color: rgba(0,0,0,.2);*/
-		min-height: 700px;
+		min-height: 350px;
+	}
+	.cover {
+	  	background-size: cover;
+		min-height: 350px;
+	}
+	.headerText-desktop .sub-header {
+		margin-top: 0;
+		font-size: 2em;
+	}
+	.headerText-desktop .sub-sub-header {
+		font-size: 1.3em;
+	}
+	.android {
+	 	margin-left: 15px;
+	  	height: 65px;
+	}
+	.apple {
+	  	height: 65px;
+
 	}
 	.app-buttons {
 		padding-top: 20px!important;
 	}
 
 }
-@media(max-width: 425px) {
-	.cover {
-	  	background-size: cover;
-		height: 70%;
-		min-height: 700px;
-	}
+@media(max-width: 630px) {
 	.box {
 		width: 100%;
 		padding-top: 70px;
 		/*background-color: rgba(0,0,0,.2);*/
-		min-height: 700px;
+		min-height: 300px;
 	}
-
-}
-@media(max-width: 452px) {
-	.apple {
-		height: 70px;
+	.cover {
+	  	background-size: cover;
+		min-height: 300px;
+	}
+	.headerText-desktop .sub-header {
+		margin-top: 0;
+		font-size: 2em;
+	}
+	.headerText-desktop .sub-sub-header {
+		margin-top: 15px;
+		font-size: 1.3em;
+		margin-bottom: 5px;
 	}
 	.android {
-		height: 75px;
+	 	margin-left: 15px;
+	  	height: 65px;
 	}
+	.apple {
+	  	height: 65px;
 
-}
-@media(max-width: 357px) {
-
-	.box {
-		width: 100%;
-		position: absolute;
-		/*margin-top: 10%;*/
 	}
 	.app-buttons {
-		padding-top: 0!important;
+		padding-top: 10px!important;
+	}
+
+}
+@media(max-width: 564px) {
+	.box {
+		width: 100%;
+		padding-top: 70px;
+		/*background-color: rgba(0,0,0,.2);*/
+		min-height: 500px;
+	}
+	.cover {
+	  	background-size: cover;
+	  	background: no-repeat center center url(../images/newbackground-small.png);
+		min-height: 500px;
+	}
+	.headerText-desktop {
+		width: 100%;
+		padding-top: 4%;
+	}
+	.headerText-desktop .sub-header {
+		font-size: 3em;
+		margin-bottom: 1%;
+		margin-top: 10px;
+	}
+
+	.headerText-desktop .sub-sub-header {
+		font-size: 2em;
+	}
+	.app-buttons {
+		padding-top: 30px;
+	}	
+	.android {
+		padding-bottom: 31px;
+	    margin-left: 50px;
+	    width: auto;
+	  	height: 80px;
+	}
+	.apple {
+		padding-bottom: 31px;
+		height: 80px;
+	  	width: auto;
 	}
 }
-
 /*----------End-----------*/
 
 /*------Contact CSS-------*/
