@@ -42,13 +42,13 @@ block content
         div.overlay
         div#particles-js 
         div.container.box
-            img.logo.remove(src="images/all-white-main-logo.png", data-wow-delay=".2s")
-            hr.symbol.wow.fadeInUp.remove
+            img.logo.remove(src="images/all-white-main-logo.png")
+            hr.symbol.remove
             div.headerText.headerText-desktop
-                h2.sub-header.wow.fadeInUp.lh_line_font(data-wow-delay=".4s") The world's first peer-to-peer delivery network.
-                h3.sub-sub-header.getPaid.wow.fadeInUp.lh_line_font(data-wow-duration=".8s",data-wow-delay=".7s") Get paid for going where you're already going.
-                h3.sub-sub-header.other-stuff.wow.fadeInUp.lh_line_font(data-wow-duration=".8s",data-wow-delay="1s") No middlemen. No detours. 
-                h3.sub-sub-header.no-cuts.wow.fadeInUp.lh_line_font(data-wow-duration=".8s",data-wow-delay="1s")  No cuts.
+                h2.sub-header.wow.fadeInUp.noto_regular(data-wow-delay=".4s") The world's first peer-to-peer delivery network.
+                h3.sub-sub-header.getPaid.wow.fadeInUp.noto_regular(data-wow-duration=".8s",data-wow-delay=".7s") Get paid for going where you're already going.
+                h3.sub-sub-header.other-stuff.wow.fadeInUp.noto_regular(data-wow-duration=".8s",data-wow-delay="1s") No middlemen. No detours. 
+                h3.sub-sub-header.no-cuts.wow.fadeInUp.noto_regular(data-wow-duration=".8s",data-wow-delay="1s")  No cuts.
                 div.wow.fadeIn.app-buttons(data-wow-duration=".5s",data-wow-delay="1.3s")
                     a(href='https://itunes.apple.com/us/app/ontheway./id979445666?mt=8&uo=6&at=&ct=', target="_blank")
                         img.download-button.apple(src="images/appledownload.svg" onerror="this.src='images/appledownload.png'")
@@ -249,7 +249,8 @@ block script
               $(".symbol").addClass("relative");
               $(".headerText").addClass("relative");
               $(".app-buttons").addClass("relative");
-              $(".diamonds").addClass("relative");g
+              $(".diamonds").addClass("relative");
+              $(".remove").remove();
         }
 
         /* config dom id (optional) + config particles params */
