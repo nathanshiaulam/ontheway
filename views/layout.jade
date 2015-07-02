@@ -13,7 +13,7 @@ html
     block style
   body
     block nav
-        nav.diamonds.relative.navbar.navbar-default(role='navigation')
+        nav.red.relative.navbar.navbar-default(role='navigation')
             div#nav-box
                 div.navbar-header
                     button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#myNav')
@@ -25,15 +25,8 @@ html
                     ul#myNav.nav.navbar-nav.navbar-right.collapse.navbar-collapse.no-transition
                         li.nav-item
                             a.underline(href='/faq') FAQ
-                        //- li.nav-item
-                        //-     a.underline(href='/terms') Terms
-                        //- li.nav-item
-                        //-     a.underline(href='/privacy') Privacy
                         li.nav-item
                             a.underline(href='/contact') Contact
-                        //- li.signup.nav-item
-                        //-     a(href='/login') Log In
-                        
     div#wrapper
         block content
         div#content

@@ -1,4 +1,3 @@
-   //- geopoint visualization
 extends layout
 block nav
         nav.navbar.navbar-default.non-diamond(role='navigation')
@@ -13,14 +12,8 @@ block nav
                     ul#myNav.nav.navbar-nav.navbar-right.collapse.navbar-collapse.no-transition
                         li.nav-item
                             a.underline(href='/faq') FAQ
-                        //- li.nav-item
-                        //-     a.underline(href='/terms') Terms
-                        //- li.nav-item
-                        //-     a.underline(href='/privacy') Privacy
                         li.nav-item
                             a.underline(href='/contact') Contact
-                        //- li.nav-item.signup
-                        //-     a(href='/login') Log In
 block content
     div.cover 
         div#element_to_pop_up
@@ -148,74 +141,7 @@ block content
                           p.about-info.with-pic
                               |The more you deliver, the more money you make Ontheway. And you're probably making someone's life easier too,
                               |so set those paths and get the most out of your time!
-
-    //- div.full-page.white 
-    //-     div#process
-    //-         div.container-fluid.remove-padding.process-container
-    //-             div.col-md-6.header.wow.fadeInLeft.remove-padding
-    //-                 h1.role-title Place an Order
-    //-                 div.steps.container-fluid.remove-padding
-    //-                     div.col-md-6.remove-padding
-    //-                         div.step-text.left.wow.fadeInLeft
-    //-                             h2 Add a Request
-    //-                             p 
-    //-                                 |Write a description of what you’re looking 
-    //-                                 |for and set a delivery fee.
-    //-                     div.col-md-6.remove-padding
-    //-                         div.example-image.wow.fadeInLeft
-    //-                             img(src='/images/sp1.png')
-    //-                 div.steps.diamonds.container-fluid.remove-padding
-    //-                     div.col-md-6.remove-padding
-    //-                         div.step-text.left.wow.fadeInLeft
-    //-                             h2.diamond-title Verify the Receipt
-    //-                             p 
-    //-                                 |Review the receipt your deliverer uploads 
-    //-                                 |once the items are purchased.
-    //-                     div.col-md-6.remove-padding
-    //-                         div.example-image.wow.fadeInLeft.diamond-phone
-    //-                             img(src='/images/sp2.png')
-    //-                 div.steps.container-fluid.remove-padding
-    //-                     div.col-md-6.remove-padding
-    //-                         div.step-text.left.wow.fadeInLeft
-    //-                             h2 Complete the Order
-    //-                             p 
-    //-                                 |One tap.<br>Easy.
-    //-                     div.col-md-6.remove-padding
-    //-                         div.example-image.wow.fadeInLeft
-    //-                             img(src='/images/sp3.png')
-    //-             div.col-md-6.header.wow.fadeInRight.remove-padding
-    //-                 h1.role-title Make a Delivery
-    //-                 div.border-image.steps.container-fluid.remove-padding
-    //-                     div.col-md-6.remove-padding.left-image
-    //-                         div.example-image.wow.fadeInRight
-    //-                             img(src='/images/sm1.png')
-    //-                     div.col-md-6.remove-padding.left-text
-    //-                         div.step-text.right.wow.fadeInRight
-    //-                             h2 Claim a Request
-    //-                             p 
-    //-                                 |Find a request that’s ontheway for you, 
-    //-                                 |or let us find one for you.
-    //-                 div.steps.diamonds.container-fluid.remove-padding
-    //-                     div.col-md-6.remove-padding.left-image
-    //-                         div.example-image.wow.fadeInRight.diamond-phone-bottom
-    //-                             img(src='/images/sm2.png')
-    //-                     div.col-md-6.remove-padding.left-text
-    //-                         div.step-text.right.wow.fadeInRight
-    //-                             h2.diamond-title-bottom Set Your Path
-    //-                             p 
-    //-                                 |Let other people know where you're headed
-    //-                                 |so that you can make more deliveries that
-    //-                                 |are ontheway. 
-    //-                 div.border-image.steps.container-fluid.remove-padding
-    //-                     div.col-md-6.remove-padding.left-image
-    //-                         div.example-image.wow.fadeInRight
-    //-                             img(src='/images/sm3.png')
-    //-                     div.col-md-6.remove-padding.left-text
-    //-                         div.step-text.right.wow.fadeInRight
-    //-                             h2 Get Paid
-    //-                             p 
-    //-                                 |Automatically.<br>Even easier.
-    div.bottom-buttons.container-fluid.diamonds.remove-padding
+    div.bottom-buttons.container-fluid.red.remove-padding
       div.app-buttons.remove-padding-all
           a(href='https://itunes.apple.com/us/app/ontheway./id979445666?mt=8&uo=6&at=&ct=', target="_blank")
             img.download-button.apple(src="images/appledownload.svg", onerror="this.src='images/appledownload.png'")
@@ -224,12 +150,6 @@ block content
 block script
     script(type='text/javascript', src='/javascripts/smoothscroll.js')
     script(type='text/javascript').
-      //- $(document).ready(function() {
-      //-    setTimeout(function(){$('#element_to_pop_up').bPopup()}, 2000);
-      //-   });
-        /* particlesJS('dom-id', params);
-        /* @dom-id : set the html tag id [string, optional, default value : particles-js]
-        /* @params: set the params [object, optional, default values : check particles.js] */
         function isiPhone(){
             return (
                 //Detect iPhone
@@ -260,7 +180,7 @@ block script
               $(".app-buttons").addClass("relative");
               $(".non-diamond").addClass("no-background");
               $(".non-diamond").addClass("fixed");
-               $(".no-cuts").addClass("no-cuts-mobile");
+              $(".no-cuts").addClass("no-cuts-mobile");
               $(".sub-sub-header").removeClass("no-cuts");
               $(".headerText").removeClass("headerText-desktop");
               $(".headerText").addClass("headerText-mobile");

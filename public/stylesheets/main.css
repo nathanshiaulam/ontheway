@@ -271,7 +271,7 @@ hr.symbol:after {
 	color: black;
 	background: none;
 }
-.red {
+.red, .red.navbar {
 	background-color: rgb(205,51,51);
 }
 .diamonds {
@@ -1160,7 +1160,7 @@ a.svg {
 	}
 	.cover {
 	  	background-size: cover;
-	  	background: no-repeat center center url(../images/newbackground-small.png);
+	  	background: no-repeat center center url(../images/mobile-bg.png);
 		min-height: 500px;
 	}
 	.headerText-desktop {
