@@ -1390,36 +1390,66 @@ a.svg {
 	font-size: 2.1em;
 	color: #d8433d;
 }
+.desc-image {
+	width: 90%;
+	height: auto;
+	display: block;
+	margin: auto;
+}
 
+.desc-section {
+	padding-bottom: 10px;
+}
 .about-image {
 	height: auto;
-	width: 60%;
-	margin-left: auto;
+	width: 80%;
 	display: block;
+	margin: auto;
 }
 
 .about-title {
 	margin-top: 0px;
 	margin-bottom: 10px;
-	text-align: center;
+	text-align: left;
 	color: #d8433d;
 }
 
+.element-container {
+	margin-top: 25px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+
 .about-info {
-	font-size: 1.2em;
+	font-size: 1.3em;
 	line-height: 1.7;
 	margin-left: 15%;
 	margin-right: 15%;
 }
+.about-info.with-pic {
+	font-size: 1.3em;
+	margin: 0;
+	text-align: center;
+	padding-bottom: 30px;
+}
 
+.pathsImage {
+	width: 100%;
+  	height: 60px;
+  	margin-top: 10px;
+  	margin-bottom: 10px;
+}
+.about-sub-header {
+	font-size: 1.8em;
+	padding-top: 10px;
+	text-align: center;
+}
 .desc-section .about-info {
 	padding-top: 10px;
 }
 
-.desc-section {
-	/*padding-top: 20px;*/
-	padding-bottom: 30px;
-}
+
 .desc-section.about-desc {
 	padding-bottom: 10px;
 }
@@ -1454,6 +1484,10 @@ a.svg {
 		width: 25%;
 		margin-left:auto;
 		margin-right: auto;
+	}
+	.desc-image {
+		width: 50%;
+		min-width: 250px;
 	}
 	.col-md-8 .about-title {
 		text-align: center;
