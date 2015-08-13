@@ -1435,10 +1435,13 @@ a.svg {
 }
 
 .pathsImage {
-	width: 100%;
-  	height: 60px;
-  	margin-top: 10px;
-  	margin-bottom: 10px;
+	width: auto;
+	height: 60px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 .about-sub-header {
 	font-size: 1.8em;
