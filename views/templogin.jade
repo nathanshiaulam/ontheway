@@ -1,8 +1,0 @@
-extends layout
-
-block content
-    h2= title
-    form(name="login", action="/templogin", method="post")
-      input(type="text", name="phonenumber", placeholder="Phone Number")
-      input(type="password", name="password", placeholder="Password")
-      input(type="submit", name="submit", value="Submit")
